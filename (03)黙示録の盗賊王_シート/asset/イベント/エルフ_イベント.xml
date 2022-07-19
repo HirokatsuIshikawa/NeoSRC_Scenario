@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:f1210001edb910db33d96ac3ccba8e85:f123dce44019668dcb87be9240f1fc99:45d9040c0feea983e329c8420f0c21a8$ -->
+<TextureAtlas imagePath="エルフ_イベント.png" width="1292" height="1024">
+    <SubTexture name="くぱあ" x="245" y="876" rotated="true" width="135" height="114" frameX="-140" frameY="-238" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="ボテ腹" x="646" y="572" width="339" height="246" frameX="-136" frameY="-289" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="基本" x="1" y="1" width="720" height="540"/>
+    <SubTexture name="拘束具" x="987" y="572" rotated="true" width="273" height="171" frameX="-549" frameY="-136" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="棒アナル" x="1" y="876" width="242" height="49" frameX="0" frameY="-261" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="棒叩き" x="646" y="820" rotated="true" width="349" height="187" frameX="-232" frameY="-191" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="棒突き" x="997" y="745" width="192" height="210" frameX="0" frameY="0" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="痩せ男" x="723" y="1" rotated="true" width="540" height="569" frameX="0" frameY="0" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="鎧" x="1" y="543" width="643" height="331" frameX="-72" frameY="-99" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="顔_アヘ" x="1191" y="745" width="100" height="117" frameX="-568" frameY="-45" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="顔_不安" x="1191" y="864" width="100" height="111" frameX="-568" frameY="-45" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="顔_怒り" x="505" y="876" rotated="true" width="106" height="102" frameX="-566" frameY="-46" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="顔_恐怖" x="382" y="876" rotated="true" width="121" height="98" frameX="-570" frameY="-39" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="顔_泣き" x="1" y="927" rotated="true" width="108" height="96" frameX="-574" frameY="-44" frameWidth="720" frameHeight="540"/>
+</TextureAtlas>

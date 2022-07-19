@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:ba8ca0898dc8ef7edb898869b812a8cc:605cb38434ec2cb5fa99d4bb5a25ef6b:34f46112c33aef97270eae109f6d9c54$ -->
+<TextureAtlas imagePath="troop_jado.png" width="1600" height="1627">
+    <SubTexture name="なし" x="470" y="1623" width="3" height="3" frameX="0" frameY="0" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="エルフ_なし" x="470" y="1623" width="3" height="3" frameX="0" frameY="0" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_ボディ" x="1" y="584" rotated="true" width="893" height="277" frameX="-152" frameY="0" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_衣装_ドレス" x="470" y="863" width="270" height="758" frameX="-153" frameY="-142" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_衣装_ビキニ鎧" x="1" y="863" width="467" height="763" frameX="0" frameY="-133" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_衣装_葉っぱビキニ" x="742" y="863" width="253" height="758" frameX="-167" frameY="-139" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_アヘ" x="1413" y="852" width="183" height="76" frameX="-203" frameY="-64" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_哀" x="1188" y="1033" width="183" height="69" frameX="-203" frameY="-64" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_喜" x="1387" y="930" width="189" height="76" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_基本" x="1196" y="960" width="189" height="71" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_怒" x="1196" y="878" width="189" height="80" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_楽" x="997" y="1024" width="189" height="71" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_表情_泣" x="1387" y="1008" width="183" height="74" frameX="-203" frameY="-64" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_追加_ボテ腹" x="1439" y="469" width="160" height="182" frameX="-181" frameY="-255" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_追加_赤面" x="1413" y="765" rotated="true" width="24" height="77" frameX="-253" frameY="-87" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_追加_首輪" x="1132" y="1317" rotated="true" width="52" height="63" frameX="-262" frameY="-133" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="ジャド" x="1" y="1" rotated="true" width="896" height="339" frameX="-2" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_不機嫌" x="997" y="1097" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_困り" x="1373" y="1084" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_微笑み" x="1187" y="1104" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_怒り" x="997" y="1231" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_笑顔" x="1373" y="1218" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_苦笑" x="1187" y="1238" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_赤面" x="997" y="1365" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_通常" x="1186" y="1372" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド_驚き" x="1370" y="1352" width="132" height="133" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="ジャド裸" x="1" y="342" rotated="true" width="896" height="240" frameX="-46" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="タマ_パンツ" x="1013" y="765" width="198" height="111" frameX="-79" frameY="-392" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_ブラ" x="1439" y="653" rotated="true" width="144" height="197" frameX="-105" frameY="-179" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_ベース" x="899" y="441" rotated="true" width="538" height="322" frameX="-41" frameY="-2" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_ポロリ" x="997" y="878" width="197" height="144" frameX="-105" frameY="-179" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_下半身" x="1213" y="765" width="198" height="111" frameX="-79" frameY="-392" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_伏し目" x="1501" y="1" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_号泣" x="1501" y="118" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_微笑み" x="1501" y="235" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_拒否" x="1501" y="352" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_泣き顔" x="896" y="765" rotated="true" width="115" height="95" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_羞恥" x="997" y="1506" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_舌打ち" x="1094" y="1506" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_苦しみ" x="1191" y="1506" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_通常" x="1288" y="1506" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="マーク" x="899" y="1" rotated="true" width="600" height="218"/>
+    <SubTexture name="マーク_なし" x="470" y="1623" width="3" height="3" frameX="0" frameY="0" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク_裸" x="899" y="221" rotated="true" width="600" height="218"/>
+    <SubTexture name="マーク感情_どんより" x="1322" y="1171" width="49" height="48" frameX="-142" frameY="-15" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク感情_ギザギザ" x="1508" y="1084" rotated="true" width="91" height="67" frameX="-4" frameY="0" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク感情_怒" x="1385" y="1487" rotated="true" width="44" height="107" frameX="-80" frameY="-24" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク感情_照" x="1385" y="1596" width="61" height="28" frameX="-103" frameY="-78" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク感情_絆創膏" x="1322" y="1291" width="47" height="44" frameX="-140" frameY="-5" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_お茶目" x="1132" y="1382" rotated="true" width="51" height="69" frameX="-94" frameY="-57" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_ギャグ" x="1322" y="1104" rotated="true" width="49" height="65" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_哀" x="1508" y="1258" width="72" height="44" frameX="-94" frameY="-61" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_怒" x="1132" y="1243" rotated="true" width="52" height="72" frameX="-94" frameY="-58" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_恥" x="1504" y="1395" width="69" height="43" frameX="-95" frameY="-63" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_悩" x="1322" y="1221" rotated="true" width="47" height="68" frameX="-96" frameY="-58" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_楽" x="1508" y="1304" width="72" height="44" frameX="-94" frameY="-60" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_涙" x="1504" y="1440" width="67" height="42" frameX="-97" frameY="-65" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_睨" x="1321" y="1411" rotated="true" width="45" height="72" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_笑" x="1132" y="1171" rotated="true" width="53" height="70" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_笑2" x="1132" y="1097" rotated="true" width="53" height="72" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_考" x="1322" y="1337" rotated="true" width="46" height="72" frameX="-92" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_膨" x="1508" y="1153" width="75" height="49" frameX="-92" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_苦笑" x="1508" y="1350" width="72" height="43" frameX="-94" frameY="-61" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_驚" x="1508" y="1204" width="74" height="52" frameX="-92" frameY="-54" frameWidth="218" frameHeight="600"/>
+</TextureAtlas>

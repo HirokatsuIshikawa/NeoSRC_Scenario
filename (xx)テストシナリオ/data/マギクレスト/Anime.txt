@@ -1,0 +1,128 @@
+name:ケイブガード
+	action:ファイヤーアックス
+		チェイン, delay:0.2, target:攻撃側
+			createImg, target:攻撃側, asset:SpinFire, name:火炎弾, pivot:中心, color:0xFFFFFF, alpha:0, scale:2
+			target:火炎弾, time:0, alpha:1, pointTarget:攻撃側
+			target:火炎弾, pointtarget:防御側, adjustX:-32, time:0.6, alpha:1, rotation:1440
+			createImg, name:爆発 ,anime:bombR_, pivot:中心, alpha:0, color:0xFFFFFF, scale:2
+			PlaySound, file:爆発1, vol:1
+			target:爆発, alpha:1, time:0, pointTarget:防御側
+			startAnime, target:爆発, frame:100,loop:0
+			target:火炎弾, time:0, alpha:0
+			if:回避 ? 回避:ダメージ
+		チェイン終了
+		call:チェインダメージアニメ
+	action:フラッシュカットイン
+		同時
+			target:攻撃側, $x:60, time:0.4
+		同時終了
+		createImg, name:背景緑, target:背景, asset:tex_white, color:0x7FFFD4, alpha:0, x:0, y:0, width:960, height:400
+		createImg, name:カットイン, target:画面, asset:cutin_test, alpha:1, x:-512, y:0
+		同時
+			target:カットイン , alpha:1, time:0.3
+			target:カットイン, $x:512, time:0.5
+		同時終了
+		wait, 0.3
+		target:カットイン , alpha:0, time:0.3
+		target:背景緑, alpha:0, time:0
+		ループ, count:4
+			target:背景緑, alpha:1, time:0.3
+			target:背景緑, alpha:0, time:0.3
+		ループ終了
+		call:通常ダメージアニメ
+name:ワイルドランナー
+action:フレイムスピアー
+	チェイン, delay:0.2
+		createImg, name:弾丸 ,asset:firespear, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
+		target:弾丸, pointtarget:攻撃側, time:0, alpha:1
+		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		createImg, name:爆発 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:2
+		target:爆発, pointtarget:防御側, time:0, alpha:1
+		PlaySound, file:爆発1, vol:1
+		startAnime, target:爆発, frame:100,loop:0
+		target:弾丸, time:0.2, alpha:0
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:ビーストランサー
+	チェイン, delay:0.2
+	createImg, name:槍 ,asset:stone_rance, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF, scale:0
+		target:槍, time:0.6, alpha:1, scale:2, rotation:90, $x:-16
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+			連続
+				target:攻撃側, $Y:-50, time:0.1, ease:QuadOut
+				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
+			連続終了
+		同時終了
+		wait, 0.5
+		PlaySound, file:剣で斬る2, vol:1
+		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-360, time:0
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+		target:槍, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
+	
+	
+name:ゼロハチアーミー
+action:ショックベイアニット
+	チェイン, delay:0.2
+	createImg, name:傘 ,asset:umbrella, target:攻撃側,pivotX:6, pivotY:0, alpha:0, color:0xFFFFFF,scale:0
+		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+			連続
+				target:攻撃側, $Y:-50, time:0.1, ease:QuadOut
+				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
+			連続終了
+		同時終了
+		wait, 0.5
+		PlaySound, file:近接, vol:1
+		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-360, time:0
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+		target:傘, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
+action:アンブレラキャノン
+	チェイン, delay:0.2
+	createImg, name:傘 ,asset:umbrella, target:攻撃側,pivotX:6, pivotY:0, alpha:0, color:0xFFFFFF,scale:0
+		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16
+		Wait, 0.4
+		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
+		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:1
+		PlaySound, file:ビームガン, vol:1
+		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		createImg, name:爆発 ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
+		target:爆発, pointtarget:防御側, time:0, alpha:1
+		PlaySound, file:爆発1, vol:1
+		startAnime, target:爆発, frame:100,loop:0
+		target:弾丸, time:0.2, alpha:0
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:傘, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了

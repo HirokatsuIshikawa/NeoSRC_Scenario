@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:f94f0331659991a1c136c13d40717ca8:6ec7a43170bfa38674ef4935d5444026:fb5f73a964afa1176e2f89f571876680$ -->
+<TextureAtlas imagePath="chara_1.png" width="734" height="749">
+    <SubTexture name="スライム" x="458" y="362" rotated="true" width="208" height="285" frameX="-31" frameY="-39" frameWidth="320" frameHeight="260"/>
+    <SubTexture name="八雲紫" x="1" y="432" rotated="true" width="455" height="316" frameX="-120" frameY="-145" frameWidth="500" frameHeight="600"/>
+    <SubTexture name="勇太" x="572" y="1" width="161" height="359" frameX="-85" frameY="-41" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="奈緒子" x="405" y="1" width="165" height="357" frameX="-81" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="東方妖精" x="1" y="1" width="402" height="429" frameX="-4" frameY="-4" frameWidth="410" frameHeight="433"/>
+</TextureAtlas>

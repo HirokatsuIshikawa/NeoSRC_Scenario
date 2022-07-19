@@ -1,0 +1,201 @@
+name:ヤイバ
+action:アクセルガン
+	チェイン, delay:0.3
+		同時
+			ループ, count:4, delay:0.15
+				createImg, name:弾丸$変数(ループ数) ,asset:accelgun, pivot:中心, color:0xFFFFFF, scale:2
+				target:弾丸$変数(ループ数), pointtarget:攻撃側, time:0, alpha:1
+				PlaySound, file:ビームガン, vol:1
+				target:弾丸$変数(ループ数), pointtarget:防御側, adjustX:-32,time:0.4, alpha:1, ease:CircIn
+				createImg, name:爆発$変数(ループ数) ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:2
+				target:爆発$変数(ループ数), pointtarget:防御側, time:0, alpha:1
+				PlaySound, file:爆発1, vol:1
+				startAnime, target:爆発$変数(ループ数), frame:100, loop:0
+				target:弾丸$変数(ループ数), time:0, alpha:0
+			ループ終了
+		同時終了
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:ウェーブボム
+	チェイン, delay:0.2
+		createImg, name:爆弾 ,asset:cr_standbomb, pivot:中心, color:0xFFFFFF, scale:2
+		target:爆弾, pointtarget:攻撃側, time:0, alpha:1, rotation:-30
+		PlaySound, file:ヒューンと落下, vol:1
+		同時
+			target:爆弾, pointtargetX:防御側, time:0.8, rotation:30
+			連続
+				target:爆弾, pointtargetY:防御側, adjustY:-200,time:0.4, ease:QuadOut
+				target:爆弾, pointtargetY:防御側, time:0.4, ease:QuadIn
+			連続終了
+		同時終了
+		createImg, name:爆発 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+		target:爆発, pointtarget:防御側, time:0, alpha:1
+		startAnime, target:爆発, frame:100,loop:0
+		if:回避 ? 回避:ダメージ
+		PlaySound, file:爆発1, vol:1
+		target:爆弾, time:0.2, alpha:0
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:サイドウェイポッド
+	チェイン, delay:0.2
+		createImg, name:ポッド上 ,asset:StandardPod, pivot:中心, color:0xFFFFFF, scale:2, pointTarget:攻撃側
+		createImg, name:ポッド下 ,asset:StandardPod, pivot:中心, color:0xFFFFFF, scale:2, pointTarget:攻撃側
+		同時
+			連続
+				target:ポッド上, time:0, pointTarget:攻撃側, alpha:1
+				target:ポッド上, time:0.2, $x:-40, $y:-40
+				target:ポッド上, pointTarget:防御側, time:0.4
+				createImg, name:爆発上 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+				target:爆発上, pointtarget:防御側, time:0, alpha:1
+				target:ポッド上, pointTarget:防御側, time:0, alpha:0
+				startAnime, target:爆発上, frame:100,loop:0
+				if:回避 ? 回避:ダメージ
+				PlaySound, file:爆発1, vol:1
+			連続終了
+			連続, delay:0.2
+				target:ポッド下, time:0, pointTarget:攻撃側, alpha:1
+				target:ポッド下, time:0.2, $x:-40, $y:40
+				target:ポッド下, pointTarget:防御側, time:0.4
+				createImg, name:爆発下 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+				target:爆発下, pointtarget:防御側, time:0, alpha:1
+				target:ポッド下, pointTarget:防御側, time:0, alpha:0
+				startAnime, target:爆発下, frame:100,loop:0
+				if:回避 ? 回避:ダメージ
+				PlaySound, file:爆発1, vol:1
+			連続終了
+		同時終了
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:ターンアタック
+	チェイン, delay:0.2
+		target:攻撃側, $x:240, delay:0.3, time:0.2, ease:QuadIn
+		target:攻撃側画像, time:0.3, color:0xFF0000
+		PlaySound, file:空中高速移動, vol:1
+		target:攻撃側, $$x:400, time:0.3
+		target:攻撃側画像, time:0, scaleX:-4
+		Wait, 0.15
+		PlaySound, file:空中高速移動, vol:1
+		target:攻撃側, $$x:-400, time:0.3
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側画像, time:0.1, color:0xFFFFFF
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+		target:攻撃側画像, time:0, scaleX:4
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+	
+name:ディッキー
+action:ベーシックガン
+	チェイン, delay:0.3
+		同時
+			ループ, count:3, delay:0.1
+				createImg, name:弾丸$変数(ループ数) ,asset:firespear, pivot:中心, color:0xFFFFFF, scale:2
+				target:弾丸$変数(ループ数), pointtarget:攻撃側, time:0, alpha:1
+				PlaySound, file:ビームガン, vol:1
+				target:弾丸$変数(ループ数), pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+				createImg, name:爆発$変数(ループ数) ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:2
+				target:爆発$変数(ループ数), pointtarget:防御側, time:0, alpha:1
+				PlaySound, file:爆発1, vol:1
+				startAnime, target:爆発$変数(ループ数), frame:100, loop:0
+				target:弾丸$変数(ループ数), time:0, alpha:0
+			ループ終了
+		同時終了
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:スタンダードボム
+	チェイン, delay:0.2
+		createImg, name:爆弾 ,asset:cr_standbomb, pivot:中心, color:0xFFFFFF, scale:2
+		target:爆弾, pointtarget:攻撃側, time:0, alpha:1, rotation:-30
+		PlaySound, file:ヒューンと落下, vol:1
+		同時
+			target:爆弾, pointtargetX:防御側, time:0.8, rotation:30
+			連続
+				target:爆弾, pointtargetY:防御側, adjustY:-200,time:0.4, ease:QuadOut
+				target:爆弾, pointtargetY:防御側, time:0.4, ease:QuadIn
+			連続終了
+		同時終了
+		createImg, name:爆発 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+		target:爆発, pointtarget:防御側, time:0, alpha:1
+		startAnime, target:爆発, frame:100,loop:0
+		if:回避 ? 回避:ダメージ
+		PlaySound, file:爆発1, vol:1
+		target:爆弾, time:0.2, alpha:0
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:イージーポッド
+	チェイン, delay:0.2
+		createImg, name:ポッド上 ,asset:StandardPod, pivot:中心, color:0xFFFFFF, scale:2, pointTarget:攻撃側
+		createImg, name:ポッド下 ,asset:StandardPod, pivot:中心, color:0xFFFFFF, scale:2, pointTarget:攻撃側
+		同時
+			連続
+				target:ポッド上, time:0, pointTarget:攻撃側, alpha:1
+				target:ポッド上, time:0.2, $x:-40, $y:-40
+				target:ポッド上, pointTarget:防御側, time:0.4
+				createImg, name:爆発上 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+				target:爆発上, pointtarget:防御側, time:0, alpha:1
+				target:ポッド上, pointTarget:防御側, time:0, alpha:0
+				startAnime, target:爆発上, frame:100,loop:0
+				if:回避 ? 回避:ダメージ
+				PlaySound, file:爆発1, vol:1
+			連続終了
+			連続, delay:0.2
+				target:ポッド下, time:0, pointTarget:攻撃側, alpha:1
+				target:ポッド下, time:0.2, $x:-40, $y:40
+				target:ポッド下, pointTarget:防御側, time:0.4
+				createImg, name:爆発下 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:4
+				target:爆発下, pointtarget:防御側, time:0, alpha:1
+				target:ポッド下, pointTarget:防御側, time:0, alpha:0
+				startAnime, target:爆発下, frame:100,loop:0
+				if:回避 ? 回避:ダメージ
+				PlaySound, file:爆発1, vol:1
+			連続終了
+		同時終了
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:ライジングアタック
+	チェイン, delay:0.2
+		target:攻撃側, $x:160, delay:0.3, time:0.2, ease:QuadIn
+		target:攻撃側画像, time:0.3, color:0xFF0000
+		PlaySound, file:空中高速移動, vol:1
+		target:攻撃側, $$x:800, time:0.3, $$y:-40
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-480, time:0
+		target:攻撃側画像, time:0, color:0xFFFFFF
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了

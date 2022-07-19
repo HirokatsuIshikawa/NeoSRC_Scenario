@@ -1,0 +1,23 @@
+name:弾幕妖精
+action:妖精弾
+	チェイン, delay:0.3
+		同時
+			ループ, count:3, delay:0.1
+				createImg, name:弾丸$変数(ループ数) ,asset:toho_tama, pivot:中心, color:0xFFFFFF, scale:2
+				target:弾丸$変数(ループ数), pointtarget:攻撃側, time:0, alpha:1
+				PlaySound, file:ビームガン, vol:1
+				target:弾丸$変数(ループ数), pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+				createImg, name:爆発$変数(ループ数) ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
+				target:爆発$変数(ループ数), pointtarget:防御側, time:0, alpha:1
+				PlaySound, file:爆発1, vol:1
+				startAnime, target:爆発$変数(ループ数), frame:100, loop:0
+				target:弾丸$変数(ループ数), time:0, alpha:0
+			ループ終了
+		同時終了
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了

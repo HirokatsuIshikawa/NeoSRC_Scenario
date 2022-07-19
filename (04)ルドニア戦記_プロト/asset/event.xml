@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:3c84a5b27e297cd3b0cf5d829a07aa26:71cb4920a256cd25604817b2615e8e11:910052333723047b06edadb09e99a232$ -->
+<TextureAtlas imagePath="event.png" width="1832" height="991">
+    <SubTexture name="EV_カレン" x="1" y="1" rotated="true" width="600" height="800"/>
+    <SubTexture name="エルフE_くぱあ" x="1716" y="1" width="114" height="135" frameX="-140" frameY="-238" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_ボテ腹" x="847" y="723" width="339" height="246" frameX="-136" frameY="-289" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_基本" x="603" y="1" rotated="true" width="540" height="720"/>
+    <SubTexture name="エルフE_拘束具" x="352" y="803" rotated="true" width="273" height="171" frameX="-549" frameY="-136" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_棒アナル" x="603" y="723" width="242" height="49" frameX="0" frameY="-261" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_棒叩き" x="1" y="803" rotated="true" width="349" height="187" frameX="-232" frameY="-191" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_棒突き" x="627" y="774" width="192" height="210" frameX="0" frameY="0" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_痩せ男" x="1145" y="1" width="569" height="540" frameX="0" frameY="0" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_鎧" x="1188" y="543" width="643" height="331" frameX="-72" frameY="-99" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_顔_アヘ" x="1716" y="261" width="100" height="117" frameX="-568" frameY="-45" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_顔_不安" x="1716" y="380" rotated="true" width="111" height="100" frameX="-568" frameY="-45" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_顔_怒り" x="1188" y="876" width="102" height="106" frameX="-566" frameY="-46" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_顔_恐怖" x="1716" y="138" width="98" height="121" frameX="-570" frameY="-39" frameWidth="720" frameHeight="540"/>
+    <SubTexture name="エルフE_顔_泣き" x="1292" y="876" width="96" height="108" frameX="-574" frameY="-44" frameWidth="720" frameHeight="540"/>
+</TextureAtlas>

@@ -1,0 +1,33 @@
+name:木之本桜
+action:さくらカード『剣』
+	createImg, name:剣 ,asset:ccs_sword, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF,scale:0
+	call:単体剣攻撃
+action:さくらカード『風』
+		同時
+			target:攻撃側, $x:60, time:0.4
+		同時終了
+		createImg, name:背景緑, target:背景, asset:tex_white, color:0x7FFFD4, alpha:0, x:0, y:0, width:960, height:400
+		createSpr, name:親スプライト, target:画面
+		set, 第一回転, 720
+		set, 第二回転, 360
+		target:背景緑, alpha:0, time:0
+		target:親スプライト, x:720, y:200, time:0, alpha:1
+		PlaySound, file:風魔法2, vol:1
+		同時
+			ループ, count:3
+				set, ヒール画像, ヒール$変数(ループ数)
+				createImg, name:$変数(ヒール画像) ,asset:heal, pivot:中心, alpha:0, color:0xFFFFFF, scale:2, target:親スプライト
+				連続
+					target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数)), time:0, range:240, alpha:1
+					target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数) + $変数(第一回転)), time:1, range:80
+					target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数) + $変数(第一回転) + $変数(第二回転)), time:0.5, alpha:0, range:0
+				連続終了
+			ループ終了
+			連続
+				ループ, count:3
+					target:背景緑, alpha:1, time:0.3
+					target:背景緑, alpha:0, time:0.3
+				ループ終了
+			連続終了
+		同時終了
+		call:通常ダメージアニメ

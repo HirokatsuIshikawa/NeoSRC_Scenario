@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:73c13af21527c31441758e3ce483a89a:a6ac093f9514e0dc7d79e5551c690c3b:fb5f73a964afa1176e2f89f571876680$ -->
+<TextureAtlas imagePath="chara_1.png" width="1021" height="493">
+    <SubTexture name="セシル_困り" x="945" y="130" rotated="true" width="75" height="91" frameX="-107" frameY="-83" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_泣き" x="375" y="271" width="91" height="77" frameX="-107" frameY="-83" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸ポーズ赤面" x="1" y="1" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸赤面" x="188" y="1" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="伏し目" x="515" y="265" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="号泣" x="612" y="265" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="女王様_怒り" x="509" y="136" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_思考" x="643" y="1" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_悲しみ" x="752" y="1" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_激怒" x="861" y="1" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_照れ" x="406" y="350" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_興味" x="618" y="136" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_通常" x="727" y="130" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="女王様_驚き" x="836" y="130" width="107" height="127" frameX="-151" frameY="-30" frameWidth="405" frameHeight="540"/>
+    <SubTexture name="微笑み" x="515" y="382" rotated="true" width="115" height="95" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="拒否" x="632" y="382" rotated="true" width="115" height="95" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="泣き顔" x="709" y="265" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="羞恥" x="806" y="259" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="舌打ち" x="903" y="259" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="苦しみ" x="749" y="382" rotated="true" width="115" height="95" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="表情_怒り" x="1" y="360" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="表情_笑顔" x="136" y="360" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="表情_苦笑" x="271" y="360" rotated="true" width="133" height="132" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="表情_赤面" x="375" y="1" width="132" height="133" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="表情_通常" x="375" y="136" width="132" height="133" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="表情_驚き" x="509" y="1" width="132" height="133" frameX="-95" frameY="-2" frameWidth="344" frameHeight="900"/>
+    <SubTexture name="通常" x="866" y="376" rotated="true" width="115" height="95" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+</TextureAtlas>

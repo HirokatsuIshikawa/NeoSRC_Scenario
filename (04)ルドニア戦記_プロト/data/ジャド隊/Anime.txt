@@ -1,0 +1,22 @@
+name:ジャド
+action:シャドウスナップ
+	createImg, name:ショット ,asset:ShadowSnap, pivot:中心, color:0xFFFFFF, scale:2
+	call:ショット
+action:ファルコンブレード
+	createImg, name:剣 ,asset:FalconEdge, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF,scale:0
+	call:単体剣攻撃
+	
+name:レティシア
+action:マギアボウ
+	createImg, name:武器, asset:MagiaBow, , target:攻撃側, pivot:右中心, scale:2
+	createImg, name:ショット ,asset:Arrow, pivot:中心, color:0xFFFFFF, scale:2
+	target:武器, time:0.3, alpha:1, scale:2, $x:-8, $y:-24
+	call:ショット
+action:マグスダガー
+	createImg, name:剣 ,asset:MagusDagger, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF,scale:0
+	call:単体剣攻撃
+	
+name:タマ
+action:トライデント
+	createImg, name:槍 ,asset:stone_rance, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF, scale:0
+	call:槍攻撃
