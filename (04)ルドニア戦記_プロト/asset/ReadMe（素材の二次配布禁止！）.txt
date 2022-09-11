@@ -22,6 +22,8 @@ http://blue-forest.sakura.ne.jp/
 ＜シグ子さん＞https://www.ac-illust.com/main/profile.php?id=siguko&area=1
 モンスター.png
 
+作者：Carlmary
+URL：https://carlmary.jp/gallery/materials-300/
 
 ・むすすだシステム
 http://mususuda.php.xdomain.jp/index.htm

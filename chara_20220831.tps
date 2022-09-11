@@ -709,6 +709,111 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女剣士.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>68,200,135,400</rect>
+                <key>scale9Paddings</key>
+                <rect>68,200,135,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女奴隷_A.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>45,200,91,400</rect>
+                <key>scale9Paddings</key>
+                <rect>45,200,91,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女奴隷_B.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>52,200,103,400</rect>
+                <key>scale9Paddings</key>
+                <rect>52,200,103,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女戦士.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>100,225,199,450</rect>
+                <key>scale9Paddings</key>
+                <rect>100,225,199,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女盗賊.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>65,225,130,450</rect>
+                <key>scale9Paddings</key>
+                <rect>65,225,130,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/女魔道士.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>104,200,207,400</rect>
+                <key>scale9Paddings</key>
+                <rect>104,200,207,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/姫.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>120,200,239,400</rect>
+                <key>scale9Paddings</key>
+                <rect>120,200,239,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/汎用/戦士_A.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -724,6 +829,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/汎用/男奴隷_A.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/汎用/盗賊_A.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/汎用/盗賊_B.png</key>
             <struct type="IndividualSpriteSettings">
