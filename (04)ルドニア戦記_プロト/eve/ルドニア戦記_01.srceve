@@ -10,7 +10,7 @@ Exit
 //
 Call ポジション初期設定
 Call ベースレイヤーセット
-Call 背景セット 森
+Call 背景セット 夕焼け空
 Call 黒幕エフェクトセット
 //
 //テロップセット
@@ -24,9 +24,9 @@ ReadyMove
 SetMove layer:エフェクト time:0.7 alpha:0.2
 StartMove type:同時 wait:on
 Wait 1
-―――ラミアス地方
+―――ダム・ブルー
 Wait 0.6
-　　　マクムウッドの森
+　　　砂漠地帯
 Wait 1
 ClearTelop
 //
@@ -54,6 +54,8 @@ SetChara name:タマ x:$変数(プレイヤー位置) alpha:1 ポロリ 下半�
 //
 Call プレイヤー位置計算加算 4 400
 SetChara name:マーク x:$変数(プレイヤー位置) y:200 alpha:1
+Call プレイヤー位置計算加算 5 400
+SetChara name:エリス x:$変数(プレイヤー位置) y:200 alpha:1
 //
 Call 場面初期位置表示 -1000
 Call BGM fi_Mudtown
