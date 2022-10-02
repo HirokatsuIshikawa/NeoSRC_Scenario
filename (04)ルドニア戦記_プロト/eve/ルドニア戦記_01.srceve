@@ -10,7 +10,7 @@ Exit
 //
 Call ポジション初期設定
 Call ベースレイヤーセット
-Call 背景セット 夕焼け空
+Call 背景セット 砂漠_A
 Call 黒幕エフェクトセット
 //
 //テロップセット
@@ -26,7 +26,7 @@ StartMove type:同時 wait:on
 Wait 1
 ―――ダム・ブルー
 Wait 0.6
-　　　砂漠地帯
+　　　砂漠地帯・砂上船内
 Wait 1
 ClearTelop
 //
@@ -41,7 +41,7 @@ ClearLayer name:背景
 //
 //背景セット
 //
-Call 背景セット 寝室
+Call 背景セット 船内寝室
 //
 Call プレイヤー位置計算加算 1 40
 SetChara name:レティシア x:$変数(プレイヤー位置) alpha:1 裸 赤面 泣
@@ -52,7 +52,7 @@ SetChara name:ジャド x:$変数(プレイヤー位置) alpha:1 裸 驚き
 Call プレイヤー位置計算加算 3 -120
 SetChara name:タマ x:$変数(プレイヤー位置) alpha:1 ポロリ 下半身 舌打ち
 //
-Call プレイヤー位置計算加算 4 400
+Call プレイヤー位置計算加算 4 440
 SetChara name:マーク x:$変数(プレイヤー位置) y:200 alpha:1
 Call プレイヤー位置計算加算 5 400
 SetChara name:エリス x:$変数(プレイヤー位置) y:200 alpha:1
@@ -110,6 +110,9 @@ Talk マーク 悲しみ
 でも、いいなぁ……
 Wait 0.5
 でっかいおっぱい……
+
+Talk エリス
+ムッ……
 
 Talk ジャド 不機嫌
 うらやましそうに見てんじゃねーよ
@@ -214,7 +217,7 @@ Exit
 
 ステージ開始:
 StopBGM
-LoadMap file:ラトネ街道.map
+LoadMap file:砂漠地帯.map
 //
 VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:味方の全滅
 //

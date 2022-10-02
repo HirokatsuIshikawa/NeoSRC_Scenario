@@ -74,7 +74,7 @@
         <key>textureSubPath</key>
         <string></string>
         <key>textureFormat</key>
-        <enum type="SettingsBase::TextureFormat">png8</enum>
+        <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
         <uint>0</uint>
         <key>maxTextureSize</key>
@@ -173,7 +173,32 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_ボディ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_オーバーオール.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_裸.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女__照れ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_なし.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_エプロン.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_オーバーオール.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_タオル.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_照れ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_獣コス_a.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_魔女っ子_緑.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_魔女っ子_赤.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/少女共通/少女_魔女っ子_青.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>68,150,135,300</rect>
+                <key>scale9Paddings</key>
+                <rect>68,150,135,300</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_お茶目.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_ギャグ.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_哀.png</key>
@@ -189,14 +214,6 @@
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_膨.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_苦笑.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/エリス/エリス_表情_驚.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女__照れ.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_エプロン.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_オーバーオール.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_タオル.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_獣コス_a.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_魔女っ子_緑.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_魔女っ子_赤.png</key>
-            <key type="filename">(04)ルドニア戦記/asset/chara/エリス/少女_魔女っ子_青.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -347,6 +364,30 @@
                 <rect>76,200,152,400</rect>
                 <key>scale9Paddings</key>
                 <rect>76,200,152,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_なし.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_ボディ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_哀.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_喜.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_怒.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_楽.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_照れ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_目逸.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_考.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/シャンフー/シャンフー_驚.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>69,220,137,440</rect>
+                <key>scale9Paddings</key>
+                <rect>69,220,137,440</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -557,6 +598,29 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_ボディ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_目_ウインク.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_目_笑顔目.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_目_通常.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_表情_困り.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_表情_怒り.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_表情_笑顔.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_表情_苦笑.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/ブフルス/ブフルス_表情_通常.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>111,250,221,500</rect>
+                <key>scale9Paddings</key>
+                <rect>111,250,221,500</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/マーク/マーク.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/マーク/マーク_なし.png</key>
             <key type="filename">(04)ルドニア戦記/asset/chara/マーク/マーク_裸.png</key>
@@ -659,6 +723,78 @@
                 <rect>90,190,180,380</rect>
                 <key>scale9Paddings</key>
                 <rect>90,190,180,380</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/カンファー.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>78,120,155,240</rect>
+                <key>scale9Paddings</key>
+                <rect>78,120,155,240</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ロヴァン.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>133,135,267,270</rect>
+                <key>scale9Paddings</key>
+                <rect>133,135,267,270</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_なし.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_ボディ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_すぼみ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_怒り.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_歯ぎしり.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_笑い.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_膨れ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_通常.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_口_驚き.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_ウインク.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_上向き.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_下向き.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_横目.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_細める.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_見開く.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_通常.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_目_閉.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_眉_困り.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_眉_怒り.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_眉_悲しみ.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_眉_通常.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_眉_驚き.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_裸.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_裸タトゥー.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_顔_汗.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_顔_涙.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_顔_涙黒子.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/女悪魔/女悪魔_顔_頬照れ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>121,213,242,425</rect>
+                <key>scale9Paddings</key>
+                <rect>121,213,242,425</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -884,6 +1020,11 @@
             <filename>(04)ルドニア戦記/asset/chara/ルーク</filename>
             <filename>(04)ルドニア戦記/asset/chara/ロリ共通</filename>
             <filename>(04)ルドニア戦記/asset/chara/汎用</filename>
+            <filename>(04)ルドニア戦記/asset/chara/シャンフー</filename>
+            <filename>(04)ルドニア戦記/asset/chara/ブフルス</filename>
+            <filename>(04)ルドニア戦記/asset/chara/単品</filename>
+            <filename>(04)ルドニア戦記/asset/chara/女悪魔</filename>
+            <filename>(04)ルドニア戦記/asset/chara/少女共通</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
