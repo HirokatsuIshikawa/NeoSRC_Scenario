@@ -123,7 +123,7 @@ wait 0.3
 
 ClearTelop
 Wait 0.3
-SetChara name:黄昏の魔法使い x:540 alpha:1
+SetImg img:イベント_黄昏の魔法使い size:fill name:魔法使い layer:キャラクター
 ReadyMove
 SetMove layer:キャラクター time:1.5 fade:in
 StartMove type:同時 wait:on

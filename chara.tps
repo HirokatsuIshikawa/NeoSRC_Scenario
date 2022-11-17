@@ -701,6 +701,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/白壁ハクマ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>33,160,65,320</rect>
+                <key>scale9Paddings</key>
+                <rect>33,160,65,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(2)知世の野望/asset/scenario/chara/真ケルベロス.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -713,6 +728,21 @@
                 <rect>75,135,150,270</rect>
                 <key>scale9Paddings</key>
                 <rect>75,135,150,270</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/赤金シュリ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>43,160,85,320</rect>
+                <key>scale9Paddings</key>
+                <rect>43,160,85,320</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
