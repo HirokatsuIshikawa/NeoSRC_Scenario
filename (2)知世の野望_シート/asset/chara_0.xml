@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:8fafc8e1b396bcdd197c047c7d632ad7:f09259d68db94d60451722bfe36343c9:fb5f73a964afa1176e2f89f571876680$ -->
+<!-- $TexturePacker:SmartUpdate:fa8ae149fb0e27dd82b2238430599d28:633a6268da25f3489ebbb558f57e06ab:fb5f73a964afa1176e2f89f571876680$ -->
 <TextureAtlas imagePath="chara_0.png" width="2045" height="2048">
     <SubTexture name="どんぐり目_0001" x="934" y="537" rotated="true" width="640" height="304"/>
     <SubTexture name="アリサ" x="912" y="1398" width="358" height="541" frameX="0" frameY="-99" frameWidth="358" frameHeight="640"/>

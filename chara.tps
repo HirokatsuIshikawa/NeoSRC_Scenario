@@ -174,6 +174,7 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">(2)知世の野望/asset/scenario/chara/すずか.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/キャサリン京橋.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -577,6 +578,21 @@
                 <rect>46,160,92,320</rect>
                 <key>scale9Paddings</key>
                 <rect>46,160,92,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/大道寺きら.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>42,160,83,320</rect>
+                <key>scale9Paddings</key>
+                <rect>42,160,83,320</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
