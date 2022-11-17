@@ -2,9 +2,9 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>4</int>
+        <int>5</int>
         <key>texturePackerVersion</key>
-        <string>5.5.0</string>
+        <string>6.0.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -37,24 +37,18 @@
         <filename></filename>
         <key>flipPVR</key>
         <false/>
-        <key>pvrCompressionQuality</key>
-        <enum type="SettingsBase::PvrCompressionQuality">PVR_QUALITY_NORMAL</enum>
-        <key>atfCompressData</key>
-        <false/>
-        <key>mipMapMinSize</key>
-        <uint>32768</uint>
-        <key>etc1CompressionQuality</key>
-        <enum type="SettingsBase::Etc1CompressionQuality">ETC1_QUALITY_LOW_PERCEPTUAL</enum>
-        <key>etc2CompressionQuality</key>
-        <enum type="SettingsBase::Etc2CompressionQuality">ETC2_QUALITY_LOW_PERCEPTUAL</enum>
+        <key>pvrQualityLevel</key>
+        <uint>3</uint>
+        <key>astcQualityLevel</key>
+        <uint>2</uint>
+        <key>basisUniversalQualityLevel</key>
+        <uint>2</uint>
+        <key>etc1QualityLevel</key>
+        <uint>40</uint>
+        <key>etc2QualityLevel</key>
+        <uint>40</uint>
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
-        <key>jxrColorFormat</key>
-        <enum type="SettingsBase::JpegXrColorMode">JXR_YUV444</enum>
-        <key>jxrTrimFlexBits</key>
-        <uint>0</uint>
-        <key>jxrCompressionLevel</key>
-        <uint>0</uint>
         <key>ditherType</key>
         <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
         <key>backgroundColor</key>
@@ -78,8 +72,6 @@
         <key>webpQualityLevel</key>
         <uint>101</uint>
         <key>textureSubPath</key>
-        <string></string>
-        <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
@@ -132,7 +124,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>シナリオ/(2)知世の野望_シート/asset/battle.xml</filename>
+                <filename>(2)知世の野望_シート/asset/battle.xml</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -181,8 +173,8 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/SparkBomb.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/StandardPod.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/SparkBomb.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/StandardPod.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -197,75 +189,79 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/SpinFire.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beamF_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beamF_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beamG_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beamG_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beam_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beam_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/beam_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_004.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_005.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombB_006.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_004.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_005.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombN_006.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_004.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_005.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombP_006.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_004.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_005.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombR_006.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_002.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_003.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_004.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_005.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/bombY_006.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/wall.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/windcutter.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/base/base_genshi.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/slime_b.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/さくらU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/どんぐり目U_0001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/なのはU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/アタッカーU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/アルフU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/エアバイク.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/グランモールU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ケイブガードU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/コクエン隊_男.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/シューターU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/スライムB_U.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/セシルU_0001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ディッキーU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/パーカー少年U_0001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/フェイトU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ポテトンU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ポテドンU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/マシンキャバリーU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/メカニックU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ヤイバU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ユーノU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/レイダーU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/ワイルドランナーU.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/三白眼U_0001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/少年U_0001.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/東方妖精U.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/scenario/unit/虚魂U.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/SpinFire.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beamF_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beamF_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beamG_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beamG_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beam_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beam_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/beam_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_004.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_005.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombB_006.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_004.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_005.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombN_006.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_004.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_005.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombP_006.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_004.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_005.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombR_006.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_001.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_002.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_003.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_004.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_005.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/bombY_006.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/wall.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/windcutter.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/base/base_genshi.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/slime_b.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/さくら2U.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/さくらU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/どんぐり目U_0001.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/なのはU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/アタッカーU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/アルフU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/エアバイク.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/グランモールU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ケイブガードU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/コクエン隊_男.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/シューターU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/スライムB_U.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/セシルU_0001.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ディッキーU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/パーカー少年U_0001.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/フェイトU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ポテトンU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ポテドンU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/マシンキャバリーU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ミズチU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/メカニックU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ヤイバU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ユーノ2U.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ユーノU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/レイダーU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/ワイルドランナーU.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/三白眼U_0001.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/勇太U.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/少年U_0001.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/東方妖精U.png</key>
+            <key type="filename">(2)知世の野望/asset/scenario/unit/虚魂U.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -280,9 +276,9 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/accelgun.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/firespear.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/weapon_shot.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/accelgun.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/firespear.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/weapon_shot.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -297,7 +293,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/ccs_sword.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/ccs_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -312,7 +308,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/cr_standbomb.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/cr_standbomb.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -327,8 +323,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/heal.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/toho_tama.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/heal.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/toho_tama.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -343,7 +339,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/rayB.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/rayB.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -358,8 +354,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/stone_rance.png</key>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/weapon_stick.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/stone_rance.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/weapon_stick.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -374,7 +370,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">シナリオ/(2)知世の野望/asset/Anime/umbrella.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/umbrella.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -392,9 +388,9 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>シナリオ/(2)知世の野望/asset/Anime</filename>
-            <filename>シナリオ/(2)知世の野望/asset/scenario/base</filename>
-            <filename>シナリオ/(2)知世の野望/asset/scenario/unit</filename>
+            <filename>(2)知世の野望/asset/Anime</filename>
+            <filename>(2)知世の野望/asset/scenario/base</filename>
+            <filename>(2)知世の野望/asset/scenario/unit</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

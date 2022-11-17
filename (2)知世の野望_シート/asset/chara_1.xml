@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:1ba37c08a4db856c554441a945ae8d20:1ec77f4713d7044368a2f946ce4b5851:fb5f73a964afa1176e2f89f571876680$ -->
-<TextureAtlas imagePath="chara_1.png" width="1862" height="1437">
+<!-- $TexturePacker:SmartUpdate:8fafc8e1b396bcdd197c047c7d632ad7:f09259d68db94d60451722bfe36343c9:fb5f73a964afa1176e2f89f571876680$ -->
+<TextureAtlas imagePath="chara_1.png" width="1862" height="1438">
     <SubTexture name="すずか" x="1298" y="1068" rotated="true" width="521" height="151" frameX="0" frameY="-119" frameWidth="151" frameHeight="640"/>
     <SubTexture name="なのは" x="1298" y="728" rotated="true" width="541" height="338" frameX="0" frameY="-99" frameWidth="338" frameHeight="640"/>
     <SubTexture name="アタッカー" x="301" y="604" width="174" height="601" frameX="0" frameY="-39" frameWidth="174" frameHeight="640"/>
-    <SubTexture name="ケイブガード" x="1" y="1246" rotated="true" width="581" height="190" frameX="0" frameY="-59" frameWidth="190" frameHeight="640"/>
+    <SubTexture name="ケイブガード" x="1" y="1247" rotated="true" width="581" height="190" frameX="0" frameY="-59" frameWidth="190" frameHeight="640"/>
     <SubTexture name="シューター" x="1298" y="564" rotated="true" width="561" height="162" frameX="0" frameY="-79" frameWidth="162" frameHeight="640"/>
     <SubTexture name="シンイチ" x="691" y="584" width="211" height="581" frameX="0" frameY="-59" frameWidth="211" frameHeight="640"/>
     <SubTexture name="スライム" x="1066" y="1127" rotated="true" width="208" height="285" frameX="-31" frameY="-39" frameWidth="320" frameHeight="260"/>
@@ -17,8 +17,8 @@
     <SubTexture name="レイダー" x="904" y="564" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
     <SubTexture name="八雲紫" x="1391" y="229" rotated="true" width="455" height="316" frameX="-120" frameY="-145" frameWidth="500" frameHeight="600"/>
     <SubTexture name="友永勇太" x="1112" y="564" width="184" height="561" frameX="0" frameY="-79" frameWidth="184" frameHeight="640"/>
-    <SubTexture name="大道寺知世" x="1" y="1" width="237" height="640"/>
-    <SubTexture name="奈緒子" x="1" y="643" width="298" height="601" frameX="0" frameY="-39" frameWidth="298" frameHeight="640"/>
+    <SubTexture name="大道寺知世" x="1" y="1" width="237" height="641" frameX="0" frameY="-79" frameWidth="237" frameHeight="720"/>
+    <SubTexture name="奈緒子" x="1" y="644" width="298" height="601" frameX="0" frameY="-39" frameWidth="298" frameHeight="640"/>
     <SubTexture name="宵闇コクエン" x="718" y="1" width="180" height="581" frameX="0" frameY="-59" frameWidth="180" frameHeight="640"/>
     <SubTexture name="少年_0001" x="1276" y="1221" rotated="true" width="431" height="154"/>
     <SubTexture name="真ケルベロス" x="1391" y="1" rotated="true" width="470" height="226" frameX="-44" frameY="-70" frameWidth="300" frameHeight="540"/>
