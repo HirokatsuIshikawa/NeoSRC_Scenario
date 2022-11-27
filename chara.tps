@@ -250,6 +250,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/カトレア.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>66,180,132,360</rect>
+                <key>scale9Paddings</key>
+                <rect>66,180,132,360</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(2)知世の野望/asset/scenario/chara/カリン.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -293,6 +308,21 @@
                 <rect>30,160,60,320</rect>
                 <key>scale9Paddings</key>
                 <rect>30,160,60,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/ゴウセツ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>60,190,119,379</rect>
+                <key>scale9Paddings</key>
+                <rect>60,190,119,379</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -341,6 +371,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/スバル.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>55,160,109,320</rect>
+                <key>scale9Paddings</key>
+                <rect>55,160,109,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(2)知世の野望/asset/scenario/chara/スライム.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -368,6 +413,21 @@
                 <rect>62,160,125,320</rect>
                 <key>scale9Paddings</key>
                 <rect>62,160,125,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/チルノ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>71,160,141,320</rect>
+                <key>scale9Paddings</key>
+                <rect>71,160,141,320</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -416,6 +476,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/フェイト.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>91,160,181,320</rect>
+                <key>scale9Paddings</key>
+                <rect>91,160,181,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(2)知世の野望/asset/scenario/chara/ポテトン.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -458,6 +533,21 @@
                 <rect>83,175,165,350</rect>
                 <key>scale9Paddings</key>
                 <rect>83,175,165,350</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(2)知世の野望/asset/scenario/chara/ミナモ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>74,170,149,340</rect>
+                <key>scale9Paddings</key>
+                <rect>74,170,149,340</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

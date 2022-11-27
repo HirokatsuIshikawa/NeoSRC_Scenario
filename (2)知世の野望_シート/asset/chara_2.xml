@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:f23365615a9353e7de5960c12692f179:b2492b2bf773b8fa575e395100d23e64:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_2.png" width="538" height="468">
+    <SubTexture name="ポテトン" x="1" y="1" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
+</TextureAtlas>
