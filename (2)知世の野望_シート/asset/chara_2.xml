@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:f23365615a9353e7de5960c12692f179:b2492b2bf773b8fa575e395100d23e64:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
-<TextureAtlas imagePath="chara_2.png" width="538" height="468">
-    <SubTexture name="ポテトン" x="1" y="1" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
+<!-- $TexturePacker:SmartUpdate:1b23e08c9809c2bc696562be237009b7:e26d395eb9e142997ae9c9473842571c:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_2.png" width="483" height="847">
+    <SubTexture name="チルノ" x="1" y="1" rotated="true" width="481" height="282" frameX="0" frameY="-159" frameWidth="282" frameHeight="640"/>
+    <SubTexture name="マシンキャバリー" x="209" y="285" width="183" height="561" frameX="0" frameY="-79" frameWidth="183" frameHeight="640"/>
+    <SubTexture name="レイダー" x="1" y="285" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
 </TextureAtlas>
