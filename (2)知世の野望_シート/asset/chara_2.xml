@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:1b23e08c9809c2bc696562be237009b7:e26d395eb9e142997ae9c9473842571c:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
-<TextureAtlas imagePath="chara_2.png" width="483" height="847">
-    <SubTexture name="チルノ" x="1" y="1" rotated="true" width="481" height="282" frameX="0" frameY="-159" frameWidth="282" frameHeight="640"/>
-    <SubTexture name="マシンキャバリー" x="209" y="285" width="183" height="561" frameX="0" frameY="-79" frameWidth="183" frameHeight="640"/>
-    <SubTexture name="レイダー" x="1" y="285" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
+<!-- $TexturePacker:SmartUpdate:e230d33a7b8ccbbf193a6135385efe1b:df41d8e5abd356373ce1995a4d2fc861:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_2.png" width="1884" height="1006">
+    <SubTexture name="すずか" x="643" y="853" rotated="true" width="521" height="151" frameX="0" frameY="-119" frameWidth="151" frameHeight="640"/>
+    <SubTexture name="どんぐり目_0001" x="643" y="604" rotated="true" width="521" height="247" frameX="0" frameY="-119" frameWidth="247" frameHeight="640"/>
+    <SubTexture name="キャサリン京橋" x="1" y="855" rotated="true" width="640" height="150"/>
+    <SubTexture name="シューター" x="1346" y="1" width="162" height="561" frameX="0" frameY="-79" frameWidth="162" frameHeight="640"/>
+    <SubTexture name="シンイチ" x="779" y="1" width="211" height="581" frameX="0" frameY="-59" frameWidth="211" frameHeight="640"/>
+    <SubTexture name="ソロ" x="1" y="604" rotated="true" width="640" height="249"/>
+    <SubTexture name="パーカー少年_0001" x="1510" y="1" width="198" height="400"/>
+    <SubTexture name="マシンキャバリー" x="1166" y="564" rotated="true" width="561" height="183" frameX="0" frameY="-79" frameWidth="183" frameHeight="640"/>
+    <SubTexture name="メカニック" x="549" y="1" width="228" height="601" frameX="0" frameY="-39" frameWidth="228" frameHeight="640"/>
+    <SubTexture name="ヤイバ" x="301" y="1" width="246" height="581" frameX="0" frameY="-59" frameWidth="246" frameHeight="640"/>
+    <SubTexture name="友永勇太" x="992" y="1" width="184" height="561" frameX="0" frameY="-79" frameWidth="184" frameHeight="640"/>
+    <SubTexture name="大道寺きら" x="1178" y="1" width="166" height="561" frameX="0" frameY="-79" frameWidth="166" frameHeight="640"/>
+    <SubTexture name="奈緒子" x="1" y="1" width="298" height="601" frameX="0" frameY="-119" frameWidth="298" frameHeight="720"/>
+    <SubTexture name="少年_0001" x="1729" y="554" width="154" height="431"/>
+    <SubTexture name="白壁ハクマ" x="1729" y="1" width="131" height="551" frameX="0" frameY="-89" frameWidth="131" frameHeight="640"/>
+    <SubTexture name="赤金シュリ" x="1166" y="749" rotated="true" width="561" height="170" frameX="0" frameY="-79" frameWidth="170" frameHeight="640"/>
 </TextureAtlas>

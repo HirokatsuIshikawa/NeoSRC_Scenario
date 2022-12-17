@@ -23,8 +23,8 @@ SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プ�
 SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 5) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:1 
+SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 5) alpha:1 
 ReadyMove
 SetMove layer:背景 time:1 fade:in
 StartMove type:連続 wait:on
@@ -191,7 +191,7 @@ Talk さくら
 あはは……
 
 Talk ユーノ
-（対して難しい魔法じゃないけれど
+（たいして難しい魔法じゃないけれど
 　一体、誰から念話を……）
 
 Talk ケイブガード
@@ -257,7 +257,7 @@ Wait 1
 誰ッ！？
 Wait 1
 PlaySound file:マシン走行
-SetChara name:マシンキャバリー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:0  y:160
+SetChara name:マシンキャバリー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:0
 ReadyMove
 SetMove chara:マシンキャバリー fade:in time:0.5
 StartMove type:連続
@@ -352,7 +352,7 @@ Talk キャノンレイダー
 そんな不機嫌な顔して……
 
 Talk ヤイバ
-……やってやれるか
+……やってられるか
 
 コクエンの奴、こんな下らない悪巧みの
 手伝いなんかさせやがって……
@@ -389,7 +389,7 @@ Talk キャノンレイダー
 あ、おい！！
 
 Talk ヤイバ
-後は任せた。
+後は任せた
 Wait 0.7
 ……少し、その辺を歩いてくる
 ReadyMove
@@ -723,8 +723,8 @@ SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(�
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 
+SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0 x:$式($変数(エネミー表示位置) + 200)
 SetMove layer:キャラクター time:0.1 fade:in
@@ -876,8 +876,8 @@ SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(�
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 
+SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置) + 400)
 SetMove layer:キャラクター time:0.1 fade:in
@@ -931,7 +931,7 @@ CreateUnit name:ディッキー x:11 y:16 side:さくらチーム level:1 join:0
 CreateUnit name:ディッキー x:14 y:16 side:さくらチーム level:1 join:0
 CreateUnit name:ディッキー x:17 y:16 side:さくらチーム level:1 join:0
 RegistGenericUnit name:ディッキー lv:1 cost:6
-SetChara name:ディッキー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -3) alpha:1 y:160
+SetChara name:ディッキー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -3) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0 x:$式($変数(プレイヤー表示位置))
 SetMove layer:キャラクター time:0.1 fade:in
@@ -1022,7 +1022,7 @@ Talk ディッキー
 ……急いできたから、今は俺達だけだけど
 
 仲間達も向こう側で待ってるから
-良ければ、転送ポートで読んでやってくれ
+準備が出来たら、転送ポートで呼んでくれ
 
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置))
@@ -1045,9 +1045,9 @@ SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(�
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
-SetChara name:ディッキー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -3) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 
+SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 
+SetChara name:ディッキー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -3) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(エネミー表示位置) + 300)
 SetMove layer:キャラクター time:0.1 fade:in
@@ -1207,8 +1207,8 @@ SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(�
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 
+SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(エネミー表示位置) + 100)
 SetMove layer:キャラクター time:0.1 fade:in
@@ -1377,8 +1377,8 @@ SetImg img:草地 size:just name:草地 layer:背景
 SetChara name:アリサ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:さくら x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
 SetChara name:ユーノ x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
-SetChara name:ケイブガード x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 2) alpha:1 y:160
-SetChara name:ディッキー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 3) alpha:1 y:160
+SetChara name:ケイブガード x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 2) alpha:1 
+SetChara name:ディッキー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 3) alpha:1 
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in x:0
 SetMove layer:エフェクト time:0.5 fade:out
@@ -1500,6 +1500,8 @@ Talk アリサ
 いやいや……
 Wait 0.8
 言うに事欠いて、魔法少女って……
+
+それも、冷やし中華みたいな感じで……
 
 なのは、そう言うの好きだったっけ……？
 

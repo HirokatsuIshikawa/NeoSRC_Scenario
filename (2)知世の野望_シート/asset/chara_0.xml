@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:1b23e08c9809c2bc696562be237009b7:e26d395eb9e142997ae9c9473842571c:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
-<TextureAtlas imagePath="chara_0.png" width="2041" height="2047">
-    <SubTexture name="すずか" x="190" y="1525" width="151" height="521" frameX="0" frameY="-119" frameWidth="151" frameHeight="640"/>
-    <SubTexture name="どんぐり目_0001" x="1735" y="1279" width="304" height="640"/>
-    <SubTexture name="なのは" x="692" y="694" width="374" height="641" frameX="0" frameY="-79" frameWidth="374" frameHeight="720"/>
-    <SubTexture name="アリサ" x="839" y="1493" width="358" height="541" frameX="0" frameY="-99" frameWidth="358" frameHeight="640"/>
-    <SubTexture name="カトレア" x="1226" y="1" width="264" height="641" frameX="0" frameY="-79" frameWidth="264" frameHeight="720"/>
-    <SubTexture name="ケロちゃん" x="1367" y="644" width="102" height="140" frameX="-13" frameY="-207" frameWidth="120" frameHeight="640"/>
-    <SubTexture name="ゴウセツ" x="1" y="765" width="238" height="758"/>
-    <SubTexture name="ジャンクロイド" x="241" y="765" width="449" height="731" frameX="-40" frameY="-21" frameWidth="512" frameHeight="768"/>
-    <SubTexture name="スライム" x="1367" y="816" width="285" height="208" frameX="-31" frameY="-39" frameWidth="320" frameHeight="260"/>
-    <SubTexture name="ディッキー" x="1492" y="1" rotated="true" width="541" height="345" frameX="0" frameY="-99" frameWidth="345" frameHeight="640"/>
-    <SubTexture name="ポテトン" x="1492" y="348" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
-    <SubTexture name="ミナモ" x="1068" y="644" width="297" height="641" frameX="0" frameY="-39" frameWidth="297" frameHeight="680"/>
-    <SubTexture name="モンスター" x="1199" y="1473" rotated="true" width="534" height="572" frameX="-49" frameY="-6" frameWidth="675" frameHeight="540"/>
-    <SubTexture name="ユーノ" x="343" y="1498" width="361" height="541" frameX="0" frameY="-99" frameWidth="361" frameHeight="640"/>
-    <SubTexture name="ワイルドランナー" x="1" y="1525" width="187" height="521" frameX="0" frameY="-119" frameWidth="187" frameHeight="640"/>
-    <SubTexture name="八雲紫" x="866" y="1" width="358" height="641" frameX="0" frameY="-79" frameWidth="358" frameHeight="720"/>
-    <SubTexture name="友永勇太" x="1125" y="1287" rotated="true" width="561" height="184" frameX="0" frameY="-79" frameWidth="184" frameHeight="640"/>
-    <SubTexture name="少年_0001" x="692" y="1337" rotated="true" width="431" height="154"/>
-    <SubTexture name="東方妖精" x="1735" y="816" width="305" height="461" frameX="0" frameY="-179" frameWidth="305" frameHeight="640"/>
-    <SubTexture name="白壁ハクマ" x="706" y="1493" width="131" height="551" frameX="0" frameY="-89" frameWidth="131" frameHeight="640"/>
-    <SubTexture name="近藤ゲン" x="1" y="1" width="387" height="762"/>
-    <SubTexture name="黄昏の魔法使い" x="390" y="1" width="474" height="691"/>
+<!-- $TexturePacker:SmartUpdate:e230d33a7b8ccbbf193a6135385efe1b:df41d8e5abd356373ce1995a4d2fc861:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_0.png" width="2039" height="2040">
+    <SubTexture name="なのは" x="630" y="694" width="374" height="641" frameX="0" frameY="-79" frameWidth="374" frameHeight="720"/>
+    <SubTexture name="アリサ" x="364" y="1498" width="358" height="541" frameX="0" frameY="-99" frameWidth="358" frameHeight="640"/>
+    <SubTexture name="カトレア" x="1391" y="537" width="264" height="641" frameX="0" frameY="-79" frameWidth="264" frameHeight="720"/>
+    <SubTexture name="ゴウセツ" x="390" y="734" width="238" height="758"/>
+    <SubTexture name="ジャンクゴーレム" x="1006" y="537" width="383" height="638" frameX="-44" frameY="-2" frameWidth="427" frameHeight="640"/>
+    <SubTexture name="ジャンクロイド" x="1" y="1" width="449" height="731" frameX="-40" frameY="-21" frameWidth="512" frameHeight="768"/>
+    <SubTexture name="チルノ" x="1030" y="1720" rotated="true" width="481" height="282" frameX="0" frameY="-159" frameWidth="282" frameHeight="640"/>
+    <SubTexture name="ディッキー" x="1030" y="1177" width="345" height="541" frameX="0" frameY="-99" frameWidth="345" frameHeight="640"/>
+    <SubTexture name="ドレイク" x="724" y="1337" width="304" height="561" frameX="0" frameY="-79" frameWidth="304" frameHeight="640"/>
+    <SubTexture name="ポテトン" x="1502" y="1" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
+    <SubTexture name="ポテドン" x="1377" y="1180" rotated="true" width="442" height="513" frameX="-11" frameY="-9" frameWidth="530" frameHeight="454"/>
+    <SubTexture name="モンスター" x="928" y="1" width="572" height="534" frameX="-49" frameY="-6" frameWidth="675" frameHeight="540"/>
+    <SubTexture name="ユーノ" x="1" y="1498" width="361" height="541" frameX="0" frameY="-99" frameWidth="361" frameHeight="640"/>
+    <SubTexture name="レイダー" x="1821" y="1111" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
+    <SubTexture name="札付鋭一" x="1657" y="469" width="373" height="640"/>
+    <SubTexture name="東方妖精" x="1513" y="1695" rotated="true" width="461" height="305" frameX="0" frameY="-179" frameWidth="305" frameHeight="640"/>
+    <SubTexture name="近藤ゲン" x="1" y="734" width="387" height="762"/>
+    <SubTexture name="黄昏の魔法使い" x="452" y="1" width="474" height="691"/>
 </TextureAtlas>
