@@ -21,8 +21,9 @@ mati.mp3
 アルフ.png
 
 ・立ち絵
-<dairi>https://www.pixiv.net/users/4920496
-八雲紫.png
+＜楽落樂々様＞
+木之本桜
+大道寺知世
 
 <らぬきの立ち絵保管庫>http://ranuking.ko-me.com/
 200304_npc_t_01a.png		→		パーカー少年_0001.png
@@ -39,9 +40,15 @@ mati.mp3
 ＜シグ子さん＞https://www.ac-illust.com/main/profile.php?id=siguko&area=1
 モンスター.png
 
-＜ぷくりゃすずめさん＞https://www.ac-illust.com/main/profile.php?id=PazkZk70&area=1&keyword=&page=1&order=1&format=all&pp=45#illustration-list
-ローブ.png
-
 ・背景画像
-http://radius-rave.com/ks_factory/cgi-bin/sh1_album/sh1_album/
-http://guttari8.sakura.ne.jp/
+※シミュラマボックス公開Wiki
+https://w.atwiki.jp/neosrchelp/
+
+発注したのとNovelAIで作成した画像で何とか形になったのでOPまで差し替えてアップしました。
+
+・BGM
+＜魔王魂＞　https://maoudamashii.jokersounds.com/
+＜煉獄庭園＞　http://www.rengoku-teien.com/index.html
+・背景画像
+＜ks_factory＞https://radius-rave.com/ks_factory/
+<ぐったりにゃんこのホームページ>http://guttari8.sakura.ne.jp/

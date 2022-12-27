@@ -1,31 +1,24 @@
+初期化:
+#<system/system.srceve>
+#<LoadStart>
+Exit
+
 スタート:
-AddLayer name:背景 alpha:0
-AddLayer name:キャラクター alpha:0
-AddLayer name:エフェクト alpha:0
 //
-//場面転換
+//初期設定
 //
-CharaLayer name:キャラクター
-//
-//配置位置変数
-//
-Set name:プレイヤー表示位置 value:0
-Set name:プレイヤー配置位置 value:200
-Set name:プレイヤー配置間隔 value:180
-//
-Set name:エネミー表示位置 value:-1080
-Set name:エネミー配置位置 value:1300
-Set name:エネミー配置間隔 value:200
-//
+Call ポジション初期設定
+Call ベースレイヤーセット
+Call 背景セット 草地
+Call 黒幕エフェクトセット
 Wait 1
-SetImg img:草地 size:fill name:境内 layer:背景 alpha:1
-SetChara name:ケルベロス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1 y:160
-ReadyMove
-SetMove layer:背景 time:0.5 fade:in
-SetMove layer:キャラクター time:0.5 fade:in
-StartMove type:連続 wait:on
+Call プレイヤー位置計算加算 1 -40
+SetChara name:ケルベロス x:$変数(プレイヤー位置) alpha:1
+Call プレイヤー位置計算 2
+SetChara name:ユーノ x:$変数(プレイヤー位置) alpha:1
+Call プレイヤー位置計算加算 3 40
+SetChara name:ケイブガード x:$変数(プレイヤー位置) alpha:1
+Call 場面初期表示
 Wait 0.6
 //
 //
@@ -98,7 +91,10 @@ Talk ケイブガード
 一旦帰っていったのに……
 
 Talk ユーノ
-うん……まぁ、いろいろあって
+うん……
+Wait 0.3
+まぁ、いろいろあってね
+
 僕は帰らなくても、みんなみたいに騒がれないから……
 
 ……そもそも、君達だって人の事は言えないじゃないか
@@ -258,18 +254,17 @@ ShowMsg 0.3
 Talk ？？？
 ここが、例の研究がされていた秘密工場か……
 
-こちら側に落ちてきた時の衝撃で、どこもメチャクチャ
+こちら側に落ちてきた時の衝撃で
+どこもメチャクチャ……
 
-これじゃ、研究成果とやらも全部オジャンだな
-
-とんだ無駄足だったか……
+とんだ無駄足か……
 
 ん……？
 
 CreateUnit name:友永勇太 x:24 y:13 side:さくらチーム level:1
 Center x:23 y:12
 SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
-Wait 0.8
+Wait 0.3
 ReadyMove 
 SetMove chara:友永勇太 time:0.3 fade:in
 StartMove wait:on
@@ -291,6 +286,7 @@ Talk 勇太
 広場で遊んでたら、変な穴に落っこっちゃたんだ
 
 キミ、見ない子だけど近所の子なの？
+
 出口はどこだか知らない？
 
 Talk ？？？
@@ -300,19 +296,23 @@ Talk ？？？
 
 Talk 勇太
 ありがとう！
+
 ボク勇太、友永勇太！
 
 Talk ミズチ
 ……闇雲ミズチだ
-
+Wait 0.7
+PlaySound file:メカボイス Vol:0.5
 Talk ？？？
 ミズ……チ……
-
+Wait 0.6
 Talk 勇太
 わっ！？
 
 Talk ミズチ
-……？　今、なにか言ったか？
+……？
+Wait 0.3
+なにか言ったか？
 
 Talk 勇太
 ううん、なにも
@@ -322,18 +322,23 @@ Talk ミズチ
 
 こっちだ、ついてこい
 
+Call キャラクター隠し
 Center x:23 y:16
-UnitMove unit:闇雲ミズチ x:23 y:16
-UnitMove unit:友永勇太 x:24 y:16
+ReadyUnitMove unit:闇雲ミズチ x:23 y:16 time:1
+ReadyUnitMove unit:友永勇太 x:24 y:16 time:1
+StartUnitMove
 Wait 0.6
 Center x:17 y:12
-UnitMove unit:闇雲ミズチ x:17 y:16
-UnitMove unit:友永勇太 x:18 y:16
+ReadyUnitMove unit:闇雲ミズチ x:17 y:16 time:1
+ReadyUnitMove unit:友永勇太 x:18 y:16 time:1
+StartUnitMove
 Wait 0.6
 Center x:17 y:14
-UnitMove unit:闇雲ミズチ x:17 y:14
-UnitMove unit:友永勇太 x:18 y:15
+ReadyUnitMove unit:闇雲ミズチ x:17 y:14 time:1
+ReadyUnitMove unit:友永勇太 x:18 y:15 time:1
+StartUnitMove
 Wait 1
+Call キャラクター表示
 Talk ミズチ
 ！？　勇太、そこで止まれ
 
@@ -341,7 +346,7 @@ Talk 勇太
 え……？
 
 Talk ミズチ
-痛い目をみたくなかったら、そこから前に出るな
+怪我をしたくなかったら、そこから前に出るな
 
 ……来るぞ
 
@@ -837,21 +842,3 @@ StartMove type:連続 wait:on
 DeleteAllLayer
 Continue 知世の野望_05.srceve
 Exit
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-キャラクター表示:
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
-Return
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-キャラクター隠し:
-HideMsg 0.3
-Clearmsg type:all
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
-Return

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:e230d33a7b8ccbbf193a6135385efe1b:df41d8e5abd356373ce1995a4d2fc861:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<!-- $TexturePacker:SmartUpdate:eb7ae1c19b7e3d16dc622c7eede4dd39:8b2c296f0f124610f7f0492d9b61dab9:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
 <TextureAtlas imagePath="chara_1.png" width="1197" height="1865">
     <SubTexture name="アタッカー" x="1022" y="1" width="174" height="601" frameX="0" frameY="-39" frameWidth="174" frameHeight="640"/>
     <SubTexture name="カリン" x="647" y="1243" width="165" height="621" frameX="0" frameY="-19" frameWidth="165" frameHeight="640"/>
-    <SubTexture name="ケイブガード" x="814" y="1187" width="199" height="601" frameX="0" frameY="-39" frameWidth="199" frameHeight="640"/>
+    <SubTexture name="ケイブガード" x="814" y="1187" width="199" height="601" frameX="0" frameY="-59" frameWidth="199" frameHeight="660"/>
     <SubTexture name="ケロちゃん" x="437" y="1574" width="102" height="140" frameX="-13" frameY="-207" frameWidth="120" frameHeight="640"/>
     <SubTexture name="スバル" x="746" y="572" width="218" height="601" frameX="0" frameY="-39" frameWidth="218" frameHeight="640"/>
     <SubTexture name="スライム" x="437" y="1287" rotated="true" width="208" height="285" frameX="-31" frameY="-39" frameWidth="320" frameHeight="260"/>
