@@ -1,0 +1,110 @@
+ポジション初期設定:
+//
+//初期設定
+//
+PlayerSideName さくらチーム
+Set name:プレイヤー表示位置 value:0
+Set name:プレイヤー配置位置 value:200
+Set name:プレイヤー配置間隔 value:180
+Set name:プレイヤー位置 value:0
+Return
+
+ベースレイヤーセット:
+//
+//背景ベース
+//
+AddLayer name:背景 alpha:1
+AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:1
+CharaLayer name:キャラクター
+Return
+
+背景セット:
+SetImg img:$引数(0) size:fill name:背景 layer:背景 alpha:1
+Return
+
+黒幕エフェクトセット:
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+Return
+
+エフェクトイン:
+ReadyMove
+SetMove layer:エフェクト time:$引数(0) fade:in
+StartMove type:連続 wait:on
+Return
+
+エフェクトアウト:
+ReadyMove
+SetMove layer:エフェクト time:$引数(0) fade:out
+StartMove type:連続 wait:on
+Return
+
+場面初期表示:
+ReadyMove
+SetMove layer:背景 time:1 fade:in
+SetMove layer:キャラクター time:0.5 fade:in
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+場面初期位置表示:
+ReadyMove
+SetMove layer:背景 time:1 fade:in
+SetMove layer:キャラクター time:0.5 fade:in
+SetMove layer:キャラクター time:0 x:$引数(0)
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+プレイヤー位置計算:
+Set name:プレイヤー位置 value:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * $引数(0))
+Return
+
+
+プレイヤー位置計算加算:
+Set name:プレイヤー位置 value:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * $引数(0) + $引数(1))
+Return
+
+
+テロップセット:
+SetTelop backColor:0 fontColor:0xFFFFFF
+Telop
+Return
+
+テロップ終了:
+EndTelop
+Return
+
+//Call レイヤー横移動 レイヤー名 秒 移動位置
+レイヤー横移動:
+ReadyMove
+SetMove layer:$Args(0) time:$Args(1) x:$Args(2)
+StartMove type:連続 wait:on
+Return
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+キャラクター表示:
+ReadyMove
+SetMove layer:キャラクター time:0.3 fade:out
+StartMove type:同時 wait:on
+Return
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+キャラクター隠し:
+HideMsg 0.3
+Clearmsg type:all
+ReadyMove
+SetMove layer:キャラクター time:0.3 fade:out
+StartMove type:同時 wait:on
+Return
+
+BGM:
+StartBGM file:$Args(0)
+Return
+
+SE:
+PlaySound file:$args(0)
+Return
