@@ -3,7 +3,14 @@ name:ユガミ
 nickname:ユガミ
 type:立ち絵
 x:160,	y:160
-ボディ, 	ユガミ, 	0
+ボディ, 	モンスター, 	0
+basic:ボディ
+
+name:ガベージ
+nickname:ガベージ
+type:立ち絵
+x:160,	y:160
+ボディ, 	モンスター, 	0
 basic:ボディ
 
 

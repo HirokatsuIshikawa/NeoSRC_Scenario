@@ -1,6 +1,6 @@
 name:ケイブガード
 	action:ファイヤーアックス
-		チェイン, delay:0.2, target:攻撃側
+		チェイン, delay:0.2
 			createImg, target:攻撃側, asset:SpinFire, name:火炎弾, pivot:中心, color:0xFFFFFF, alpha:0, scale:2
 			target:火炎弾, time:0, alpha:1, pointTarget:攻撃側
 			target:火炎弾, pointtarget:防御側, adjustX:-32, time:0.6, alpha:1, rotation:1440

@@ -16,11 +16,13 @@ JoinCommander name:大道寺知世 Lv:1
 SetCommander name:大道寺知世 sidename:さくらチーム
 VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:味方の全滅
 //
-CreateUnit name:木之本桜 x:5 y:10 side:さくらチーム level:3 anime:0
+CreateUnit name:木之本桜 x:5 y:10 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太(ベーシック) x:5 y:10 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太 x:5 y:10 side:さくらチーム level:3 anime:0 join:1
 CreateUnit name:木之本桜 x:8 y:10 side:コクエン隊 level:3 anime:0
-CreateUnit name:高町なのは x:4 y:11 side:さくらチーム level:3 anime:0
+CreateUnit name:高町なのは x:4 y:11 side:さくらチーム level:3 anime:0 join:1
 CreateUnit name:高町なのは x:7 y:11 side:コクエン隊 level:3 anime:0
-CreateUnit name:ユーノ・スクライア x:5 y:12 side:さくらチーム level:3 anime:0
+CreateUnit name:ユーノ・スクライア x:5 y:12 side:さくらチーム level:3 anime:0 join:1
 CreateUnit name:ユーノ・スクライア x:8 y:12 side:コクエン隊 level:3 anime:0
 CreateUnit name:ケイブガード x:4 y:13 side:さくらチーム level:3 anime:0
 CreateUnit name:ケイブガード x:7 y:13 side:コクエン隊 level:3 anime:0
@@ -59,5 +61,6 @@ CreateUnit name:グランモール x:19 y:15 side:コクエン隊 level:3 anime:
 //SetEvent unit:木之本桜 label:さくら制圧 type:制圧
 //
 StartBGM file:BGM/game_maoudamashii_1_battle24.mp3 vol:0.5 fade:0.5
+//ClassChange name:高町なのは change:木之本桜 side:さくらチーム
 DeleteAllLayer
 Exit

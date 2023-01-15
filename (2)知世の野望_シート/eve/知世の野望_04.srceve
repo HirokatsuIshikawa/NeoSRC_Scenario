@@ -84,6 +84,14 @@ Talk ケイブガード
 Talk ユーノ
 まぁ……ね
 
+Talk ケルベロス
+ワイの思った通りや
+
+これなら、うまく行きそうやな
+
+Talk ユーノ
+（……実際に手を動かしてるのは、僕なんだけど……）
+
 Talk ケイブガード
 ……ところで、ホントに帰らなくっていいのか？
 
@@ -368,11 +376,9 @@ Talk ミズチ
 
 とっとと、片付けてやるか
 
-
 ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
-SetSideCost side:コクエン隊 cost:12
 //
 HideMessage time:0.3
 clearmsg type:all
@@ -387,41 +393,18 @@ ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 //イベントセット
-SetEvent side:敵 label:ボス登場判定 type:撃破
 SetEvent side:さくらチーム label:ゲームオーバー type:全滅
-SetEvent side:さくらチーム type:ターン turn:4 label:ディッキー増援
-SetEvent side:コクエン隊 type:ターン turn:2 label:妖精部隊
-SetEvent side:さくらチーム label:ヤイバ登場 type:制圧 eventId:敵本拠地
+SetEvent side:コクエン隊 type:ターン turn:2 label:第一陣撃破
 DeleteAllLayer
 Exit
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-出撃準備:
-RegistGenericUnit name:ケイブガード lv:1 cost:3
-RegistGenericUnit name:ワイルドランナー lv:1 cost:3
-RegistGenericUnit name:ゼロハチアーミー lv:1 cost:4
-RegistGenericUnit name:スライム lv:1 cost:1
-//
-SetSideCost side:さくらチーム cost:30
-Organize count:9 x:7 y:6 width:3 height:6 type:GENERIC
-Return
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-妖精部隊:
+第一陣撃破:
 AddLayer name:キャラクター alpha:0
 CharaLayer name:キャラクター
-SetChara name:キャノンレイダー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
-SetChara name:エレクトロショッカー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
-SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
-SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
-SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
 ReadyMove
-SetMove layer:キャラクター time:0 x:$式($変数(エネミー表示位置) + 200)
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
 Talk 勇太
@@ -466,8 +449,6 @@ Talk ミズチ
 
 
 
-
-
 HideMsg 0.3
 Clearmsg type:all
 ReadyMove
@@ -480,23 +461,10 @@ CreateUnit name:弾幕妖精 x:22 y:4 side:コクエン隊 level:1
 CreateUnit name:弾幕妖精 x:24 y:6 side:コクエン隊 level:1 
 CreateUnit name:弾幕妖精 x:24 y:11 side:コクエン隊 level:1 
 CreateUnit name:弾幕妖精 x:22 y:13 side:コクエン隊 level:1 
-RegistGenericUnit name:弾幕妖精 lv:1 cost:6 side:コクエン隊
+Wait 1
 ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
-SetChara name:弾幕妖精 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 2) alpha:0 id:妖精１
-SetChara name:弾幕妖精 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 3) alpha:0 id:妖精２
-SetChara name:弾幕妖精 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 4) alpha:0 id:妖精３
-ReadyMove
-SetMove layer:キャラクター time:0 x:$変数(エネミー表示位置)
-SetMove layer:キャラクター time:0.3 fade:in
-Setmove id:妖精１ time:0.3 fade:in
-Setmove id:妖精２ time:0.3 fade:in
-Setmove id:妖精３ time:0.3 fade:in
+SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
-
-
-
 Talk 勇太
 ！？　また出た！！
 
@@ -505,9 +473,6 @@ Talk ミズチ
 
 とりあえず、先にこいつらを何とかするぞ
 お前は、邪魔にならないよう引っ込んでろ
-
-
-
 
 hidemsg time:0.3
 clearmsg type:all
@@ -523,31 +488,22 @@ Exit
 ブレイブアップ:
 AddLayer name:キャラクター alpha:0
 CharaLayer name:キャラクター
-SetChara name:キャノンレイダー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
-SetChara name:エレクトロショッカー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
-SetChara name:弾幕妖精 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 2) alpha:1
-SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
-SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
-SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
 ReadyMove
-SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置) + 400)
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
-
 Talk 勇太
-！？　また来た！！
+！　またぁ！？
 
 Talk ミズチ
-しまった……！
+！？　しまった……
 
 （こいつら、まさか勇太を狙ってるのか……
 　だが、何故……？）
 
 Talk ミズチ
-クッ、間に合わない……！
+……クッ、間に合わない……！
 
 Talk 勇太
 た、助けてぇ～～～～！！
@@ -591,6 +547,9 @@ Talk 勇太
 わかった、こうだね……！
 
 ブレイブアップ！　デッカード！！
+
+
+ClassChange name:友永勇太(通常) change:友永勇太 side:さくらチーム
 
 Talk ミズチ
 あれは……！
