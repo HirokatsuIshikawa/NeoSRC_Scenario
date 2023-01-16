@@ -281,6 +281,7 @@
             <key type="filename">(2)知世の野望/asset/Anime/accelgun.png</key>
             <key type="filename">(2)知世の野望/asset/Anime/firespear.png</key>
             <key type="filename">(2)知世の野望/asset/Anime/weapon_shot.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/ブレイブファイヤー.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -296,6 +297,7 @@
                 <false/>
             </struct>
             <key type="filename">(2)知世の野望/asset/Anime/ccs_sword.png</key>
+            <key type="filename">(2)知世の野望/asset/Anime/電磁警棒.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

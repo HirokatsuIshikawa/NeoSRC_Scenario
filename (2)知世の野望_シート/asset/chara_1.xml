@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:3a859441f1a7ad77ccc9beb0d3207e40:d77f776bcd7bd3a507f3d7f74b3d3f82:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<!-- $TexturePacker:SmartUpdate:a923bab28cbab893a35fe4be0a237cf4:7cd1db7bf2d66438c1843b9fb8baaa9f:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
 <TextureAtlas imagePath="chara_1.png" width="1976" height="1929">
     <SubTexture name="アタッカー" x="674" y="604" width="174" height="601" frameX="0" frameY="-39" frameWidth="174" frameHeight="640"/>
     <SubTexture name="カトレア" x="1" y="1287" width="264" height="641" frameX="0" frameY="-79" frameWidth="264" frameHeight="720"/>
@@ -19,7 +19,7 @@
     <SubTexture name="モンスター" x="850" y="600" rotated="true" width="534" height="572" frameX="-49" frameY="-6" frameWidth="675" frameHeight="540"/>
     <SubTexture name="三白眼_0001" x="1346" y="1218" rotated="true" width="520" height="245" frameX="0" frameY="-120" frameWidth="245" frameHeight="640"/>
     <SubTexture name="八雲紫" x="1" y="1" width="358" height="641" frameX="0" frameY="-79" frameWidth="358" frameHeight="720"/>
-    <SubTexture name="友永勇太" x="1604" y="1" width="186" height="561" frameX="-107" frameY="-79" frameWidth="400" frameHeight="640"/>
+    <SubTexture name="友永勇太" x="1604" y="1" width="186" height="561" frameX="-127" frameY="-79" frameWidth="400" frameHeight="640"/>
     <SubTexture name="友永勇太_デッカード" x="1206" y="1" width="396" height="569" frameX="-4" frameY="-71" frameWidth="400" frameHeight="640"/>
     <SubTexture name="大道寺きら" x="1386" y="1050" rotated="true" width="561" height="166" frameX="0" frameY="-79" frameWidth="166" frameHeight="640"/>
     <SubTexture name="大道寺知世" x="267" y="1287" width="237" height="641" frameX="0" frameY="-79" frameWidth="237" frameHeight="720"/>

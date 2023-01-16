@@ -51,7 +51,7 @@ action:フレイムスピアー
 action:ビーストランサー
 	チェイン, delay:0.2
 	createImg, name:槍 ,asset:stone_rance, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF, scale:0
-		target:槍, time:0.6, alpha:1, scale:2, rotation:90, $x:-16
+		target:槍, time:0.6, alpha:1, scale:2, rotation:90, $x:-16, $y:0
 		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
 		同時
 			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
@@ -80,7 +80,7 @@ name:ゼロハチアーミー
 action:ショックベイアニット
 	チェイン, delay:0.2
 	createImg, name:傘 ,asset:umbrella, target:攻撃側,pivotX:6, pivotY:0, alpha:0, color:0xFFFFFF,scale:0
-		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16
+		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16, $y:0
 		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
 		同時
 			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
@@ -106,7 +106,7 @@ action:ショックベイアニット
 action:アンブレラキャノン
 	チェイン, delay:0.2
 	createImg, name:傘 ,asset:umbrella, target:攻撃側,pivotX:6, pivotY:0, alpha:0, color:0xFFFFFF,scale:0
-		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16
+		target:傘, time:0.6, alpha:1, scale:2, rotation:-90, $x:16, $y:0
 		Wait, 0.4
 		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
 		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:1

@@ -42,6 +42,30 @@ action:射撃
 		メッセージ送り, 防御側
 		if:個別撃破 ? 撃破:none
 	同時終了
+/////////////////////////////////////////武器射撃
+action:武器射撃
+	チェイン, delay:0.2		
+		target:武器, time:0, alpha:0,scale:1, rotation:-90, $x:0, $y:0
+		target:武器, time:0.6, alpha:1, scale:2, rotation:0, $x:24, $y:0
+		Wait, 0.4
+		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
+		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:1
+		PlaySound, file:ビームガン, vol:1
+		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		createImg, name:爆発 ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
+		target:爆発, pointtarget:防御側, time:0, alpha:1
+		PlaySound, file:爆発1, vol:1
+		startAnime, target:爆発, frame:100,loop:0
+		target:弾丸, time:0.2, alpha:0
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:武器, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
 ////////////////////////////////////////////////////////////////////スキル////////////////////////////////////////////////////////////////////
 action:スキル2
 		set, 第一回転, 720
@@ -176,6 +200,33 @@ action:剣撃破
 			target:防御側, $$x:60, time:0.3, alpha:0
 			target:防御側画像, color:0xFF0000
 		同時終了
+////////////////////////////////////////////////////////////////////武器突撃
+action:武器突撃
+	チェイン, delay:0.2	
+		target:武器, time:0, alpha:0,scale:1, rotation:-90, $x:0, $y:0
+		target:武器, time:0.6, alpha:1, scale:2, rotation:0, $x:24, $y:0
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+			連続
+				target:攻撃側, $Y:-50, time:0.1, ease:QuadOut
+				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
+			連続終了
+		同時終了
+		wait, 0.5
+		PlaySound, file:近接, vol:1
+		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-360, time:0
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+		target:武器, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
 		
 name:スライム
 action:べとべとアタック

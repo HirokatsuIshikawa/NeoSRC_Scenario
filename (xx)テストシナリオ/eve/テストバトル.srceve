@@ -17,8 +17,10 @@ SetCommander name:大道寺知世 sidename:さくらチーム
 VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:味方の全滅
 //
 CreateUnit name:木之本桜 x:5 y:10 side:さくらチーム level:3 anime:0 join:1
-CreateUnit name:友永勇太(ベーシック) x:5 y:10 side:さくらチーム level:3 anime:0 join:1
-CreateUnit name:友永勇太 x:5 y:10 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太 x:4 y:9 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太 x:5 y:8 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太(ベーシック) x:6 y:9 side:コクエン隊 level:3 anime:0 join:1
+CreateUnit name:友永勇太(ベーシック) x:5 y:8 side:コクエン隊 level:3 anime:0 join:1
 CreateUnit name:木之本桜 x:8 y:10 side:コクエン隊 level:3 anime:0
 CreateUnit name:高町なのは x:4 y:11 side:さくらチーム level:3 anime:0 join:1
 CreateUnit name:高町なのは x:7 y:11 side:コクエン隊 level:3 anime:0
@@ -56,6 +58,8 @@ CreateUnit name:キャノンレイダー x:17 y:14 side:さくらチーム level
 CreateUnit name:キャノンレイダー x:20 y:14 side:コクエン隊 level:3 anime:0
 CreateUnit name:グランモール x:16 y:15 side:さくらチーム level:3 anime:0
 CreateUnit name:グランモール x:19 y:15 side:コクエン隊 level:3 anime:0
+CreateUnit name:闇雲ミズチ x:16 y:16 side:さくらチーム level:3 anime:0
+CreateUnit name:闇雲ミズチ x:19 y:16 side:コクエン隊 level:3 anime:0
 //SetEvent side:コクエン隊 label:コクエン制圧 type:制圧
 //SetEvent unit:木之本桜 label:さくら制圧２ type:制圧 eventId:となりの鉱山
 //SetEvent unit:木之本桜 label:さくら制圧 type:制圧
