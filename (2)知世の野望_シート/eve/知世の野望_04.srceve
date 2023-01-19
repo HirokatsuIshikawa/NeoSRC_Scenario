@@ -246,8 +246,9 @@ Exit
 
 マップ開始:
 LoadMap file:地下研究所.map
+ClearCommander sidename:さくらチーム
 //
-CreateUnit name:闇雲ミズチ x:23 y:12 side:さくらチーム level:1 anime:0 join:0
+CreateUnit name:闇雲ミズチ x:23 y:12 side:さくらチーム level:10 anime:0 join:0
 Center x:23 y:12
 ReadyMove
 SetMove layer:キャラクター alpha:0
@@ -260,16 +261,16 @@ SetMove layer:キャラクター time:0.3 fade:in
 StartMove type:連続 wait:on
 ShowMsg 0.3
 Talk ？？？
-ここが、例の研究がされていた秘密工場か……
+ここが、例の研究がされていた工場か
 
 こちら側に落ちてきた時の衝撃で
 どこもメチャクチャ……
 
-とんだ無駄足か……
-
+とんだ無駄足だったな……
+Wait 0.6
 ん……？
 
-CreateUnit name:友永勇太 x:24 y:13 side:さくらチーム level:1
+CreateUnit name:友永勇太(ベーシック) x:24 y:13 side:さくらチーム level:1 join:1
 Center x:23 y:12
 SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
 Wait 0.3
@@ -282,6 +283,7 @@ Talk 勇太
 Talk ？？？
 ！？
 
+StartBGM file:魔王魂_村08
 Talk 勇太
 あ……人間……？
 
@@ -298,7 +300,8 @@ Talk 勇太
 出口はどこだか知らない？
 
 Talk ？？？
-オレは、調べたい事があってこの辺を調査してただけだ
+オレは、調べたい事があって
+この辺を調査してただけだ
 
 用事も無くなったし、外に出たいんなら案内してやるよ
 
@@ -309,6 +312,7 @@ Talk 勇太
 
 Talk ミズチ
 ……闇雲ミズチだ
+
 Wait 0.7
 PlaySound file:メカボイス Vol:0.5
 Talk ？？？
@@ -331,21 +335,20 @@ Talk ミズチ
 こっちだ、ついてこい
 
 Call キャラクター隠し
-Center x:23 y:16
-ReadyUnitMove unit:闇雲ミズチ x:23 y:16 time:1
-ReadyUnitMove unit:友永勇太 x:24 y:16 time:1
-StartUnitMove
-Wait 0.6
-Center x:17 y:12
-ReadyUnitMove unit:闇雲ミズチ x:17 y:16 time:1
-ReadyUnitMove unit:友永勇太 x:18 y:16 time:1
-StartUnitMove
-Wait 0.6
 Center x:17 y:14
+ReadyUnitMove unit:闇雲ミズチ x:23 y:16 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:24 y:16 time:1
+StartUnitMove
+Wait 0.3
+ReadyUnitMove unit:闇雲ミズチ x:17 y:16 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:18 y:16 time:1
+StartUnitMove
+Wait 0.3
 ReadyUnitMove unit:闇雲ミズチ x:17 y:14 time:1
-ReadyUnitMove unit:友永勇太 x:18 y:15 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:18 y:15 time:1
 StartUnitMove
 Wait 1
+StopBGM fade:1
 Call キャラクター表示
 Talk ミズチ
 ！？　勇太、そこで止まれ
@@ -358,17 +361,24 @@ Talk ミズチ
 
 ……来るぞ
 
+Call キャラクター隠し
+StartBGM file:魔王魂_BGM_ネオロック80
+Wait 0.6
+CreateUnit name:ガベージ x:14 y:10 side:敵 level:1
+CreateUnit name:ガベージ x:16 y:10 side:敵 level:1
+CreateUnit name:ガベージ x:18 y:10 side:敵 level:1
+Wait 1
+Call キャラクター表示
 Talk 勇太
 うわぁっ！？　なにあれ！？　オバケェッ！？
 
 Talk ミズチ
-バケモノどもめ……
-こんな所に、一体何の用が……
+チッ、こんな所にもウジャウジャと……
 
 勇太、そこでじっとしていろ
 
 Talk 勇太
-ミズチ……？
+み、ミズチ……？
 
 Talk ミズチ
 守りながらなのが少し辛いが……
@@ -376,34 +386,21 @@ Talk ミズチ
 
 とっとと、片付けてやるか
 
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
-//
-HideMessage time:0.3
-clearmsg type:all
-VictoryCondition victory:敵の全滅,敵本拠地の占拠 defeat:味方の全滅
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
-//表示消去
-hidemsg time:0.3
-clearmsg type:all
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
+Call キャラクター隠し
+VictoryCondition victory:敵の全滅 defeat:勇太・ミズチいずれかの撃破
 //イベントセット
-SetEvent side:さくらチーム label:ゲームオーバー type:全滅
-SetEvent side:コクエン隊 type:ターン turn:2 label:第一陣撃破
+SetEvent side:さくらチーム label:ゲームオーバー type:撃破
+SetEvent side:敵 label:第一陣撃破 type:全滅
 DeleteAllLayer
 Exit
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 第一陣撃破:
+ClearEvent 第一陣撃破
 AddLayer name:キャラクター alpha:0
 CharaLayer name:キャラクター
 SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
@@ -416,7 +413,8 @@ Talk ミズチ
 分からないか？
 
 ……なら、お前には関係ないと言う事だ
-
+StopBGM fade:1
+Wait 1
 Talk 勇太
 あ、ちょっと……！
 
@@ -428,7 +426,18 @@ Talk ミズチ
 Talk 勇太
 なんか、ヤなカンジ……
 
-教えてくれたっていいのに……
+教えてくれたっていいじゃん……
+
+Call キャラクター隠し
+Center x:6 y:4
+ReadyUnitMove unit:闇雲ミズチ x:12 y:3 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:12 y:4 time:1
+StartUnitMove
+Wait 0.3
+ReadyUnitMove unit:闇雲ミズチ x:6 y:3 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:6 y:4 time:1
+StartUnitMove
+Wait 0.3
 
 Talk ミズチ
 ……！
@@ -447,8 +456,6 @@ Talk ミズチ
 （しかし、本当にどうしたものか……
 　地道に障害物をどかせば、何とかなるだろうが……）
 
-
-
 HideMsg 0.3
 Clearmsg type:all
 ReadyMove
@@ -457,10 +464,13 @@ StartMove type:同時 wait:on
 StopBGM
 Wait 1
 StartBGM file:kthxbi
-CreateUnit name:弾幕妖精 x:22 y:4 side:コクエン隊 level:1 
-CreateUnit name:弾幕妖精 x:24 y:6 side:コクエン隊 level:1 
-CreateUnit name:弾幕妖精 x:24 y:11 side:コクエン隊 level:1 
-CreateUnit name:弾幕妖精 x:22 y:13 side:コクエン隊 level:1 
+CreateUnit name:ガベージ x:19 y:7 side:敵 level:1
+CreateUnit name:ガベージ x:17 y:7 side:敵 level:1
+CreateUnit name:ガベージ x:15 y:7 side:敵 level:1
+CreateUnit name:ガベージ x:13 y:7 side:敵 level:1
+CreateUnit name:ガベージ x:14 y:5 side:敵 level:1
+CreateUnit name:ガベージ x:16 y:5 side:敵 level:1
+CreateUnit name:ガベージ x:18 y:5 side:敵 level:1
 Wait 1
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in
@@ -474,11 +484,9 @@ Talk ミズチ
 とりあえず、先にこいつらを何とかするぞ
 お前は、邪魔にならないよう引っ込んでろ
 
-hidemsg time:0.3
-clearmsg type:all
-ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
-StartMove type:同時 wait:on
+Call キャラクター隠し
+SetEvent side:敵 label:ステージクリア type:全滅
+SetEvent side:さくらチーム type:ターン turn:1 label:ブレイブアップ now:1
 DeleteAllLayer
 Exit
 
@@ -489,7 +497,7 @@ Exit
 AddLayer name:キャラクター alpha:0
 CharaLayer name:キャラクター
 SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
@@ -511,10 +519,6 @@ Talk 勇太
 Talk ？？？
 ユウ……タ……！
 
-
-ReadyMove
-SetMove layer:キャラクター time:0.3 x:$変数(エネミー表示位置)
-StartMove type:連続 wait:on
 
 Talk 勇太
 な、なにこれ……！？
@@ -583,27 +587,7 @@ Talk ミズチ
 Talk 勇太
 あ、ちょっと！！
 
-
-
-
-
 Wait 1
-StopBGM
-
-Call キャラクター隠し
-Wait 0.7
-StartBGM file:The_Evil_Sacrifice_Archenemies
-CreateUnit name:ディッキー x:11 y:16 side:さくらチーム level:1 join:0
-CreateUnit name:ディッキー x:14 y:16 side:さくらチーム level:1 join:0
-CreateUnit name:ディッキー x:17 y:16 side:さくらチーム level:1 join:0
-RegistGenericUnit name:ディッキー lv:1 cost:6
-SetChara name:ディッキー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -3) alpha:1 y:160
-ReadyMove
-SetMove layer:キャラクター time:0 x:$式($変数(プレイヤー表示位置))
-SetMove layer:キャラクター time:0.1 fade:in
-StartMove type:連続 wait:on
-
-
 Call キャラクター隠し
 DeleteAllLayer
 Exit
@@ -612,23 +596,30 @@ Exit
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-ヤイバ撃破:
+ステージクリア:
+CreateUnit name:ガベージ x:11 y:3 side:敵 level:1 
+CreateUnit name:ガベージ x:13 y:3 side:敵 level:1 
+CreateUnit name:ガベージ x:15 y:3 side:敵 level:1 
+CreateUnit name:ガベージ x:17 y:3 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:4 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:6 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:8 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:10 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:12 side:敵 level:1 
+CreateUnit name:ガベージ x:19 y:14 side:敵 level:1 
+CreateUnit name:ガベージ x:17 y:16 side:敵 level:1 
+CreateUnit name:ガベージ x:15 y:16 side:敵 level:1 
+CreateUnit name:ガベージ x:13 y:16 side:敵 level:1 
+CreateUnit name:ガベージ x:11 y:16 side:敵 level:1 
+CreateUnit name:ガベージ x:9 y:16 side:敵 level:1 
+Wait 1
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
-CharaLayer name:キャラクター
-SetChara name:キャノンレイダー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
-SetChara name:ヤイバ x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
-SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
-SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
-SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
-SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -2) alpha:1 y:160
-SetChara name:ワイルドランナー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * -1) alpha:1 y:160
+SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
 ReadyMove
-SetMove layer:キャラクター time:0.3 x:$式($変数(エネミー表示位置) + 100)
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
-
 Talk 勇太
 また増えた～っ！？
 
@@ -638,6 +629,8 @@ Talk ミズチ
 このままじゃ、流石にアイツにはつらいか……
 
 ……ん？
+
+Flash 
 
 Talk 勇太
 こ、今度はなに！？
@@ -791,7 +784,7 @@ Talk ミズチ
 （危ない所を切り抜けたが……
 　今度は、どうも面倒くさい事になりそうだな……）
 
-
+SetCommander name:大道寺知世 sidename:さくらチーム
 hidemsg time:0.3
 clearmsg type:all
 flash time:2

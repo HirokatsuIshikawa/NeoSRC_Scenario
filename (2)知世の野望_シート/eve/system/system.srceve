@@ -87,7 +87,7 @@ Return
 ///////////////////////////////////////////////////////////////////////////////////////////////
 キャラクター表示:
 ReadyMove
-SetMove layer:キャラクター time:0.3 fade:out
+SetMove layer:キャラクター time:0.3 fade:in
 StartMove type:同時 wait:on
 Return
 
