@@ -500,10 +500,10 @@ flash time:0.3
 wait 0.3
 flash time:0.3
 wait 0.3
+//
+//
+//
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
-//
-//
-//
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:同時 wait:on

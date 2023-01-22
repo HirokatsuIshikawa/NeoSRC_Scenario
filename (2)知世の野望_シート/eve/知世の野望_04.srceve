@@ -434,16 +434,16 @@ ReadyUnitMove unit:闇雲ミズチ x:12 y:3 time:1
 ReadyUnitMove unit:友永勇太(ベーシック) x:12 y:4 time:1
 StartUnitMove
 Wait 0.3
-ReadyUnitMove unit:闇雲ミズチ x:6 y:3 time:1
-ReadyUnitMove unit:友永勇太(ベーシック) x:6 y:4 time:1
+ReadyUnitMove unit:闇雲ミズチ x:5 y:3 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:4 y:4 time:1
 StartUnitMove
 Wait 0.3
-
+Call キャラクター表示
 Talk ミズチ
 ……！
 
-まいったな……
-入ってきた入口が使えなくなってる
+しまった……
+入ってきた入口が使えなくなってる……
 
 Talk 勇太
 えーっ！？
@@ -461,16 +461,15 @@ Clearmsg type:all
 ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
-StopBGM
+StopBGM fade:1
 Wait 1
 StartBGM file:kthxbi
-CreateUnit name:ガベージ x:19 y:7 side:敵 level:1
-CreateUnit name:ガベージ x:17 y:7 side:敵 level:1
-CreateUnit name:ガベージ x:15 y:7 side:敵 level:1
-CreateUnit name:ガベージ x:13 y:7 side:敵 level:1
-CreateUnit name:ガベージ x:14 y:5 side:敵 level:1
-CreateUnit name:ガベージ x:16 y:5 side:敵 level:1
-CreateUnit name:ガベージ x:18 y:5 side:敵 level:1
+CreateUnit name:ガベージ x:9 y:3 side:敵 level:1
+CreateUnit name:ガベージ x:9 y:5 side:敵 level:1
+CreateUnit name:ガベージ x:9 y:7 side:敵 level:1
+CreateUnit name:ガベージ x:11 y:4 side:敵 level:1
+CreateUnit name:ガベージ x:11 y:6 side:敵 level:1
+CreateUnit name:ガベージ x:11 y:8 side:敵 level:1
 Wait 1
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in
@@ -494,7 +493,11 @@ Exit
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ブレイブアップ:
+Wait 0.3
+CreateUnit name:ガベージ x:3 y:6 side:敵 level:1
+CreateUnit name:ガベージ x:4 y:7 side:敵 level:1
 AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:0
 CharaLayer name:キャラクター
 SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
@@ -510,55 +513,74 @@ Talk ミズチ
 （こいつら、まさか勇太を狙ってるのか……
 　だが、何故……？）
 
-Talk ミズチ
-……クッ、間に合わない……！
-
 Talk 勇太
 た、助けてぇ～～～～！！
 
+Talk ミズチ
+……クッ、間に合わないか……！？
+
+StopBGM fade
 Talk ？？？
 ユウ……タ……！
 
-
+flash time:0.3
+wait 0.3
 Talk 勇太
 な、なにこれ……！？
 
 Talk ミズチ
-これは……マギクレストの発光……！？
+これは……
+Wait 0.3
+マギクレストの発光……！？
 
 だが、一体何に反応して……
 
+flash time:0.3
+wait 0.3
 ！？　あれは……！
 
 Talk 勇太
 デッカード……？
 
 Talk デッカード
-ユウタ……ブレイブアップ……ヲ……
+ユウタ……ブレイブアップ……ダ……
 
 Talk 勇太
 ブレイブアップ……？
 
+ClearMessage
 （なんだろう……聞いた事のない言葉なのに
 　何をすればいいのかが分かる……
+Wait 0.5
 　でも、なんで……）
-
 
 Talk デッカード
 イソゲ、ユウタ……！
 
 Talk 勇太
 わかった、こうだね……！
-
+Wait 1
+ClearMessage
 ブレイブアップ！　デッカード！！
 
-
-ClassChange name:友永勇太(通常) change:友永勇太 side:さくらチーム
-
+SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
+ClassChange name:友永勇太(ベーシック) change:友永勇太 side:さくらチーム
+RemoveChara name:友永勇太
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 デッカードスタイル
+Wait 1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:out
+StartMove type:同時 wait:on
+Wait 1
+StartBGM file:CRUSADE
+Wait 0.5
 Talk ミズチ
 あれは……！
 
-Talk 勇太
+Talk 勇太 デッカードスタイル
 うわっ、なにこれ……変身しちゃった……
 
 これは銃……？　なんか、おもちゃっぽいけど……
@@ -569,15 +591,26 @@ Talk ミズチ
 その力なら、こいつ等と戦えるはずだ
 
 Talk 勇太
-戦うって……この変なのと！？
+マギクレスト……？
 
+それに、戦うって……この変なのと！？
+
+flash time:0.3
+wait 0.3
+ClearMessage
 わっ！？
 
 Talk デッカード
-ユウタ……！
+イコウ、ユウタ！
 
 Talk 勇太
-すごい……
+くっ、このおっ！！
+Wait 1
+flash time:0.3
+wait 0.3
+Talk 勇太
+わ……
+す、すごい……
 
 Talk ミズチ
 覚醒したばかりにしては上出来か……
@@ -587,7 +620,6 @@ Talk ミズチ
 Talk 勇太
 あ、ちょっと！！
 
-Wait 1
 Call キャラクター隠し
 DeleteAllLayer
 Exit
@@ -616,7 +648,7 @@ Wait 1
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
 SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
+SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 デッカードスタイル
 ReadyMove
 SetMove layer:キャラクター time:0.1 fade:in
 StartMove type:連続 wait:on
@@ -629,9 +661,9 @@ Talk ミズチ
 このままじゃ、流石にアイツにはつらいか……
 
 ……ん？
-
-Flash 
-
+Wait 1
+flash time:0.3
+wait 0.3
 Talk 勇太
 こ、今度はなに！？
 
@@ -639,7 +671,7 @@ Talk ミズチ
 ポータル……いや、ゲートか？
 
 なんでこんな所に……
-
+Wait 0.3
 いや、考えてる暇はないか……！
 
 勇太！！　飛び込むぞ！！
@@ -655,10 +687,13 @@ Talk ミズチ
 Talk 勇太
 あっ！　待ってよー！！
 
-
-
 hidemsg time:0.3
 clearmsg type:all
+Wait 1
+SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
 StopBGM fade:0.4
 Wait 0.7
 SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
@@ -677,15 +712,18 @@ AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
 Wait 0.8
 SetImg img:草地 size:just name:草地 layer:背景
-SetChara name:アリサ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
-SetChara name:さくら x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
-SetChara name:ユーノ x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
-SetChara name:ケイブガード x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 2) alpha:1 y:160
-SetChara name:ディッキー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 3) alpha:1 y:160
-ReadyMove
-SetMove layer:キャラクター time:0.1 fade:in x:0
-SetMove layer:エフェクト time:0.5 fade:out
-StartMove type:連続 wait:on
+Call ポジション初期設定
+Call ベースレイヤーセット
+Call 背景セット 草地
+Call 黒幕エフェクトセット
+Wait 1
+Call プレイヤー位置計算加算 1 -40
+SetChara name:ケルベロス x:$変数(プレイヤー位置) alpha:1
+Call プレイヤー位置計算 2
+SetChara name:ユーノ x:$変数(プレイヤー位置) alpha:1
+Call プレイヤー位置計算加算 3 40
+SetChara name:ケイブガード x:$変数(プレイヤー位置) alpha:1
+Call 場面初期表示
 Wait 0.3
 showmsg time:0.3
 StartBGM file:魔王魂_村03 vol:1 fade:0.5

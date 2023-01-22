@@ -24,15 +24,13 @@ action:近接
 	同時終了
 /////////////////////////////////////////射撃
 action:射撃
-	//call:近接
-	//createImg, name:弾丸 ,asset:weapon_shot, target:攻撃側, pivot:中心, alpha:0, color:0xFFFFFF, scale:2
-	createImg, name:弾丸 ,asset:weapon_shot, pointTarget:攻撃側,pivot:中心, alpha:0, color:0xFFFFFF, scale:2
 	チェイン
-		//target:弾丸, $x:500, $y:0, time:0.6, alpha:1
-		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.6, alpha:0
-		createImg, name:爆発 ,anime:bombP_, pointTarget:防御側,pivot:中心, alpha:1, color:0xFFFFFF, scale:2
+		createImg, name:弾丸 ,asset:weapon_shot, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
+		target:弾丸, pointtarget:攻撃側, adjustX:32 ,time:0, alpha:0
 		PlaySound, file:爆発1, vol:1
-		target:爆発, alpha:1, time:0
+		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		createImg, name:爆発 ,anime:bombP_,pivot:中心, alpha:0, color:0xFFFFFF, scale:2
+		target:爆発, pointtarget:防御側, time:0, alpha:1
 		startAnime, target:爆発, frame:100,loop:0
 		target:弾丸, time:0.2, alpha:0
 		if:回避 ? 回避:ダメージ
@@ -49,7 +47,7 @@ action:武器射撃
 		target:武器, time:0.6, alpha:1, scale:2, rotation:0, $x:24, $y:0
 		Wait, 0.4
 		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
-		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:1
+		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:0
 		PlaySound, file:ビームガン, vol:1
 		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
 		createImg, name:爆発 ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
