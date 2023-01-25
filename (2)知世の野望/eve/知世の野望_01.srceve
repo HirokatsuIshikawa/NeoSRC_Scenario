@@ -9,6 +9,7 @@ PlayerSideName さくらチーム
 AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
+CharaLayer name:キャラクター
 SetImg img:住宅地 size:fill name:部屋 layer:背景
 //
 //テロップセット
@@ -33,7 +34,7 @@ br
 
 ClearTelop
 夕暮れ時に、道を歩いていると
-
+Wait 0.3
 いつのまにか、見覚えのない路地裏を歩いていて……
 
 不思議に思って戸惑っていると、どこからか
@@ -56,16 +57,18 @@ br
 
 ClearTelop
 また眉唾物の話だね……
-
+wait 0.3
 白昼夢でも見たんじゃないの？
 
 br
-それが、戻って来た時に確認したら
+ところが、戻って来た時には
 手の中に、その魔法の紋章を
 握ったままになってたんだって……
 
 br
-……で、その紋章で本当に魔法は使えるの？
+ウソでしょ
+wait 0.3
+その紋章で、本当に魔法が使えたっていうの？
 
 br
 噂では、そうだっていってたよ
@@ -73,7 +76,7 @@ br
 ClearTelop
 それを受け取った子は、アニメやゲームみたいに
 火の玉や氷の粒を飛ばしたり
-
+wait 0.3
 普通の人には見えない魔法の抜け道を通って
 遠くに行ったり出来るようになるんだって
 
@@ -103,22 +106,27 @@ SetMove name:路地裏 time:0.5 fade:in
 StartMove type:同時 wait:on
 Wait 1
 ……あれ、ここどこだろ？
-
+wait 0.3
 帰り道に、こんなところあったっけ？
 
 ClearTelop
 見た事の無い路地裏……
-
+wait 0.3
 ひょっとして、黄昏の魔法使いの……？
 
 br
 ま、まさか……
-
+wait 0.3
 あんなの、ただの噂話
 wait 0.3
 都市伝説でしょ……
 
 ClearTelop
+Wait 0.3
+SetImg img:イベント_黄昏の魔法使い size:fill name:魔法使い layer:キャラクター
+ReadyMove
+SetMove layer:キャラクター time:1.5 fade:in
+StartMove type:同時 wait:on
 あら、今日のお客様は二人ね……
 
 br
@@ -140,9 +148,11 @@ SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:0.5 fade:in
 SetMove layer:背景 time:0.3 fade:out
+SetMove layer:キャラクター time:0 alpha:0
 StartMove type:連続 wait:on
 EndTelop time:0.3
 ClearLayer name:背景
+ClearLayer name:キャラクター
 //
 //場面転換
 //
@@ -266,7 +276,7 @@ Talk ケルベロス
 ちゃんとやれてるみたいやないか
 
 Talk さくら
-はう……お姉さんだなんてて
+はう……お姉さんだなんて
 ちょっと照れちゃうかな
 
 でも、がんばってるのは私じゃなくて……
@@ -490,10 +500,10 @@ flash time:0.3
 wait 0.3
 flash time:0.3
 wait 0.3
+//
+//
+//
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
-//
-//
-//
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:同時 wait:on

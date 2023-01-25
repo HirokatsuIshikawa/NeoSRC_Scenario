@@ -1,3 +1,17 @@
+ゲームオーバー:
+Select goto:on 続ける:継続選択 あきらめる:終了選択
+Exit
+
+継続選択:
+QuickLoad
+Exit
+
+終了選択:
+Finish
+Exit
+
+
+
 ポジション初期設定:
 //
 //初期設定

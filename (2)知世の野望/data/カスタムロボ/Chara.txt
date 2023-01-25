@@ -2,7 +2,7 @@
 name:ヤイバ
 nickname:ヤイバ
 type:立ち絵
-x:160,	y:160
+x:113,	y:220
 ボディ, 	ヤイバ, 	0
 basic:ボディ
 
@@ -10,7 +10,7 @@ basic:ボディ
 name:ディッキー
 nickname:ディッキー
 type:立ち絵
-x:160,	y:160
+x:150,	y:242
 ボディ, 	ディッキー, 	0
 basic:ボディ
 
@@ -18,7 +18,7 @@ basic:ボディ
 name:ドレイク
 nickname:ドレイク
 type:立ち絵
-x:160,	y:160
+x:122,	y:242
 ボディ, 	ドレイク, 	0
 basic:ボディ
 

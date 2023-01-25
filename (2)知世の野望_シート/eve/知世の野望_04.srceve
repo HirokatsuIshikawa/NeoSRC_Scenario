@@ -261,15 +261,15 @@ SetMove layer:キャラクター time:0.3 fade:in
 StartMove type:連続 wait:on
 ShowMsg 0.3
 Talk ？？？
-ここが、例の研究がされていた工場か
+ここが、例の研究をしていた工場か
 
 こちら側に落ちてきた時の衝撃で
-どこもメチャクチャ……
+どこもメチャクチャだ……
 
 とんだ無駄足だったな……
 Wait 0.6
 ん……？
-
+Wait 0.6
 CreateUnit name:友永勇太(ベーシック) x:24 y:13 side:さくらチーム level:1 join:1
 Center x:23 y:12
 SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:0
@@ -370,7 +370,9 @@ CreateUnit name:ガベージ x:18 y:10 side:敵 level:1
 Wait 1
 Call キャラクター表示
 Talk 勇太
-うわぁっ！？　なにあれ！？　オバケェッ！？
+うわぁっ！？　なにあれ！？
+Wait 0.3
+オバケェッ！？
 
 Talk ミズチ
 チッ、こんな所にもウジャウジャと……
@@ -412,7 +414,7 @@ Talk 勇太
 Talk ミズチ
 分からないか？
 
-……なら、お前には関係ないと言う事だ
+……なら、お前には関係ないって事だ
 StopBGM fade:1
 Wait 1
 Talk 勇太
@@ -424,7 +426,7 @@ Talk ミズチ
 なら、余計な事を考えずについてこい
 
 Talk 勇太
-なんか、ヤなカンジ……
+……なんか、ヤなカンジ
 
 教えてくれたっていいじゃん……
 
@@ -443,7 +445,7 @@ Talk ミズチ
 ……！
 
 しまった……
-入ってきた入口が使えなくなってる……
+通路が使えなくなってる……
 
 Talk 勇太
 えーっ！？
@@ -523,6 +525,7 @@ StopBGM fade
 Talk ？？？
 ユウ……タ……！
 
+PlaySound file:パワーチャージ
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -534,7 +537,8 @@ Wait 0.3
 マギクレストの発光……！？
 
 だが、一体何に反応して……
-
+Wait 0.6
+PlaySound file:パワーチャージ
 flash time:0.3
 wait 0.3
 ！？　あれは……！
@@ -548,7 +552,7 @@ Talk デッカード
 Talk 勇太
 ブレイブアップ……？
 
-ClearMessage
+ClearMsg
 （なんだろう……聞いた事のない言葉なのに
 　何をすればいいのかが分かる……
 Wait 0.5
@@ -559,10 +563,13 @@ Talk デッカード
 
 Talk 勇太
 わかった、こうだね……！
+Wait 0.5
+PlaySound file:剣で斬る2
 Wait 1
-ClearMessage
+ClearMsg
 ブレイブアップ！　デッカード！！
 
+PlaySound file:ビーム砲チャージ
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
@@ -594,10 +601,11 @@ Talk 勇太
 マギクレスト……？
 
 それに、戦うって……この変なのと！？
-
+Wait 0.5
+PlaySound file:ビームガン
 flash time:0.3
 wait 0.3
-ClearMessage
+ClearMsg
 わっ！？
 
 Talk デッカード
@@ -605,7 +613,10 @@ Talk デッカード
 
 Talk 勇太
 くっ、このおっ！！
-Wait 1
+Wait 0.5
+PlaySound file:ビームガン
+Wait 0.8
+PlaySound file:爆発1
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -644,13 +655,13 @@ CreateUnit name:ガベージ x:15 y:16 side:敵 level:1
 CreateUnit name:ガベージ x:13 y:16 side:敵 level:1 
 CreateUnit name:ガベージ x:11 y:16 side:敵 level:1 
 CreateUnit name:ガベージ x:9 y:16 side:敵 level:1 
-Wait 1
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
+CharaLayer name:キャラクター
 SetChara name:闇雲ミズチ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:友永勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 デッカードスタイル
 ReadyMove
-SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0.3 fade:in
 StartMove type:連続 wait:on
 Talk 勇太
 また増えた～っ！？
@@ -662,6 +673,7 @@ Talk ミズチ
 
 ……ん？
 Wait 1
+PlaySound file:インスピ
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -691,13 +703,15 @@ hidemsg time:0.3
 clearmsg type:all
 Wait 1
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
+PlaySound file:テレポート
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:同時 wait:on
 StopBGM fade:0.4
 Wait 0.7
-SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:0
 ReadyMove
+SetMove name:ブラック time:1 fade:in
 SetMove layer:エフェクト time:1 fade:in
 SetMove layer:キャラクター time:1 fade:in
 StartMove type:同時 wait:on
@@ -715,7 +729,6 @@ SetImg img:草地 size:just name:草地 layer:背景
 Call ポジション初期設定
 Call ベースレイヤーセット
 Call 背景セット 草地
-Call 黒幕エフェクトセット
 Wait 1
 Call プレイヤー位置計算加算 1 -40
 SetChara name:ケルベロス x:$変数(プレイヤー位置) alpha:1
@@ -723,12 +736,15 @@ Call プレイヤー位置計算 2
 SetChara name:ユーノ x:$変数(プレイヤー位置) alpha:1
 Call プレイヤー位置計算加算 3 40
 SetChara name:ケイブガード x:$変数(プレイヤー位置) alpha:1
+ReadyMove
+SetMove layer:エフェクト time:0.6 fade:out
+StartMove type:同時 wait:on
 Call 場面初期表示
-Wait 0.3
+ClearLayer name:エフェクト
 showmsg time:0.3
-StartBGM file:魔王魂_村03 vol:1 fade:0.5
-
-
+StartBGM file:game_maoudamashii_5_village05 vol:1 fade:0.5
+PlaySound file:インスピ
+Wait 0.4
 Talk ユーノ
 ん……？
 
@@ -736,11 +752,15 @@ Talk ケイブガード
 どうした？
 
 Talk ユーノ
-今、この先で強い力の気配が……
+いや、なんか繋ごうとした先で
+強い力を感じた気がしたんだけど……
+
+Talk ケイブガード
+強い力……？
 
 Talk ケルベロス
-あっちこっちつないどるからなぁ……
-
+まぁ、あっちこっちつないどるからなぁ……
+Wait 0.5
 なんや、変なモンが出てこんとええんやけど
 
 Talk ユーノ
@@ -748,7 +768,7 @@ Talk ユーノ
 
 Talk ケルベロス
 とりあえず、厄介な事にならんウチに
-早く閉じとこか
+今回のポータルは閉じとこか
 
 ユーノもだいぶ慣れて来たみたいやし
 そろそろ狙った所につなげられるはずや
@@ -756,17 +776,37 @@ Talk ケルベロス
 Talk ユーノ
 わかった、それじゃあ……
 
+Flash time:0.3
+StopBGM fade:0.5
 ……え？
 
+ReadyMove
+SetMove layer:キャラクター time:1 x:-300
+PlaySound file:テレポート
+StartMove
+Flash time:0.3
+Call プレイヤー位置計算加算 4 60
+SetChara name:闇雲ミズチ x:$変数(プレイヤー位置) alpha:0
+ReadyMove
+SetMove chara:闇雲ミズチ time:1 fade:in
+StartMove
 Talk ミズチ
 よっ……
 
+PlaySound file:テレポート
+Flash time:0.3
+Call プレイヤー位置計算加算 5 20
+SetChara name:友永勇太 x:$変数(プレイヤー位置) alpha:0 デッカードスタイル
+ReadyMove
+SetMove chara:友永勇太 time:1 fade:in
+StartMove
 Talk 勇太
 うわぁぁぁぁぁぁっ！？
 
 Talk ケイブガード
 な、なんだ！？
-
+StartBGM file:魔王魂_村08 vol:1 fade:0.5
+Wait 1
 Talk ミズチ
 この気配……あちら側か……
 
@@ -784,7 +824,7 @@ Talk 勇太
 Talk ミズチ
 （この格好……確か、ケイブヴィレッジとかいう
 　集落の連中だったか……
-
+Wait 0.3
 　……ん？）
 
 Talk ユーノ
@@ -793,6 +833,7 @@ Talk ユーノ
 Talk ミズチ
 （コイツは……）
 
+clearmsg 
 お前が、ゲートを開いてくれたのか
 
 おかげで助かったぜ、ちょっとやばかったんでな
@@ -800,9 +841,16 @@ Talk ミズチ
 Talk ユーノ
 あ……いや、別に意図してやったわけじゃ……
 
+Call プレイヤー位置計算加算 6 20
+ReadyMove
+SetMove layer:キャラクター time:1 x:-450
+SetMove chara:ケルベロス time:1 x:$変数(プレイヤー位置)
+StartMove
 Talk ケルベロス
-お前さん、一体何モンや？　随分強い力を持っとるようやけど……
+お前さん達、一体何モンや？
+随分、変わった力を持っとるようやけど……
 
+StopBGM fade:1
 Talk ミズチ
 ………………
 
@@ -810,10 +858,15 @@ Talk 勇太
 ………………
 
 Talk ケルベロス
-な、なんや、その反応……？
+な、なんや……？
+
+ワイがどうかしたんか？
 
 Talk 勇太
-ぬいぐるみが浮かんで、しかも喋ってる……？
+ぬいぐるみが……浮かんで……
+Wait 0.5
+StartBGM file:game_maoudamashii_5_casino03 vol:1
+喋ってる！？
 
 Talk ケルベロス
 コラぁッ！　誰がぬいぐるみや！
@@ -825,10 +878,10 @@ Talk ミズチ
 SetCommander name:大道寺知世 sidename:さくらチーム
 hidemsg time:0.3
 clearmsg type:all
-flash time:2
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
-StartMove type:連続 wait:on
+StartMove type:同時 wait:on
 DeleteAllLayer
 Continue 知世の野望_05.srceve
 Exit
