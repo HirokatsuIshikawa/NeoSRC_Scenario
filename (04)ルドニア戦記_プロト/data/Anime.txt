@@ -233,12 +233,3 @@ action:剣撃破
 			target:防御側, $$x:60, time:0.3, alpha:0
 			target:防御側画像, color:0xFF0000
 		同時終了
-
-name:ゴブリン
-action:毒液玉
-	createImg, name:爆弾 ,asset:PoisonBall, pivot:中心, color:0xFFFFFF, scale:2
-	call:投てき
-action:ダガー
-	createImg, name:剣 ,asset:Dagger, target:攻撃側,pivotX:8, pivotY:32, alpha:0, color:0xFFFFFF,scale:0
-	call:単体剣攻撃
-
