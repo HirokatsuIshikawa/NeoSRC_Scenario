@@ -21,6 +21,9 @@ Set name:プレイヤー表示位置 value:0
 Set name:プレイヤー配置位置 value:0
 Set name:プレイヤー配置間隔 value:280
 Set name:プレイヤー位置 value:0
+Set name:エネミー表示位置 value:-1080
+Set name:エネミー配置位置 value:1300
+Set name:エネミー配置間隔 value:200
 Return
 
 ベースレイヤーセット:
@@ -96,4 +99,31 @@ Return
 
 SE:
 PlaySound file:$args(0)
+Return
+
+マップ表示:
+hidemsg time:0.3
+clearmsg type:all
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+キャラ表示:
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:in
+StartMove type:連続 wait:on
+showmsg time:0.3
+Return
+
+キャラレイヤー移動:
+ReadyMove
+SetMove layer:キャラクター time:0.5 x:$引数(0)
+StartMove type:同時 wait:on
+Return
+
+マップイベントレイヤーセット:
+AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:0
+CharaLayer name:キャラクター
 Return

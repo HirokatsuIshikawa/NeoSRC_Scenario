@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:a921d399b097205c0a96c30e59172ef8:f3ee745542f334ecf123b16fd1e3526f:2043d1d26c9815a72542e948514d086d$ -->
+<!-- $TexturePacker:SmartUpdate:c6310bc86512b7a04797fe48208962c2:f3ee745542f334ecf123b16fd1e3526f:2043d1d26c9815a72542e948514d086d$ -->
 <TextureAtlas imagePath="chara_2.png" width="2048" height="2048">
     <SubTexture name="エリス_オーバーオール" x="1374" y="1205" rotated="true" width="590" height="198" frameX="-47" frameY="-5" frameWidth="270" frameHeight="600"/>
     <SubTexture name="エリス_表情_ギャグ" x="1107" y="1827" width="68" height="59" frameX="-98" frameY="-53" frameWidth="270" frameHeight="600"/>

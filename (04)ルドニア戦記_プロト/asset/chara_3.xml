@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:a921d399b097205c0a96c30e59172ef8:f3ee745542f334ecf123b16fd1e3526f:2043d1d26c9815a72542e948514d086d$ -->
+<!-- $TexturePacker:SmartUpdate:c6310bc86512b7a04797fe48208962c2:f3ee745542f334ecf123b16fd1e3526f:2043d1d26c9815a72542e948514d086d$ -->
 <TextureAtlas imagePath="chara_3.png" width="2038" height="2038">
     <SubTexture name="エリス_表情_考" x="1993" y="444" rotated="true" width="43" height="71" frameX="-98" frameY="-62" frameWidth="270" frameHeight="600"/>
     <SubTexture name="エルフ_衣装_ドレス" x="898" y="1232" rotated="true" width="758" height="270" frameX="-153" frameY="-142" frameWidth="467" frameHeight="900"/>
