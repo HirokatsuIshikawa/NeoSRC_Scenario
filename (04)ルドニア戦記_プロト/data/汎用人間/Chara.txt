@@ -15,6 +15,6 @@ basic:ボディ
 name:破落戸
 nickname:破落戸
 type:立ち絵
-x:124,	y:164
+x:136,	y:164
 ボディ, 	戦士_A, 	0
 basic:ボディ
