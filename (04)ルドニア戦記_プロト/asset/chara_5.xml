@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:156981357e32162443546fa105076d92:09670602ea325c5e6ddb63c8e42eba31:4fbb45ed0c02ea34d4ed6bbaf678c95a$ -->
+<TextureAtlas imagePath="chara_5.png" width="1701" height="1445">
+    <SubTexture name="エルフ_衣装_ドレス" x="274" y="1" width="270" height="758" frameX="-153" frameY="-142" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="エルフ_衣装_葉っぱビキニ" x="546" y="1" width="253" height="758" frameX="-167" frameY="-139" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="ジュノ_裸" x="801" y="1" width="257" height="700" frameX="-35" frameY="-75" frameWidth="418" frameHeight="800"/>
+    <SubTexture name="セシル_丸出し" x="1428" y="369" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_丸出し赤面" x="1060" y="447" rotated="true" width="357" height="185" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_服" x="1060" y="634" rotated="true" width="357" height="185" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_服赤面" x="817" y="703" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸" x="817" y="1062" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸ポーズ" x="1419" y="728" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸ポーズ赤面" x="1004" y="1087" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_裸赤面" x="1191" y="1087" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="ダイアナ_裸ポーズ" x="1060" y="1" rotated="true" width="366" height="221" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="ダイアナ_裸ポーズ赤面" x="1428" y="1" width="221" height="366" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="ダイアナ_裸赤面" x="1060" y="224" rotated="true" width="366" height="221" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="マリー_服赤面" x="1378" y="1087" width="163" height="357" frameX="-83" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="マリー_裸" x="1543" y="1087" width="157" height="357" frameX="-89" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="マリー_裸赤面" x="1004" y="821" rotated="true" width="357" height="157" frameX="-89" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="女剣士" x="1" y="1" width="271" height="800"/>
+    <SubTexture name="少女_魔女っ子_緑" x="1" y="803" width="270" height="600"/>
+    <SubTexture name="少女_魔女っ子_赤" x="273" y="803" width="270" height="600"/>
+    <SubTexture name="少女_魔女っ子_青" x="545" y="761" width="270" height="600"/>
+</TextureAtlas>

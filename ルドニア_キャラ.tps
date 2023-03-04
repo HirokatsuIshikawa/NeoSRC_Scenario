@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.0.1</string>
+        <string>7.0.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -712,7 +712,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">(04)ルドニア戦記/asset/chara/単品/カンファー.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ウィザード.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -721,9 +721,204 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>78,120,155,240</rect>
+                <rect>133,200,265,400</rect>
                 <key>scale9Paddings</key>
-                <rect>78,120,155,240</rect>
+                <rect>133,200,265,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ウォリア.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>128,200,257,400</rect>
+                <key>scale9Paddings</key>
+                <rect>128,200,257,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/キャプテン.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>138,225,275,450</rect>
+                <key>scale9Paddings</key>
+                <rect>138,225,275,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/クマひげ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>146,225,293,450</rect>
+                <key>scale9Paddings</key>
+                <rect>146,225,293,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ジェリー.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>129,200,258,400</rect>
+                <key>scale9Paddings</key>
+                <rect>129,200,258,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/スタンツ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>154,225,307,450</rect>
+                <key>scale9Paddings</key>
+                <rect>154,225,307,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/チャールズ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>145,225,289,450</rect>
+                <key>scale9Paddings</key>
+                <rect>145,225,289,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ナースロイド.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>80,200,161,400</rect>
+                <key>scale9Paddings</key>
+                <rect>80,200,161,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ナース戦闘員.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>119,205,237,410</rect>
+                <key>scale9Paddings</key>
+                <rect>119,205,237,410</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/パエリア.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>155,225,309,450</rect>
+                <key>scale9Paddings</key>
+                <rect>155,225,309,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ベレー戦闘員.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>86,200,171,400</rect>
+                <key>scale9Paddings</key>
+                <rect>86,200,171,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ベレー戦闘員_孕み.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>75,200,150,400</rect>
+                <key>scale9Paddings</key>
+                <rect>75,200,150,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ベレー戦闘員_裸.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>55,200,109,400</rect>
+                <key>scale9Paddings</key>
+                <rect>55,200,109,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ラーナ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>138,225,276,450</rect>
+                <key>scale9Paddings</key>
+                <rect>138,225,276,450</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
