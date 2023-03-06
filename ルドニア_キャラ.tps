@@ -742,7 +742,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">(04)ルドニア戦記/asset/chara/単品/キャプテン.png</key>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/オリビア.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -787,6 +787,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ジンライ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>149,225,298,450</rect>
+                <key>scale9Paddings</key>
+                <rect>149,225,298,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/単品/スタンツ.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -802,6 +817,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/タイラン.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>152,225,303,450</rect>
+                <key>scale9Paddings</key>
+                <rect>152,225,303,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/単品/チャールズ.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -814,6 +844,21 @@
                 <rect>145,225,289,450</rect>
                 <key>scale9Paddings</key>
                 <rect>145,225,289,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/チュロス.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>155,225,309,450</rect>
+                <key>scale9Paddings</key>
+                <rect>155,225,309,450</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -844,21 +889,6 @@
                 <rect>119,205,237,410</rect>
                 <key>scale9Paddings</key>
                 <rect>119,205,237,410</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">(04)ルドニア戦記/asset/chara/単品/パエリア.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>155,225,309,450</rect>
-                <key>scale9Paddings</key>
-                <rect>155,225,309,450</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -907,6 +937,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/メイプル.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>127,225,255,450</rect>
+                <key>scale9Paddings</key>
+                <rect>127,225,255,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ルドニア戦記/asset/chara/単品/ラーナ.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -919,6 +964,36 @@
                 <rect>138,225,276,450</rect>
                 <key>scale9Paddings</key>
                 <rect>138,225,276,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/リィル.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>138,225,277,450</rect>
+                <key>scale9Paddings</key>
+                <rect>138,225,277,450</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ルドニア戦記/asset/chara/単品/ロキ.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>88,225,175,450</rect>
+                <key>scale9Paddings</key>
+                <rect>88,225,175,450</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
