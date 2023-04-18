@@ -1,0 +1,664 @@
+初期化:
+#<system/system.srceve>
+#<LoadStart>
+Exit
+
+
+スタート:
+//
+//初期設定
+//
+Call ポジション初期設定
+Call ベースレイヤーセット
+Call 背景セット 砂漠_A
+Call 黒幕エフェクトセット
+//
+//テロップセット
+//
+SetTelop backColor:0 fontColor:0xFFFFFF
+Telop
+//
+//フェードイン
+//
+ReadyMove
+SetMove layer:エフェクト time:0.7 alpha:0.2
+StartMove type:同時 wait:on
+遥かなる昔、世界が闇の中に
+数多もの光を浮かべていた頃
+
+神々は世界に人間や動物など
+数多の生命を創造し、その繁栄を見守っていた
+
+しかし、力をつけすぎた命は
+さらなる繁栄を求め争いをはじめ
+
+結果、侵すべきでない他の命の領域をも支配しようとし
+争いは神の手でも収められないほど拡大していった
+
+そして、その争いにより世界のすべてが破壊されようとした時
+神はその過ちを正す為、世界を絶つための剣を解き放ち
+闇ごと世界を切り裂いた
+
+絶たれて欠片となった世界は
+それぞれが『封界儀』という名の神遺物と形を変えた
+
+その中では、時の止まったままの世界が眠り続けているという……
+
+Wait 1
+―――ダム・ブルー
+Wait 0.6
+　　　砂漠地帯・砂上船内
+Wait 1
+ClearTelop
+//
+//場面転換
+//
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:連続 wait:on
+Wait 0.5
+EndTelop
+ClearLayer name:背景
+//
+//背景セット
+//
+Call 背景セット 船内寝室
+//
+Call プレイヤー位置計算加算 1 40
+SetChara name:レティシア x:$変数(プレイヤー位置) alpha:1 裸 赤面 泣
+//
+Call プレイヤー位置計算 2
+SetChara name:ジャド x:$変数(プレイヤー位置) alpha:1 裸 驚き
+//
+Call プレイヤー位置計算加算 3 -120
+SetChara name:タマ x:$変数(プレイヤー位置) alpha:1 ポロリ 下半身 舌打ち
+//
+Call プレイヤー位置計算加算 4 440
+SetChara name:マーク x:$変数(プレイヤー位置) y:200 alpha:1 怒り
+Call プレイヤー位置計算加算 5 400
+SetChara name:エリス x:$変数(プレイヤー位置) y:200 alpha:1 膨れ
+//
+Call 場面初期位置表示 -1000
+Call BGM fi_Mudtown
+Talk マーク 怒り
+おかしらー！
+Wait 0.3
+起きろよ、おかしらー！！
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:0
+StartMove type:連続 wait:on
+Talk ジャド
+んむ……なんだよマーク
+
+こんな朝っぱらから……
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:-1000
+StartMove type:同時 wait:on
+Talk エリス 怒り
+もうお昼ですよ！
+
+Talk ジャド
+おや、エリスも一緒か……
+
+船長には、いろいろ仕事があるのさ
+
+Talk マーク 膨れ
+仕事って、その姿でなにいってんだ
+
+……どうせ、昨夜もお楽しみだったんだろ
+
+ReadyMove
+SetMove chara:ジャド time:1 fade:in x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4 + 200)
+StartMove type:同時 wait:on
+Talk ジャド 笑顔
+まぁな
+
+Talk エリス 驚き
+うわ……
+
+Talk ジャド
+いい仕事をするためには、
+色々溜め込まないのも必要ってことだ
+
+Talk マーク
+全く……
+Wait 0.5
+ちょっとは隠せよ……
+
+Talk マーク 悲しみ
+でも、いいなぁ……
+Wait 0.5
+でっかいおっぱい……
+
+Talk エリス 膨れ
+ムッ……
+
+Talk ジャド 不機嫌
+うらやましそうに見てんじゃねーよ
+
+お前にも、ちゃんと用意してやっただろ
+
+Talk マーク 膨れ
+だってさぁ……
+
+こいつの、ペッタンコなんだもん
+
+Talk エリス 怒り
+こら！　マーク！！
+
+Talk マーク
+おまけに、何かと口うるさいし……
+
+Talk ジャド 微笑み
+お前にゃお似合いの相手だよ
+
+Talk エリス 膨れ
+うー……
+
+Talk マーク
+まぁ、悪い気はしないけどさぁ……
+
+Talk ジャド 笑顔
+……ま、そのうち乳くらい吸わせてやるから
+今はペッタンコので我慢するこった
+
+Talk マーク
+チェッ……
+
+Talk ジャド
+ところでマーク、ラミアポリスまでは
+あとどのくらいかかる？
+
+Talk マーク
+あと3時間ってところかな
+
+Talk ジャド
+船倉の連中は？
+
+Talk マーク
+青は、みんな大人しくしてるよ
+
+黄色は、ちょっと不安そうな顔してたけど
+特に暴れたりはしてないし……
+
+赤は……ガチガチにしてあるから
+なにもできなさそうだしね
+
+Talk ジャド
+到着までは問題なさそうか……
+
+なら、もう一戦くらい……
+
+Talk ジャド 不機嫌
+……！
+
+Talk マーク 驚き
+おかしら？
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:0
+SetMove chara:ジャド time:1 fade:in x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2)
+StartMove type:同時 wait:on
+Wait 0.3
+clearmsg
+Talk ジャド 怒り
+タマ！
+Wait 0.5
+Playsound file:平手打ち1
+Talk タマ 拒否
+いたっ！？
+
+Talk ジャド
+レティ！　
+Wait 0.5
+Playsound file:平手打ち1
+Talk レティシア 哀
+ひんっ！？
+
+Talk ジャド 怒り
+とっとと起きろ！
+Wait 0.5
+客を出迎えるぞ！！
+
+hidemsg time:0.3
+clearmsg type:all
+Wait 1
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:同時 wait:on
+//
+//
+//
+clearmsg type:all
+DeleteLayer name:背景
+ClearLayer name:キャラクター
+Wait 0.6
+Goto ステージ開始
+Exit
+
+ステージ開始:
+StopBGM
+LoadMap file:砂漠地帯.map
+//
+VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:敵の全滅
+//
+ReadyMove
+SetMove layer:キャラクター alpha:0
+SetMove layer:エフェクト time:0.3 fade:out
+StartMove type:同時 wait:on
+StartBGM file:Ghouls
+Wait 0.7
+//盗賊頭
+CreateUnit name:盗賊頭 x:11 y:7 side:敵 level:1 
+//
+CreateUnit name:盗賊 x:13 y:7 side:敵 level:1 
+CreateUnit name:盗賊 x:12 y:8 side:敵 level:1 
+CreateUnit name:盗賊 x:11 y:9 side:敵 level:1 
+//
+CreateUnit name:破落戸 x:14 y:8 side:敵 level:1 
+CreateUnit name:破落戸 x:13 y:9 side:敵 level:1 
+CreateUnit name:破落戸 x:12 y:10 side:敵 level:1 
+Wait 1
+SetChara name:盗賊頭 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
+SetChara name:盗賊 x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 3) alpha:1
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0 x:$変数(エネミー表示位置)
+StartMove type:同時 wait:on
+Talk 盗賊
+副頭、来たぜ！
+
+間違いねぇ……
+ジャドの奴隷輸送船だ！
+
+Talk 盗賊頭
+気やがったか……
+
+ヤツのせいで、俺たち闇夜のサソリは
+壊滅させられ、頭目もとっつかまって……
+
+同じ盗賊の癖して、権力に媚び
+いい暮らしをしてる欲ボケ野郎！！
+
+見てろよ、この恨みを晴らして
+テメェのすべてを奪い取って……
+
+Call マップ表示
+Wait 0.5
+StopBGM
+CreateUnit name:ジャド x:20 y:9 side:ジャド隊 level:5 
+Wait 1
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 怒り
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0 x:$変数(プレイヤー表示位置)
+StartMove type:同時 wait:on
+//
+StartBGM file:Battle-Forbidden
+Talk ジャド 怒り
+誰が欲ボケ野郎だ？　コラ！？
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+ゲッ！？　ジャド！！
+
+いつの間に！？
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド 不機嫌
+ファントム持ちが、こんだけ強い殺気を
+隠さず露にしてたら、気づいて当然だろうが
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+クッ……まさか欲ボケ如きに
+これだけの事が出来たとは……
+
+流石は、闇夜のサソリを壊滅に
+追い込んだだけの事はある……
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド 驚き
+闇夜のサソリ……？
+
+StopBGM
+……なんだ、そりゃ？
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+StartBGM file:魔王魂_カジノ03
+Talk 盗賊
+な……！？
+
+てめぇ、まさか忘れたとか
+抜かすんじゃねーだろうな！？
+
+テメェにボロボロにされた盗賊団
+闇夜のサソリを……
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド 驚き
+………………
+
+……全然記憶にねぇ
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+はぁっ！？
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド 苦笑
+そもそも、ザコい盗賊団の事なんて
+いちいち覚えてられねぇよ
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+てめぇ！　誰がザコだ！？
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド
+……でもまぁ、お前らも
+盗賊って事だよなぁ……
+
+おまけに、規模はだいぶ小さいが、
+一応はファントム持ち……
+Wait 0.7
+StartBGM file:Battle-Forbidden
+Talk ジャド 怒り
+ここで狩っておいて、損はないな
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+ッ……
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド
+タマ、レティ、出番だぞ！！
+
+Call マップ表示
+//
+Wait 0.7
+CreateUnit name:タマ x:21 y:8 side:ジャド隊 level:3
+CreateUnit name:レティシア x:21 y:10 side:ジャド隊 level:3
+Wait 0.6
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 - 60) alpha:1 怒  赤面
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1 舌打ち
+Call キャラ表示
+Talk タマ
+イタタ……
+
+あー、手形が残ってる……
+
+Talk レティシア
+ジャド！
+Wait 0.5
+ボク達を起こすのに、
+こんな強くお尻叩く事ないだろ！！
+
+Talk レティシア 哀 赤面
+こんなお尻、人に見られたら
+恥ずかしいじゃないか……
+
+Talk ジャド 驚き
+普段から、そんな格好して
+何言ってんだよ……
+
+Talk ジャド 苦笑
+それに、手形がイヤなら判らない様に
+尻を真っ赤に染めてやろうか？
+
+Talk タマ 伏し目
+う、それは……
+
+Talk ジャド
+幸いにして、船の連中を除けば
+見てるのは、あのザコ盗賊達だけ……
+
+とっ捕まえちまえば、目撃者消去で
+ノーカンって寸法よ
+
+Talk レティシア
+ノーカンになるわけないだろッ！！
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+クソーッ、戦場で美人を侍らせやがって
+
+どこまでもうらやま……
+いや、憎らしいヤツ！！
+
+……とにかく、ヤツを打ち取れば
+あの女達も、船の奴らも全部俺たちのもんだ！！
+
+野郎ども、抜かるんじゃねぇぞ！！
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド
+おーおー、変に気合入っちゃって……
+
+タマ、レティ、準備はいいな？
+
+Talk レティシア 怒
+この状況じゃ……やるしかないだろ
+
+Talk タマ
+あの規模の盗賊なら、
+大した事なさそうだしね
+
+Talk ジャド
+よしよし、それじゃあ行くぜ！！
+
+VictoryCondition victory:敵の全滅 defeat:敵の全滅
+Call マップ表示
+SetEvent side:ジャド隊 label:ゲームオーバー type:全滅
+SetEvent side:敵 label:ステージクリア type:全滅
+DeleteAllLayer
+Exit
+
+
+ステージクリア:
+Call マップイベントレイヤーセット
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 - 60) alpha:1 微笑み
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0 x:$変数(エネミー表示位置)
+StartMove type:同時 wait:on
+Talk 盗賊
+グハッ……
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk ジャド
+この程度か……
+
+ろくに使いこなせてないとはいえ
+
+ファントムはファントムだ
+
+Call キャラレイヤー移動 $変数(エネミー表示位置)
+Talk 盗賊
+ひっ……！
+
+Talk ジャド
+……喧嘩を売ってきた以上
+覚悟はできてるんだよな？
+
+Talk 盗賊
+た、助け……
+
+Call キャラレイヤー移動 $変数(プレイヤー表示位置)
+Talk 盗賊
+ぎぇぇぇぇぇぇっ！？
+
+Talk タマ
+うぇ……嫌な悲鳴……
+
+Talk レティシア
+相手が盗賊とはいえ
+これはいつ見ても嫌な気分だな……
+
+Talk ジャド
+ふぅ、これでよし
+
+Talk 盗賊
+あう……あう……
+
+Talk マーク
+お頭ー！！
+
+Talk マーク
+どうやら、終わったみたいだな
+
+錠や檻の準備は出来てるぜ
+
+Talk ジャド
+よし、よくやったジャド
+
+こいつらも積み込むぞ、タグは無論赤だ
+
+さっさと終わらせて、早くラミアポリスに行こう
+
+Talk タマ
+はーい
+
+
+hidemsg time:0.3
+clearmsg type:all
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
+ClearLayer name:キャラクター
+Goto エピローグ
+Exit
+
+エピローグ:
+AddLayer name:背景 alpha:1 level:0
+CharaLayer name:キャラクター
+SetImg img:湯舟 size:just name:湯舟 layer:背景
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 裸 赤面
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 + 40) alpha:1 裸 赤面 怒
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3 - 120) alpha:1 ポロリ 下半身 舌打ち
+Wait 1
+StartBGM file:橙
+Wait 0.5
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+showmsg time:0.3
+
+Talk クルー
+オーライ！　オーライ……
+
+はい、ストップ！！
+
+青の乗員はこっちだ、順序良く降りてくれ
+
+黄色はこっちだ、列を間違えるんじゃないぞ
+
+ごまかそうとしてもすぐ分かるからな
+
+赤は……予定より多いな
+
+ふむふむ……
+
+途中で捕まえた奴もか……
+
+Talk ジャド
+ふぅ、これで一息つける……
+
+Talk ブフルス
+ご苦労だったな、ジャド
+
+Talk ジャド
+ありゃ、ブフルスの親分
+来てたのか？
+
+Talk ブフルス
+なに、大した意味ではないよ
+
+ただ、お前さんの顔を見たくなってな
+
+Talk ジャド
+そいつはどうも……光栄だね
+
+Talk ブフルス
+……しかし、今回は妙に青が多いな
+
+Talk ジャド
+ああ、何とか黄色の部屋を開けて
+詰め込んだくらいだからな
+
+幸い、どいつもやる気だけはありそうだし
+こっちにとっては、損はないんだが……
+
+Talk ブフルス
+だが、さすがにこの事態は異常だぞ
+
+伯爵殿も、他から何か情報を掴んだらしく
+眉間に皺を寄せておった……
+
+近々、呼び出しがあるかもしれんな
+
+Talk ジャド
+そうでない事を、願いたいんだがね……
+
+Talk マーク
+おかしらーっ！！
+
+Talk ジャド
+ん……
+
+Talk ブフルス
+おお、マークにエリス
+
+今日も元気そうだな
+
+Talk マーク
+あ、ブフルスの親分
+こんにちは
+
+Talk エリス
+こ、こんにちは
+
+Talk ブフルス
+はい、こんにちわ
+
+Talk マーク
+おかしら、船の積み込みが終わったから
+書類へのサインをしてくれだってさ
+
+Talk ジャド
+わかった、すぐいく
+
+そんじゃ親分、これで……
+
+Talk ブフルス
+うむ、ゆっくりと休めよ
+
+Talk マーク
+きゃっ！？
+
+Talk マーク
+へへっ、お尻みーえたっと
+
+Talk エリス
+こ……こらーーーっ！！
+
+Talk ブフルス
+ははは、やんちゃどもめ
+
+
+hidemsg time:0.3
+clearmsg type:all
+Wait 0.8
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:連続 wait:on
+DeleteAllLayer
+clearmsg
+Continue ルドニア戦記_02.srceve
+Exit

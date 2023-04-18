@@ -1,0 +1,480 @@
+初期化:
+#<system/system.srceve>
+#<LoadStart>
+Exit
+
+
+スタート:
+//
+//初期設定
+//
+Call ポジション初期設定
+Call ベースレイヤーセット
+Call 背景セット 森
+Call 黒幕エフェクトセット
+//
+//テロップセット
+//
+SetTelop backColor:0 fontColor:0xFFFFFF
+Telop
+//
+//フェードイン
+//
+ReadyMove
+SetMove layer:エフェクト time:0.7 alpha:0.2
+StartMove type:同時 wait:on
+Wait 1
+―――ラミアス地方
+Wait 0.6
+　　　マクムウッドの森
+Wait 1
+ClearTelop
+//
+//場面転換
+//
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:連続 wait:on
+Wait 0.5
+EndTelop
+ClearLayer name:背景
+//
+//背景セット
+//
+Call 背景セット 寝室
+//
+Call プレイヤー位置計算加算 1 40
+SetChara name:レティシア x:$変数(プレイヤー位置) alpha:1 裸 赤面 泣
+//
+Call プレイヤー位置計算 2
+SetChara name:ジャド x:$変数(プレイヤー位置) alpha:1 裸 驚き
+//
+Call プレイヤー位置計算加算 3 -120
+SetChara name:タマ x:$変数(プレイヤー位置) alpha:1 ポロリ 下半身 舌打ち
+//
+Call プレイヤー位置計算加算 4 400
+SetChara name:マーク x:$変数(プレイヤー位置) y:200 alpha:1
+//
+Call 場面初期位置表示 -1000
+Call BGM fi_Mudtown
+Talk マーク 怒り
+おかしらー！
+Wait 0.3
+起きろよ、おかしらー！！
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:0
+StartMove type:連続 wait:on
+Talk ジャド
+んむ……なんだよマーク
+
+こんな朝っぱらから……
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:-1000
+StartMove type:同時 wait:on
+Talk マーク 怒り
+もう日は高いよ、このネボスケ！！
+
+Talk マーク 膨れ
+……どうせ、昨夜もお楽しみだったんだろ
+
+ReadyMove
+SetMove chara:ジャド time:1 fade:in x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4 + 200)
+StartMove type:同時 wait:on
+Talk ジャド 笑顔
+まぁな
+
+気楽な冒険者家業
+これが一番の楽しみよ
+
+Talk マーク
+全く……
+Wait 0.5
+ちょっとは隠せよ……
+
+Talk マーク 悲しみ
+でも、いいなぁ……
+Wait 0.5
+でっかいおっぱい……
+
+Talk ジャド 不機嫌
+うらやましそうに見てんじゃねーよ
+
+お前にも、ちゃんと用意してやっただろ
+
+Talk マーク 膨れ
+だってさぁ、アイツのはペッタンコなんだもん
+
+おまけに、何かと口うるさいし……
+
+Talk ジャド 微笑み
+お前にゃお似合いの相手だよ
+
+Talk マーク
+まぁ、悪い気はしないけどさぁ……
+
+Talk ジャド 笑顔
+……ま、そのうち乳くらい吸わせてやるから
+今はペッタンコので我慢するこった
+
+Talk マーク
+チェッ……
+
+Talk マーク 驚き
+……っとそうだ
+
+おかしら、その冒険者ギルドから
+手紙が届いてるよ
+
+Talk ジャド 驚き
+呼び出しだと……？
+
+clearmsg
+差出人はニルス……
+Wait 0.5
+おまけに呼び出し先は領都か
+
+Talk ジャド 困り
+今の時期に、催事とかは特にないはずだが……
+
+clearmsg
+あのお人よし、また何かに巻き込まれたか？
+Wait 0.3
+まぁいい……
+
+ReadyMove
+SetMove layer:キャラクター time:1 x:0
+SetMove chara:ジャド time:1 fade:in x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2)
+StartMove type:同時 wait:on
+Wait 0.3
+clearmsg
+Talk ジャド 怒り
+タマ！
+Wait 0.5
+Playsound file:平手打ち1
+Talk タマ 拒否
+いたっ！？
+
+Talk ジャド
+レティ！　
+Wait 0.5
+Playsound file:平手打ち1
+Talk レティシア 哀
+ひんっ！？
+
+Talk ジャド 怒り
+とっとと起きろ！
+Wait 0.5
+ラミアポリスまで出かけるぞ
+
+hidemsg time:0.3
+clearmsg type:all
+Wait 1
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:同時 wait:on
+//
+//
+//
+clearmsg type:all
+DeleteLayer name:背景
+ClearLayer name:キャラクター
+Goto ステージ開始
+Exit
+
+ステージ開始:
+StopBGM
+LoadMap file:ラトネ街道.map
+//
+VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:味方の全滅
+//
+CreateUnit name:ジャド x:5 y:10 side:ジャド隊 level:5 anime:0
+CreateUnit name:タマ x:4 y:9 side:ジャド隊 level:3 anime:0
+CreateUnit name:レティシア x:4 y:11 side:ジャド隊 level:3 anime:0
+ReadyMove
+SetMove layer:キャラクター alpha:0
+SetMove layer:エフェクト time:0.3 fade:out
+StartMove type:同時 wait:on
+Wait 0.7
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 - 60) alpha:1 怒  赤面
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1 舌打ち
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:in
+StartMove type:連続 wait:on
+Talk タマ
+イタタ……
+
+あー、手形が残ってる……
+
+Talk レティシア
+ジャド！
+Wait 0.5
+起こすのに、こんな強くお尻叩く事ないでしょ！！
+
+Talk レティシア 哀 赤面
+こんなお尻、他人に見られたら
+恥ずかしいじゃない……
+
+Talk ジャド 驚き
+普段から、そんな格好して
+何言ってんだよ……
+
+Talk ジャド 苦笑
+それに、手形がイヤなら判らない様に
+尻を真っ赤に染めてやろうか？
+
+Talk タマ 伏し目
+そ、それは……
+
+Talk ジャド 笑顔
+まぁ、その程度の跡なら、人通りが多くなる前には
+引いてるだろうよ
+
+Talk レティシア
+（それまで、人が通りかかりませんように……）
+
+Talk レティシア 顔通常 基本
+……ところでジャド、なんでラミアポリスに？
+
+その手紙、なんだか格式高そうな見た目だけど……
+
+Talk ジャド 通常
+そりゃそうだろ、差出人は領主の息子なんだから
+
+Talk レティシア
+へぇ……
+
+Talk レティシア 哀
+……って、領主の息子！？
+
+Talk タマ 苦しみ
+正真正銘の貴族じゃない！
+
+どうして、そんな相手からアンタに手紙が……？
+
+Talk ジャド 驚き
+あのなぁ、あの森は領主から正式に命じられた
+俺の所領だって、何度か言っただろうが
+
+盗賊団名乗ってるから、あんまり表に出れないが
+
+俺はこの地方の冒険者ギルドじゃ
+れっきとした幹部格……
+
+何かあれば、依頼で領主直々に
+呼び出される事だってある立場なんだよ
+
+Talk レティシア 哀
+はぁ……
+
+Talk タマ
+信じられない……
+
+Talk ジャド 不機嫌
+さもなきゃ、あんだけの人数抱えてられるか
+
+普段の見回りも、悪い奴が出入りしてないかとか……
+
+hidemsg time:0.3
+clearmsg type:all
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:out
+StartMove type:連続 wait:on
+Wait 1
+//
+StartBGM file:Ghouls
+Wait 1
+CreateUnit name:ゴブリン x:10 y:8 side:敵 level:1 
+CreateUnit name:ゴブリン x:10 y:10 side:敵 level:1 
+CreateUnit name:ゴブリン x:10 y:12 side:敵 level:1 
+CreateUnit name:ゴブリン x:13 y:11 side:敵 level:1 
+CreateUnit name:ゴブリン x:13 y:9 side:敵 level:1
+CreateUnit name:ゴブリン x:16 y:8 side:敵 level:1
+CreateUnit name:ゴブリン x:16 y:10 side:敵 level:1
+CreateUnit name:ゴブリン x:16 y:12 side:敵 level:1
+CreateUnit name:ゴブリン x:19 y:10 side:敵 level:1
+Wait 1
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:in
+StartMove type:連続 wait:on
+showmsg time:0.3
+Talk ジャド
+……こう言う、街道を行く奴等の邪魔をする
+悪い奴等の駆除だってやる訳だ
+
+Talk レティシア 哀
+ゴブリンの群れ！？　こんな所に……
+
+Talk ジャド
+領都から離れてるとは言え、
+こんな所にたむろされたら迷惑だな……
+
+どうせ大した相手じゃない
+二人とも、行けるか？
+
+Talk レティシア 怒
+この状況じゃ……やるしかないでしょ
+
+Talk タマ 通常
+ゴブリン程度なら、苦戦する相手じゃないし
+
+Talk ジャド 微笑み
+よっしゃ、いい答えだ
+
+それじゃ、ちゃっちゃと終わらせちまうか
+hidemsg time:0.3
+clearmsg type:all
+VictoryCondition victory:敵の全滅 defeat:味方の全滅
+ReadyMove
+SetMove layer:キャラクター time:0.3 fade:out
+StartMove type:同時 wait:on
+SetEvent side:ジャド隊 label:ゲームオーバー type:全滅
+SetEvent side:敵 label:ステージクリア type:全滅
+DeleteAllLayer
+Exit
+
+
+ステージクリア:
+AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:0
+CharaLayer name:キャラクター
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 - 60) alpha:1 微笑み
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:in
+StartMove type:連続 wait:on
+Talk ジャド
+いよっと、これで全部か
+
+Talk レティシア
+ゴブリンがこんなにも……
+
+近くに巣があるのかしら？
+
+Talk ジャド 不機嫌
+気になる所ではあるが、
+そいつは俺達の仕事じゃない
+
+場所だけ覚えておいて、ギルドに
+一緒に報告しておけばそれでいいだろ
+
+Talk タマ
+領主様に呼び出されてる身だものね
+
+Talk ジャド 微笑み
+もう少し歩けば、ラミアポリスが見えてくる
+
+やる事すまして、さっさと休むとしようや
+
+hidemsg time:0.3
+clearmsg type:all
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
+ClearLayer name:キャラクター
+Goto エピローグ
+Exit
+
+エピローグ:
+AddLayer name:背景 alpha:1 level:0
+CharaLayer name:キャラクター
+SetImg img:湯舟 size:just name:湯舟 layer:背景
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 裸 赤面
+SetChara name:レティシア x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1 + 40) alpha:1 裸 赤面 怒
+SetChara name:タマ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3 - 120) alpha:1 ポロリ 下半身 舌打ち
+Wait 1
+StartBGM file:橙
+Wait 0.5
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+showmsg time:0.3
+Talk ジャド
+いやぁー、極楽極楽……
+
+やっぱ都会の宿は風呂が広くていいねぇ……
+
+Playsound file:間抜け4
+Wait 0.8
+Talk タマ
+ちょっと、こんな事してる場合？
+
+Talk レティシア
+早いとこ、領主様に会いに
+行った方がいいんじゃないの……？
+
+Talk ジャド 驚き
+バカ言え、よくよく考えて見ろよ
+
+俺たちゃ軽装のまま、街道を歩いてきたんだぞ
+
+当然足は汚れて、露出の多い身体も
+砂埃、土埃にまみれてるわけだ
+
+そんな恰好のまま、謁見に向かったら
+それこそ失礼だろうが
+
+Talk タマ 伏し目
+それはそうだけど……
+Wait 0.5
+Playsound file:間抜け4
+Wait 0.8
+Talk タマ 舌打ち
+……じゃあ、この手は何？
+
+Talk ジャド 赤面
+大事な物事の前には
+リラックスも必要だろ？
+
+ここはベッドも大きいからな
+
+夜に備えて、先端までしっかり洗わなきゃな
+
+Talk レティシア 怒り
+このぉ……
+
+Playsound file:間抜け4
+Wait 0.8
+Talk ？？？
+ハハハ……
+
+悪いが、それは用事が終わってからにしてくれるかな
+
+Talk タマ 苦しみ
+えっ……？
+
+Talk ジャド 苦笑
+あらま、ずいぶんとお早い到着で……
+
+SetChara name:ニルス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) y:120 alpha:1 裸 照れ
+ReadyMove
+SetMove layer:キャラクター time:1 x:-200
+StartMove type:同時 wait:on
+Talk ？？？
+いきなり呼び出したのはこちらだからな
+
+来てくれてありがとう、ジャド
+
+Talk レティシア 哀
+もしかして、この人が……
+
+Talk ジャド 微笑み
+いよぅ、久しぶり
+Wait 0.6
+御曹司どの……
+
+hidemsg time:0.3
+clearmsg type:all
+Wait 0.8
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:連続 wait:on
+DeleteAllLayer
+clearmsg
+Continue ルドニア戦記_02.srceve
+Exit

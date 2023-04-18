@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:df2b4559995ebcbb0291433e8c4b796b:f3fe94dd9f68380d8467b4bfa71d675c:6a144fbdfcf29fa3c1fcaa2722449915$ -->
+<TextureAtlas imagePath="chara_6.png" width="272" height="1204">
+    <SubTexture name="少女_魔女っ子_赤" x="1" y="1" width="270" height="600"/>
+    <SubTexture name="少女_魔女っ子_青" x="1" y="603" width="270" height="600"/>
+</TextureAtlas>

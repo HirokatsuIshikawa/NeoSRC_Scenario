@@ -1,0 +1,20 @@
+﻿name:盗賊頭
+nickname:盗賊頭
+type:立ち絵
+x:124,	y:164
+ボディ, 	盗賊_A, 	0
+basic:ボディ
+
+name:盗賊
+nickname:盗賊
+type:立ち絵
+x:124,	y:164
+ボディ, 	盗賊_B, 	0
+basic:ボディ
+
+name:破落戸
+nickname:破落戸
+type:立ち絵
+x:136,	y:164
+ボディ, 	戦士_A, 	0
+basic:ボディ
