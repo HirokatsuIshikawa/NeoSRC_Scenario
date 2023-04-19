@@ -40,6 +40,17 @@ Return
 SetImg img:$引数(0) size:fill name:背景 layer:背景 alpha:1
 Return
 
+背景変更:
+SetImg img:$引数(0) size:fill name:新背景 layer:背景 alpha:0
+ReadyMove
+SetMove name:新背景 time:$引数(1) fade:in
+SetMove name:背景 time:0 alpha:0
+StartMove type:連続 wait:on
+RemoveImg name:背景
+ChangeImgName before:新背景 after:背景
+Return
+
+
 黒幕エフェクトセット:
 SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
 Return
