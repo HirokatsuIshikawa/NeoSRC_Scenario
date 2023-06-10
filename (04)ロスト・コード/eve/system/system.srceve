@@ -124,7 +124,13 @@ Return
 ReadyMove
 SetMove layer:キャラクター time:0.5 fade:in
 StartMove type:連続 wait:on
-showmsg time:0.3
+Return
+
+
+キャラ単体表示:
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:in
+StartMove type:連続 wait:on
 Return
 
 キャラレイヤー移動:

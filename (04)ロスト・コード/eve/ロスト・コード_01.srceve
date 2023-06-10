@@ -64,6 +64,9 @@ ClearLayer name:背景
 //
 Call 背景セット 培養室
 Call 場面初期表示
+Call プレイヤー位置計算加算 1 0
+SetChara name:ビーモス x:$変数(プレイヤー位置) alpha:0
+Call キャラ単体表示 ビーモス
 Wait 1
 Talk ビーモス
 モスモス、次っ
