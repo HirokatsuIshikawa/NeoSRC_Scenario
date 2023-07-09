@@ -129,11 +129,23 @@ Talk 戦闘員
 Talk ビーモス
 なに、襲撃者！？　動力装置を壊されたでモス！？
 
-いったいどこのどいつが……
+いったいどこのどいつでモスか！？
 
-とにかく、その侵入者とやらを
-排除するでモス！！
+絶対許さんでモス！！
 
+Call メッセージ消去
+Wait 1
+Call 場面切り替え ステージ開始
+Exit
+
+ステージ開始:
+StopBGM
+LoadMap file:秘密工場_A.map
+//
+VictoryCondition victory:敵の全滅 defeat:ジャドの敗北
+//
+Call 初期マップ表示
+StartBGM file:Ghouls
 Talk ジャド
 ……よし、これで施設の機能は止まったか
 

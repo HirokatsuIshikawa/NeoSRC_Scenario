@@ -112,6 +112,30 @@ SE:
 PlaySound file:$args(0)
 Return
 
+メッセージ消去:
+hidemsg time:0.3
+clearmsg type:all
+Return
+
+場面切り替え:
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:同時 wait:on
+clearmsg type:all
+DeleteLayer name:背景
+ClearLayer name:キャラクター
+Wait 0.6
+Goto $args(0)
+Return
+
+初期マップ表示:
+ReadyMove
+SetMove layer:キャラクター alpha:0
+SetMove layer:エフェクト time:0.3 fade:out
+StartMove type:同時 wait:on
+Return
+
+
 マップ表示:
 hidemsg time:0.3
 clearmsg type:all
