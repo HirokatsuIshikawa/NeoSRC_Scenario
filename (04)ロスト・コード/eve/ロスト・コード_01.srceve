@@ -12,6 +12,7 @@ Call ポジション初期設定
 Call ベースレイヤーセット
 Call 背景セット 古の宇宙
 Call 黒幕エフェクトセット
+Call BGM dark-theme
 //
 //テロップセット
 //
@@ -21,47 +22,51 @@ Telop
 //フェードイン
 //
 ReadyMove
-SetMove layer:エフェクト time:0.7 alpha:0.2
+SetMove layer:エフェクト time:3 alpha:0.2
 StartMove type:同時 wait:on
 遥かなる昔、世界が闇の中に
 数多もの光を浮かべていた頃
 Wait 1
-神々は世界に人間や動物など
-数多の生命を創造し、その繁栄を見守っていた
-Wait 1
-しかし、力をつけすぎた命は
-さらなる繁栄を求め争いをはじめ
-Wait 1
-結果、侵すべきでない他の命の領域をも支配せんとし
-争いは神の手でも収められないほど拡大していく
-Wait 1
+神々は世界に数多の生命を創造し
+その繁栄を見守っていた
+
 ClearTelop
 Call 背景変更 宇宙爆発 1
-そして、その争いにより世界のすべてが破壊されようとした時
+しかし、力をつけすぎた命は
+さらなる繁栄の為に侵すべきでない領域に手を出し
 Wait 1
-神はその過ちを正す為、世界を絶つための剣を解き放ち
-闇ごと世界を切り裂いた
-Wait 1
-Call 背景変更 封界儀 1
-Wait 1
-その時、絶たれて欠片となった世界は
-それぞれが『スフィア』という名の神遺物と形を変え
-Wait 1
-その中では、時の止まったままの世界が眠り続けているという
+何時しか、それは神々にも制する事が出来ない
+大きな争いへと姿を変え、数多の命が消えて行った
+
+ClearTelop
+Call 背景変更 彗星 1
+神は過ちを正すため、世界を絶つための力を解き放ち
+その力は世界をいくつもの欠片に引き裂いたと言う……
+
+ClearTelop
+Call 背景変更 新たな世界 1
+その後、欠片となった世界は
+再び世界の形を成して……
+Wait 0.8
+終には、新たな命達が生きる
+この混沌の世界が生み出されたと伝えられている
+
+ClearTelop
+EndTelop
 Wait 1
 //
 //場面転換
 //
 ReadyMove
-SetMove layer:エフェクト time:0.5 fade:in
+SetMove layer:エフェクト time:3 fade:in
 StartMove type:連続 wait:on
-Wait 0.5
-ClearTelop
-EndTelop
 ClearLayer name:背景
+StopBGM
+Wait 1
 //
 //背景セット
 //
+Call BGM Crazy-Halloween-Night
 Call 背景セット 培養室
 Call 場面初期表示
 Call プレイヤー位置計算加算 1 0
@@ -71,6 +76,9 @@ Wait 1
 Talk ビーモス
 モスモス、次っ
 
+Call SE ビーム砲2
+flash time:0.3
+wait 1
 Call プレイヤー位置計算加算 3 0
 SetChara name:イビルブルー x:$変数(プレイヤー位置) alpha:0
 Call キャラ単体表示 イビルブルー
@@ -98,24 +106,43 @@ ReadyMove
 SetMove name:培養液内 time:1 alpha:1
 SetMove chara:タマ time:1 alpha:1
 StartMove type:同時 wait:on
+Talk ？？？
+……！
+
+Call SE 近接
+Wait 0.5
+Call SE 近接
+Wait 0.5
+Call SE 近接
+Wait 1
 Talk ビーモス
 おんやぁ～……？　このゴミ、まだ動くでモス
 
 全部、処分済みと聞いてたでモスが……
 いい加減な報告しやがってでモス
 
-……まぁ、いいでモス
+Talk ？？？
+……！
 
-どうせ潰しちゃうでモス
+Talk ビーモス
+コイツ、命乞いのつもりでモスか？
 
-この程度の貧弱なゴミなら
-動こうが動くまいが変わらないでモス
+……ダメでモスよー
+
+お前程度の貧弱なゴミなら
+動こうが動くまいが、変わらないでモス
 
 そんじゃあ……戦闘員製造マシン
 スイッチ、オ～……
 
+StopBGM
+Call SE 爆発1
+flash time:0.3 color:0xFF4444
+Shake x:20 y:0
+wait 1
 モスっ！？
-
+Wait 1
+Call BGM Ghouls
 な、なんでモス！？
 
 ReadyMove
@@ -127,10 +154,15 @@ Talk 戦闘員
 キーッ！！
 
 Talk ビーモス
-なに、襲撃者！？　動力装置を壊されたでモス！？
+なに、襲撃者！？
+Wait 0.5
+動力装置を壊されたでモス！？
 
 いったいどこのどいつでモスか！？
+そんな大それた事をやるヤツは！？
 
+おのれ～……
+Wait 0.3
 絶対許さんでモス！！
 
 Call メッセージ消去
@@ -164,7 +196,7 @@ Talk ビーモス
 ……って、ソイルリングでモス？
 
 Talk ジャド
-インセクター……か
+インセクター……
 
 お前がここの親玉か
 

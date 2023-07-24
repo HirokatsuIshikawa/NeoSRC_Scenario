@@ -1,0 +1,72 @@
+スタート:
+//
+//初期設定
+//
+PlayerSideName さくらチーム
+RegistGenericUnit name:ケイブガード lv:1 cost:3
+RegistGenericUnit name:ワイルドランナー lv:1 cost:3
+Goto ステージ開始
+Exit
+
+ステージ開始:
+StopBGM
+LoadMap file:ゲンシ平原.map
+//LoadMap file:新しいマップ_L.map
+//LoadMap file:新しいマップ_S.map
+//
+JoinCommander name:大道寺知世 Lv:1 
+SetCommander name:大道寺知世 sidename:さくらチーム
+VictoryCondition victory:敵の全滅,本拠地の占拠 defeat:味方の全滅
+//
+CreateUnit name:木之本桜 x:5 y:10 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太 x:4 y:9 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太 x:5 y:8 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:友永勇太(ベーシック) x:6 y:9 side:コクエン隊 level:3 anime:0 join:1
+CreateUnit name:友永勇太(ベーシック) x:5 y:8 side:コクエン隊 level:3 anime:0 join:1
+CreateUnit name:木之本桜 x:8 y:10 side:コクエン隊 level:3 anime:0
+CreateUnit name:高町なのは x:4 y:11 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:高町なのは x:7 y:11 side:コクエン隊 level:3 anime:0
+CreateUnit name:ユーノ・スクライア x:5 y:12 side:さくらチーム level:3 anime:0 join:1
+CreateUnit name:ユーノ・スクライア x:8 y:12 side:コクエン隊 level:3 anime:0
+CreateUnit name:ケイブガード x:4 y:13 side:さくらチーム level:3 anime:0
+CreateUnit name:ケイブガード x:7 y:13 side:コクエン隊 level:3 anime:0
+CreateUnit name:ワイルドランナー x:5 y:14 side:さくらチーム level:3 anime:0
+CreateUnit name:ワイルドランナー x:8 y:14 side:コクエン隊 level:3 anime:0
+CreateUnit name:ポテトン x:4 y:15 side:さくらチーム level:3 anime:0
+CreateUnit name:ポテトン x:7 y:15 side:コクエン隊 level:3 anime:0
+//
+CreateUnit name:エレクトロショッカー x:11 y:10 side:さくらチーム level:3 anime:0
+CreateUnit name:エレクトロショッカー x:14 y:10 side:コクエン隊 level:3 anime:0
+CreateUnit name:ブッシュシューター x:10 y:11 side:さくらチーム level:3 anime:0
+CreateUnit name:ブッシュシューター x:13 y:11 side:コクエン隊 level:3 anime:0
+CreateUnit name:ゼロハチアーミー x:11 y:12 side:さくらチーム level:3 anime:0
+CreateUnit name:ゼロハチアーミー x:14 y:12 side:コクエン隊 level:3 anime:0
+CreateUnit name:スライム x:10 y:13 side:さくらチーム level:3 anime:0
+CreateUnit name:スライム x:13 y:13 side:コクエン隊 level:3 anime:0
+CreateUnit name:マシンキャバリー x:11 y:14 side:さくらチーム level:3 anime:0
+CreateUnit name:マシンキャバリー x:14 y:14 side:コクエン隊 level:3 anime:0
+CreateUnit name:ポテドン x:10 y:15 side:さくらチーム level:3 anime:0
+CreateUnit name:ポテドン x:13 y:15 side:コクエン隊 level:3 anime:0
+//
+CreateUnit name:弾幕妖精 x:17 y:10 side:さくらチーム level:3 anime:0
+CreateUnit name:弾幕妖精 x:20 y:10 side:コクエン隊 level:3 anime:0
+CreateUnit name:ロッドアタッカー x:16 y:11 side:さくらチーム level:3 anime:0
+CreateUnit name:ロッドアタッカー x:19 y:11 side:コクエン隊 level:3 anime:0
+CreateUnit name:ヤイバ x:17 y:12 side:さくらチーム level:3 anime:0
+CreateUnit name:ヤイバ x:20 y:12 side:コクエン隊 level:3 anime:0
+CreateUnit name:ディッキー x:16 y:13 side:さくらチーム level:3 anime:0
+CreateUnit name:ディッキー x:19 y:13 side:コクエン隊 level:3 anime:0
+CreateUnit name:キャノンレイダー x:17 y:14 side:さくらチーム level:3 anime:0
+CreateUnit name:キャノンレイダー x:20 y:14 side:コクエン隊 level:3 anime:0
+CreateUnit name:グランモール x:16 y:15 side:さくらチーム level:3 anime:0
+CreateUnit name:グランモール x:19 y:15 side:コクエン隊 level:3 anime:0
+CreateUnit name:闇雲ミズチ x:16 y:16 side:さくらチーム level:3 anime:0
+CreateUnit name:闇雲ミズチ x:19 y:16 side:コクエン隊 level:3 anime:0
+//SetEvent side:コクエン隊 label:コクエン制圧 type:制圧
+//SetEvent unit:木之本桜 label:さくら制圧２ type:制圧 eventId:となりの鉱山
+//SetEvent unit:木之本桜 label:さくら制圧 type:制圧
+//
+StartBGM file:BGM/game_maoudamashii_1_battle24.mp3 vol:0.5 fade:0.5
+//ClassChange name:高町なのは change:木之本桜 side:さくらチーム
+DeleteAllLayer
+Exit
