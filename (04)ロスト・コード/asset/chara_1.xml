@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:3e5b1d48bfcd366c41c0d14d3622f67c:cef626f1da6a1ac31b66cf5a91be2b5a:27966351b682d3170414d32f0e510cd1$ -->
+<!-- $TexturePacker:SmartUpdate:86ba07676c5777a14e7bd5b565d31ca8:893d0933827ccb0d1890dd21baf9d37f:27966351b682d3170414d32f0e510cd1$ -->
 <TextureAtlas imagePath="chara_1.png" width="2048" height="2048">
+    <SubTexture name="ヴァレリアス" x="1" y="1" width="593" height="900"/>
     <SubTexture name="カイル_口_開大" x="2024" y="1985" width="23" height="21" frameX="-154" frameY="-97" frameWidth="379" frameHeight="900"/>
     <SubTexture name="カレン_妊婦" x="1035" y="1805" rotated="true" width="791" height="237" frameX="-37" frameY="0" frameWidth="304" frameHeight="800"/>
     <SubTexture name="カレン_表情_通常" x="1949" y="1923" width="81" height="59" frameX="-129" frameY="-50" frameWidth="304" frameHeight="800"/>
@@ -17,10 +18,9 @@
     <SubTexture name="ブフルス_表情_笑顔" x="1889" y="1923" rotated="true" width="58" height="60" frameX="-228" frameY="-65" frameWidth="443" frameHeight="1000"/>
     <SubTexture name="リィル" x="1182" y="1" width="553" height="900"/>
     <SubTexture name="ルーク_照れ" x="1996" y="1985" rotated="true" width="26" height="62" frameX="-153" frameY="-77" frameWidth="360" frameHeight="760"/>
+    <SubTexture name="ロヴァン" x="594" y="903" width="585" height="900"/>
     <SubTexture name="ロリ_悲しみ涙目" x="2037" y="1823" rotated="true" width="9" height="79" frameX="-116" frameY="-131" frameWidth="300" frameHeight="400"/>
     <SubTexture name="ロリ_悲しみ目" x="2037" y="1904" rotated="true" width="9" height="79" frameX="-116" frameY="-131" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="ロヴァン" x="594" y="903" width="585" height="900"/>
-    <SubTexture name="ヴァレリアス" x="1" y="1" width="593" height="900"/>
     <SubTexture name="女悪魔_口_すぼみ" x="2037" y="1805" rotated="true" width="10" height="16" frameX="-208" frameY="-112" frameWidth="484" frameHeight="850"/>
     <SubTexture name="少女_オーバーオール" x="1828" y="1805" rotated="true" width="207" height="116" frameX="-86" frameY="-117" frameWidth="270" frameHeight="600"/>
     <SubTexture name="戦士_A" x="1737" y="1" width="307" height="900"/>

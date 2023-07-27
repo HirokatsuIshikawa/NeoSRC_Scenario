@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:3e5b1d48bfcd366c41c0d14d3622f67c:cef626f1da6a1ac31b66cf5a91be2b5a:27966351b682d3170414d32f0e510cd1$ -->
+<!-- $TexturePacker:SmartUpdate:86ba07676c5777a14e7bd5b565d31ca8:893d0933827ccb0d1890dd21baf9d37f:27966351b682d3170414d32f0e510cd1$ -->
 <TextureAtlas imagePath="chara_2.png" width="2046" height="2048">
     <SubTexture name="エルフ_表情_怒" x="1248" y="1805" width="189" height="80" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
     <SubTexture name="エルフ_追加_ボテ腹" x="1248" y="1887" rotated="true" width="182" height="160" frameX="-181" frameY="-255" frameWidth="467" frameHeight="900"/>

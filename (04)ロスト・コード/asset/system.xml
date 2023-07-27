@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:2686e6b12f9c2e5ceac494f8c54c46a1:93156d154668777717a5bfed785e31f5:75e730636da1f75148defc1997c875c7$ -->
+<!-- $TexturePacker:SmartUpdate:50ce10b5c4124bf2d7dc1571162a6113:93156d154668777717a5bfed785e31f5:75e730636da1f75148defc1997c875c7$ -->
 <TextureAtlas imagePath="system.png" width="256" height="1720">
     <SubTexture name="backimg" x="249" y="658" width="4" height="4"/>
     <SubTexture name="battleback_bottom" x="1" y="99" width="192" height="48"/>
@@ -8,43 +8,43 @@
     <SubTexture name="battleback_top" x="1" y="1" width="192" height="96"/>
     <SubTexture name="btn_Act" x="191" y="219" rotated="true" width="64" height="96"/>
     <SubTexture name="btn_Atk" x="189" y="317" rotated="true" width="64" height="96"/>
-    <SubTexture name="btn_base" x="131" y="1137" width="96" height="64"/>
+    <SubTexture name="btn_base" x="187" y="415" rotated="true" width="64" height="96"/>
     <SubTexture name="btn_base_b" x="117" y="1567" width="64" height="64"/>
-    <SubTexture name="btn_base_color" x="1" y="339" width="128" height="80"/>
-    <SubTexture name="btn_base_w" x="1" y="1159" width="96" height="64"/>
+    <SubTexture name="btn_base_color" x="1" y="257" width="128" height="80"/>
+    <SubTexture name="btn_base_w" x="186" y="513" rotated="true" width="64" height="96"/>
     <SubTexture name="btn_bgm" x="1" y="1621" width="64" height="64"/>
-    <SubTexture name="btn_chara" x="1" y="421" width="128" height="80"/>
+    <SubTexture name="btn_chara" x="1" y="339" width="128" height="80"/>
     <SubTexture name="btn_close" x="220" y="1479" rotated="true" width="32" height="96"/>
-    <SubTexture name="btn_commander" x="131" y="1203" width="96" height="64"/>
-    <SubTexture name="btn_End" x="187" y="415" rotated="true" width="64" height="96"/>
-    <SubTexture name="btn_event" x="1" y="503" width="128" height="80"/>
-    <SubTexture name="btn_execution" x="1" y="1225" width="96" height="64"/>
-    <SubTexture name="btn_fly" x="130" y="1269" width="96" height="64"/>
-    <SubTexture name="btn_getpoint" x="1" y="1291" width="96" height="64"/>
-    <SubTexture name="btn_info_base" x="130" y="1335" width="96" height="64"/>
-    <SubTexture name="btn_intermission_base" x="1" y="585" width="128" height="80"/>
-    <SubTexture name="btn_intermission_commander" x="1" y="667" width="128" height="80"/>
-    <SubTexture name="btn_intermission_generic" x="1" y="749" width="128" height="80"/>
-    <SubTexture name="btn_landing" x="1" y="1357" width="96" height="64"/>
+    <SubTexture name="btn_commander" x="183" y="611" rotated="true" width="64" height="96"/>
+    <SubTexture name="btn_End" x="182" y="709" rotated="true" width="64" height="96"/>
+    <SubTexture name="btn_event" x="1" y="421" width="128" height="80"/>
+    <SubTexture name="btn_execution" x="131" y="807" width="96" height="64"/>
+    <SubTexture name="btn_fly" x="131" y="873" width="96" height="64"/>
+    <SubTexture name="btn_getpoint" x="131" y="939" width="96" height="64"/>
+    <SubTexture name="btn_info_base" x="131" y="1005" width="96" height="64"/>
+    <SubTexture name="btn_intermission_base" x="1" y="503" width="128" height="80"/>
+    <SubTexture name="btn_intermission_commander" x="1" y="585" width="128" height="80"/>
+    <SubTexture name="btn_intermission_generic" x="1" y="667" width="128" height="80"/>
+    <SubTexture name="btn_landing" x="131" y="1071" width="96" height="64"/>
     <SubTexture name="btn_list_main" x="179" y="225" width="6" height="24"/>
     <SubTexture name="btn_list_sub" x="179" y="251" width="6" height="24"/>
-    <SubTexture name="btn_listload" x="130" y="1401" width="96" height="64"/>
-    <SubTexture name="btn_listsave" x="1" y="1423" width="96" height="64"/>
-    <SubTexture name="btn_Menu" x="186" y="513" rotated="true" width="64" height="96"/>
-    <SubTexture name="btn_Move" x="183" y="611" rotated="true" width="64" height="96"/>
-    <SubTexture name="btn_newgame" x="1" y="1489" width="96" height="64"/>
-    <SubTexture name="btn_next" x="1" y="831" width="128" height="80"/>
-    <SubTexture name="btn_operation" x="122" y="1467" width="96" height="64"/>
-    <SubTexture name="btn_Pass" x="182" y="709" rotated="true" width="64" height="96"/>
-    <SubTexture name="btn_product" x="1" y="913" width="128" height="80"/>
-    <SubTexture name="btn_QuickLoad" x="131" y="807" width="96" height="64"/>
-    <SubTexture name="btn_Reset" x="131" y="873" width="96" height="64"/>
-    <SubTexture name="btn_Return" x="131" y="939" width="96" height="64"/>
-    <SubTexture name="btn_save" x="1" y="995" width="128" height="80"/>
-    <SubTexture name="btn_Shop" x="1" y="257" width="128" height="80"/>
-    <SubTexture name="btn_Skill" x="131" y="1005" width="96" height="64"/>
-    <SubTexture name="btn_Strength" x="131" y="1071" width="96" height="64"/>
+    <SubTexture name="btn_listload" x="131" y="1137" width="96" height="64"/>
+    <SubTexture name="btn_listsave" x="1" y="1159" width="96" height="64"/>
+    <SubTexture name="btn_Menu" x="131" y="1203" width="96" height="64"/>
+    <SubTexture name="btn_Move" x="1" y="1225" width="96" height="64"/>
+    <SubTexture name="btn_newgame" x="130" y="1269" width="96" height="64"/>
+    <SubTexture name="btn_next" x="1" y="749" width="128" height="80"/>
+    <SubTexture name="btn_operation" x="1" y="1291" width="96" height="64"/>
+    <SubTexture name="btn_Pass" x="130" y="1335" width="96" height="64"/>
+    <SubTexture name="btn_product" x="1" y="831" width="128" height="80"/>
+    <SubTexture name="btn_QuickLoad" x="1" y="1357" width="96" height="64"/>
+    <SubTexture name="btn_Reset" x="130" y="1401" width="96" height="64"/>
+    <SubTexture name="btn_Return" x="1" y="1423" width="96" height="64"/>
+    <SubTexture name="btn_save" x="1" y="913" width="128" height="80"/>
+    <SubTexture name="btn_Shop" x="1" y="995" width="128" height="80"/>
+    <SubTexture name="btn_Skill" x="1" y="1489" width="96" height="64"/>
     <SubTexture name="btn_strength" x="1" y="1077" width="128" height="80"/>
+    <SubTexture name="btn_Strength" x="122" y="1467" width="96" height="64"/>
     <SubTexture name="btn_wide" x="121" y="1533" width="96" height="32"/>
     <SubTexture name="emptylistitem" x="200" y="1643" width="32" height="32"/>
     <SubTexture name="kake" x="157" y="257" width="16" height="16" frameX="0" frameY="-4" frameWidth="16" frameHeight="24"/>

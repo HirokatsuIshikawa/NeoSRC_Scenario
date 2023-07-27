@@ -147,7 +147,7 @@ Call BGM Ghouls
 
 ReadyMove
 SetMove name:培養液内 time:1 alpha:0
-SetMove chara:タマ time:1 alpha:0
+SetMove chara:タマ time:0.5 alpha:0
 StartMove type:同時 wait:on
 Call キャラ単体表示 イビルブルー
 Talk 戦闘員
@@ -177,15 +177,38 @@ LoadMap file:秘密工場_A.map
 VictoryCondition victory:敵の全滅 defeat:ジャドの敗北
 //
 Call 初期マップ表示
-StartBGM file:Ghouls
+//SetImg anime:爆発 name:爆発 layer:エフェクト loop:0 frame:80
+SetMapPicture name:爆発 posX:8 posY:7 label:爆発 anime:爆発_ loop:0 frame:80 pivot:center
+//SetMapPicture name:キャラ posX:7 posY:7 label:爆発 img:戦士_A_U pivot:center
+Call SE 爆発1
+Wait 1
+DeleteMapPicture name:爆発
+StartBGM file:Set-Ablaze
+Wait 0.5
+CreateUnit name:ジャド x:8 y:12 side:ジャド隊 level:5 
+Wait 1
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 怒り
+ReadyMove
+SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0 x:$変数(プレイヤー表示位置)
+StartMove type:同時 wait:on
 Talk ジャド
 ……よし、これで施設の機能は止まったか
 
-まったく、こんな辺鄙な所に秘密基地なんか作りやがって……
+まったく、こんな辺鄙な所に
+秘密基地なんか作りやがって……
 
-この程度の規模じゃ、分捕り品も期待できなさそうだが……
-
-
+この程度の規模じゃ
+分捕り品も期待できなさそうだが……
+Call マップ表示
+Wait 1
+CreateUnit name:ビーモス x:8 y:5 side:ビーモス隊 level:1
+CreateUnit name:イビルブルー x:10 y:6 side:イビルブルー level:1
+CreateUnit name:イビルブルー x:6 y:6 side:イビルブルー level:1
+CreateUnit name:イビルブルー x:7 y:7 side:イビルブルー level:1
+CreateUnit name:イビルブルー x:9 y:7 side:イビルブルー level:1
+Wait 1
+Call キャラ表示
 Talk ビーモス
 いたーーーーっ！！
 
