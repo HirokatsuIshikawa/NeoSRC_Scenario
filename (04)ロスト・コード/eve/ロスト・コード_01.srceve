@@ -40,16 +40,19 @@ Wait 1
 
 ClearTelop
 Call 背景変更 彗星 1
-神は過ちを正すため、世界を絶つための力を解き放ち
-その力は世界をいくつもの欠片に引き裂いたと言う……
+世界の過ちを正すため
+神は世界を絶つための力を解き放ち
+
+その力は世界を引き裂き
+数多の世界の欠片へと変えたという
 
 ClearTelop
 Call 背景変更 新たな世界 1
 その後、欠片となった世界は
-再び世界の形を成して……
+再び世界の形を成し……
 Wait 0.8
 終には、新たな命達が生きる
-この混沌の世界が生み出されたと伝えられている
+混沌の世界が生み出されたと伝えられている
 
 ClearTelop
 EndTelop
@@ -116,9 +119,11 @@ Wait 0.5
 Call SE 近接
 Wait 1
 Talk ビーモス
-おんやぁ～……？　このゴミ、まだ動くでモス
+おんやぁ～……？
 
-全部、処分済みと聞いてたでモスが……
+こいつ、まだ動くでモス
+
+全部、処理済みと聞いてたでモスが……
 いい加減な報告しやがってでモス
 
 Talk ？？？
@@ -127,11 +132,18 @@ Talk ？？？
 Talk ビーモス
 コイツ、命乞いのつもりでモスか？
 
-……ダメでモスよー
+……でも、ダメでモスよー
 
-お前程度の貧弱なゴミなら
+お前程度の脆弱な素材なら
 動こうが動くまいが、変わらないでモス
 
+まぁ、心配しなくても
+すぐに楽になるでモスからねぇ～……
+
+Talk ？？？
+……！
+
+Talk ビーモス
 そんじゃあ……戦闘員製造マシン
 スイッチ、オ～……
 
@@ -181,11 +193,13 @@ Call 初期マップ表示
 SetMapPicture name:爆発 posX:8 posY:7 label:爆発 anime:爆発_ loop:0 frame:80 pivot:center
 //SetMapPicture name:キャラ posX:7 posY:7 label:爆発 img:戦士_A_U pivot:center
 Call SE 爆発1
+flash time:0.3 color:0xFF4444
+Shake x:20 y:0
 Wait 1
 DeleteMapPicture name:爆発
 StartBGM file:Set-Ablaze
 Wait 0.5
-CreateUnit name:ジャド x:8 y:12 side:ジャド隊 level:5 
+CreateUnit name:ジャド x:8 y:12 side:ジャド隊 level:1 join:1
 Wait 1
 SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 怒り
 ReadyMove
@@ -193,59 +207,67 @@ SetMove layer:キャラクター time:0.1 fade:in
 SetMove layer:キャラクター time:0 x:$変数(プレイヤー表示位置)
 StartMove type:同時 wait:on
 Talk ジャド
-……よし、これで施設の機能は止まったか
+……よし、これで施設の機能は止まったな
 
 まったく、こんな辺鄙な所に
-秘密基地なんか作りやがって……
+怪しい基地なんか作りやがって……
 
 この程度の規模じゃ
-分捕り品も期待できなさそうだが……
+分捕り品も期待できそうにないが……
+
 Call マップ表示
 Wait 1
 CreateUnit name:ビーモス x:8 y:5 side:ビーモス隊 level:1
-CreateUnit name:イビルブルー x:10 y:6 side:イビルブルー level:1
-CreateUnit name:イビルブルー x:6 y:6 side:イビルブルー level:1
-CreateUnit name:イビルブルー x:7 y:7 side:イビルブルー level:1
-CreateUnit name:イビルブルー x:9 y:7 side:イビルブルー level:1
+CreateUnit name:イビルブルー x:10 y:6 side:ビーモス隊 level:1
+CreateUnit name:イビルブルー x:6 y:6 side:ビーモス隊 level:1
+CreateUnit name:イビルブルー x:7 y:7 side:ビーモス隊 level:1
+CreateUnit name:イビルブルー x:9 y:7 side:ビーモス隊 level:1
 Wait 1
 Call キャラ表示
+SetChara name:ビーモス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:1
+ReadyMove
+SetMove layer:キャラクター time:0.3 x:-300
+StartMove type:同時 wait:on
 Talk ビーモス
 いたーーーーっ！！
 
 お前でモスか！？
-
+Wait 0.7
 俺っちの基地に攻撃を仕掛けてきたのは！？
 
 ……って、ソイルリングでモス？
 
 Talk ジャド
 インセクター……
-
+Wait 0.7
 お前がここの親玉か
 
 Talk ビーモス
 だったら、どうモス？
-
+Wait 0.7
 一大事だと思って駆けつけてみたら、
-どうやら、雌の匂いに惹かれてやってきた毛無しだったでモス
+どうやら、雌の匂いに惹かれてやってきた
+毛無しだったでモスか
 
 Talk ジャド
 あん……メスだと……？
 
 Talk ビーモス
-お生憎様、ここにいるのはゴミ同然の処分品
+お生憎様
+Wait 0.7
+ここにいるのはゴミ同然の処分品
+
 とんだ徒労でモス
 
 ……でも、お前は活きが良さそうでモスな
 
-これなら、良い素体になりそうでモス
-
-逃さないでモス！
+ふんふん、良い素体になりそうでモス……
 
 Talk ジャド
-あー、そう言うの間に合ってるんで……
+なに考えてるかは知らねぇが、
+テメェの悪巧みに付き合ってやる気はねぇ
 
-とりあえず、残った仕事を片付けさせてもらうぜ
+こっちも、仕事が残ってるんでな
 
 Talk ビーモス
 残った仕事ぉ……？
@@ -253,23 +275,39 @@ Talk ビーモス
 そりゃ、いったいなんでモスか？
 
 Talk ジャド
-無論……この施設の完全破壊だ
+盗賊の仕事となりゃ、決まってんだろ……！
 
+さぁ、覚悟しな！　ムシ野郎！！
+
+VictoryCondition victory:敵の全滅 defeat:ジャドの戦闘不能
+Call マップ表示
+SetEvent side:ジャド隊 label:ゲームオーバー type:全滅
+SetEvent side:ビーモス隊 label:ステージクリア type:全滅
+DeleteAllLayer
 Exit
 
 
 
 ステージクリア:
-
+Call マップイベントレイヤーセット
+ReadyMove
+SetMove layer:キャラクター time:0 x:-300
+StartMove type:同時 wait:on
+SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 怒り
+SetChara name:ビーモス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:1
+Call キャラ表示
 Talk ビーモス
 モスッ……
-
+Wait 0.3
 お前、まさかエクストレイト……！？
 
 Talk ジャド
-そう言う事だ
+へん、ネイキッドがこんなとこに
+殴り込みに来るとでも思ったか？
 
 Talk ビーモス
+ぐっ……
+Wait 0.3
 毛無しだと思って、油断したでモス
 
 ……だが、その顔は覚えたでモス
@@ -281,16 +319,34 @@ Talk ビーモス
 覚えておくでモス、この恨みは
 いずれ地獄から蘇ってでも晴らしてやるでモス……
 
+ClearMsg
 首領閣下……ばんざーいっ！！
 
+Call SE 爆発1
+flash time:0.3 color:0xFF4444
+Shake x:20 y:0
+ReadyMove
+SetMove chara:ビーモス time:0.6 fade:out
+StartMove type:同時 wait:on
+Wait 1
 Talk ジャド
 けっ、お決まりの自爆かよ……
 
 ……この先が、製造工場か
-
+Wait 1
+Call エピローグへ
+Exit
 
 エピローグ:
-
+StopBGM
+Call レイヤー横移動 キャラクター 0 0
+Call エピローグ開始準備
+Call BGM Crazy-Halloween-Night
+Call 背景セット 培養室
+Call 場面初期表示
+Call プレイヤー位置計算加算 1 0
+SetChara name:ジャド x:$変数(プレイヤー位置) alpha:0
+Call キャラ単体表示 ジャド
 Talk ジャド
 こりゃヒデェ……
 
@@ -299,15 +355,22 @@ Talk ジャド
 
 ……ん？
 
+Call プレイヤー位置計算加算 3 0
+SetChara name:タマ x:$変数(プレイヤー位置) alpha:0 ポロリ 下半身 号泣
+SetImg img:培養液内 alpha:0 x:$式($変数(プレイヤー位置) - 40) layer:キャラクター name:培養液内
+ReadyMove
+SetMove name:培養液内 time:1 alpha:1
+SetMove chara:タマ time:1 alpha:1
+StartMove type:同時 wait:on
 Talk タマ
 ………………
 
 Talk ジャド
-コイツは……生きてるのか？
+コイツは……生きてるみたいだな
 
-再加工された奴じゃねえ……
+それも、再加工された奴じゃねえ……
 
-生きたプレヒストリアンか……
+生きたプレヒストリアン……？
 
 Talk タマ
 うう……
@@ -315,25 +378,49 @@ Talk タマ
 Talk ジャド
 こいつは、とんだお宝だな……
 
-少々ションベン臭いが……
+少々汚れて臭いそうだが
+持ちかえるだけの価値はあるか
 
-持ちかえるだけの価値はあるな
-
-よし、もう少し寝ていてくれよ
-
+Call プレイヤー位置計算加算 1 0
+ReadyMove
+//SetMove chara:ジャド time:0.7 x:$式($変数(プレイヤー位置) + 200)
+SetMove chara:ジャド time:0.7 $x:300
+StartMove type:同時 wait:on
+Call SE ガラスが割れる1
+Wait 0.3
+ReadyMove
+SetMove name:培養液内 time:0.3 alpha:0
+StartMove type:同時 wait:on
+Wait 0.5
 Talk ジャド
-……これで良し、取るべきもんも全部頂いた
+よし、もう少し寝ていてくれよ……
 
+これで良し、取るべきもんも全部頂いた
+Wait 0.6
 それじゃ、お暇するとするか
 
-お前等も、迷わず成仏してくれよ
+ClearMsg
+……お前等も、迷わず成仏してくれよ
 
 Talk タマ
 ………………
 
-
-
-
+Call メッセージ消去
+ReadyMove
+SetMove layer:キャラクター time:1 alpha:0
+StartMove type:同時 wait:on
+Wait 1
+Call SE 爆発1
+flash time:0.3 color:0xFF4444
+Shake x:20 y:0
+SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:0
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+SetMove name:ホワイト time:1 fade:out
+StartMove type:連続 wait:on
+Call エピローグ終了 ロスト・コード_02.srceve
+Exit
 
 
 

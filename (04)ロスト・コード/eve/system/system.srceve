@@ -128,6 +128,35 @@ Wait 0.6
 Goto $args(0)
 Return
 
+エピローグへ:
+hidemsg time:0.3
+clearmsg type:all
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
+ClearLayer name:キャラクター
+Goto エピローグ
+Return
+
+エピローグ開始準備:
+AddLayer name:背景 alpha:1 level:0
+CharaLayer name:キャラクター
+Return
+
+エピローグ終了:
+hidemsg time:0.3
+clearmsg type:all
+Wait 0.8
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:連続 wait:on
+DeleteAllLayer
+clearmsg
+Continue $args(0)
+Return
+
+
 初期マップ表示:
 ReadyMove
 SetMove layer:キャラクター alpha:0

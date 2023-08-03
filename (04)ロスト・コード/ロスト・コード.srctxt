@@ -9,7 +9,7 @@
 会話タイプ:立ち絵
 レベル:ユニット
 インターミッション
-name:背景, type:img, img:住宅地
+name:背景, type:img, img:港区画
 name:資金, type:label,key:資金, x:10, y:10
 name:次へ, type:btn,action:NextStage, x:20, y:100
 name:一覧, type:btn,action:UnitList, x:180, y:100
