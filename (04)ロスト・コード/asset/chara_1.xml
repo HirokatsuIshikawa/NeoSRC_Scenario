@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:86ba07676c5777a14e7bd5b565d31ca8:893d0933827ccb0d1890dd21baf9d37f:27966351b682d3170414d32f0e510cd1$ -->
+<!-- $TexturePacker:SmartUpdate:cfa8e578a1227cdd5f05aaa7077ab09e:ae397d79a7991cdc6ebf1c47d3ec60b6:27966351b682d3170414d32f0e510cd1$ -->
 <TextureAtlas imagePath="chara_1.png" width="2048" height="2048">
     <SubTexture name="ヴァレリアス" x="1" y="1" width="593" height="900"/>
     <SubTexture name="カイル_口_開大" x="2024" y="1985" width="23" height="21" frameX="-154" frameY="-97" frameWidth="379" frameHeight="900"/>

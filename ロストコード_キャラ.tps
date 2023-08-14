@@ -497,6 +497,7 @@
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_微笑み.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_拒否.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_泣き顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_眠り.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_羞恥.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_舌打ち.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_苦しみ.png</key>

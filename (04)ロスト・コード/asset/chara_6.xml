@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:86ba07676c5777a14e7bd5b565d31ca8:893d0933827ccb0d1890dd21baf9d37f:27966351b682d3170414d32f0e510cd1$ -->
-<TextureAtlas imagePath="chara_6.png" width="2048" height="2048">
+<!-- $TexturePacker:SmartUpdate:cfa8e578a1227cdd5f05aaa7077ab09e:ae397d79a7991cdc6ebf1c47d3ec60b6:27966351b682d3170414d32f0e510cd1$ -->
+<TextureAtlas imagePath="chara_6.png" width="2048" height="2047">
     <SubTexture name="イビルアイ" x="465" y="803" width="445" height="800"/>
     <SubTexture name="イビルブルー" x="516" y="1" width="445" height="800"/>
     <SubTexture name="ウォリア" x="1" y="1" width="513" height="800"/>
-    <SubTexture name="エリス_表情_悩" x="1574" y="1942" rotated="true" width="45" height="72" frameX="-97" frameY="-60" frameWidth="270" frameHeight="600"/>
     <SubTexture name="エリス_表情_笑" x="1992" y="1880" rotated="true" width="51" height="70" frameX="-96" frameY="-59" frameWidth="270" frameHeight="600"/>
     <SubTexture name="エルフ_衣装_ドレス" x="1257" y="1311" rotated="true" width="758" height="270" frameX="-153" frameY="-142" frameWidth="467" frameHeight="900"/>
     <SubTexture name="エルフ_表情_基本" x="1919" y="1735" rotated="true" width="71" height="189" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
     <SubTexture name="カレン_服" x="1286" y="1" width="304" height="800"/>
-    <SubTexture name="ジュノ_ギャグ" x="1960" y="1998" width="67" height="49" frameX="-156" frameY="-150" frameWidth="418" frameHeight="800"/>
+    <SubTexture name="ジュノ_ギャグ" x="1933" y="1997" width="67" height="49" frameX="-156" frameY="-150" frameWidth="418" frameHeight="800"/>
     <SubTexture name="セシル_裸ポーズ赤面" x="803" y="1605" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
     <SubTexture name="セシル_裸赤面" x="990" y="1605" width="185" height="357" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
     <SubTexture name="タマ_パンツ" x="1660" y="1735" rotated="true" width="111" height="198" frameX="-79" frameY="-392" frameWidth="363" frameHeight="540"/>
     <SubTexture name="タマ_ブラ" x="1773" y="1735" rotated="true" width="144" height="197" frameX="-105" frameY="-179" frameWidth="363" frameHeight="540"/>
-    <SubTexture name="タマ_下半身" x="1668" y="1935" width="198" height="111" frameX="-79" frameY="-392" frameWidth="363" frameHeight="540"/>
-    <SubTexture name="ダンテ_楽" x="1175" y="1964" rotated="true" width="49" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
-    <SubTexture name="ダンテ_笑2" x="967" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-82" frameWidth="291" frameHeight="790"/>
-    <SubTexture name="ダンテ_考" x="1226" y="1964" rotated="true" width="49" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
+    <SubTexture name="タマ_下半身" x="1685" y="1935" width="198" height="111" frameX="-79" frameY="-392" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="ダンテ_楽" x="1334" y="1964" rotated="true" width="49" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
+    <SubTexture name="ダンテ_笑2" x="1126" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-82" frameWidth="291" frameHeight="790"/>
+    <SubTexture name="ダンテ_考" x="1385" y="1942" rotated="true" width="49" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
     <SubTexture name="ダンテ_裸" x="1257" y="803" rotated="true" width="790" height="213" frameX="-43" frameY="0" frameWidth="291" frameHeight="790"/>
     <SubTexture name="ダンテ_鎧" x="1257" y="1018" rotated="true" width="783" height="291" frameX="0" frameY="0" frameWidth="291" frameHeight="790"/>
-    <SubTexture name="ダンテ_驚" x="1019" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
+    <SubTexture name="ダンテ_驚" x="1178" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-79" frameWidth="291" frameHeight="790"/>
+    <SubTexture name="ナイト_小物_怒り" x="1986" y="1952" width="42" height="43" frameX="-163" frameY="0" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ナースロイド" x="963" y="1" width="321" height="800"/>
     <SubTexture name="ナース戦闘員" x="1" y="803" width="462" height="800"/>
-    <SubTexture name="ニルス_楽" x="1277" y="1964" rotated="true" width="49" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
-    <SubTexture name="ニルス_笑2" x="1071" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-60" frameWidth="292" frameHeight="760"/>
-    <SubTexture name="ニルス_考" x="1328" y="1964" rotated="true" width="49" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
-    <SubTexture name="ニルス_驚" x="1123" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ニルス_楽" x="1436" y="1942" rotated="true" width="49" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ニルス_笑2" x="1230" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-60" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ニルス_考" x="1487" y="1942" rotated="true" width="49" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ニルス_驚" x="1282" y="1964" rotated="true" width="50" height="72" frameX="-110" frameY="-57" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ニルス裸" x="1801" y="1" width="213" height="760" frameX="-43" frameY="0" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ベレー戦闘員" x="912" y="803" width="343" height="800"/>
     <SubTexture name="マリー_服赤面" x="1177" y="1605" width="163" height="357" frameX="-83" frameY="-43" frameWidth="300" frameHeight="400"/>
     <SubTexture name="マリー_裸" x="1342" y="1583" width="157" height="357" frameX="-89" frameY="-43" frameWidth="300" frameHeight="400"/>
     <SubTexture name="マリー_裸ポーズ赤面" x="1660" y="1583" rotated="true" width="357" height="150" frameX="-90" frameY="-43" frameWidth="300" frameHeight="400"/>
     <SubTexture name="マリー_裸赤面" x="1501" y="1583" width="157" height="357" frameX="-89" frameY="-43" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="マーク表情_哀" x="1868" y="1934" rotated="true" width="44" height="72" frameX="-94" frameY="-61" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="マーク表情_怒" x="913" y="1964" rotated="true" width="52" height="72" frameX="-94" frameY="-58" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="マーク表情_楽" x="1914" y="1934" rotated="true" width="44" height="72" frameX="-94" frameY="-60" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="マーク表情_睨" x="1621" y="1942" rotated="true" width="45" height="72" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク感情_絆創膏" x="2002" y="1997" rotated="true" width="44" height="47" frameX="-140" frameY="-5" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_お茶目" x="1933" y="1926" rotated="true" width="51" height="69" frameX="-94" frameY="-57" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_怒" x="1072" y="1964" rotated="true" width="52" height="72" frameX="-94" frameY="-58" frameWidth="218" frameHeight="600"/>
     <SubTexture name="マーク表情_笑" x="1992" y="1808" rotated="true" width="53" height="70" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="マーク表情_考" x="1478" y="1942" rotated="true" width="46" height="72" frameX="-92" frameY="-59" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="ヨハン_怒" x="1379" y="1942" rotated="true" width="48" height="72" frameX="-112" frameY="-61" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ヨハン_睨" x="1960" y="1952" width="72" height="44" frameX="-112" frameY="-61" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ヨハン_笑2" x="1526" y="1942" rotated="true" width="46" height="72" frameX="-112" frameY="-62" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ヨハン_驚" x="1429" y="1942" rotated="true" width="47" height="72" frameX="-111" frameY="-59" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ルーク_喜" x="803" y="1964" rotated="true" width="53" height="72" frameX="-145" frameY="-54" frameWidth="360" frameHeight="760"/>
+    <SubTexture name="マーク表情_笑2" x="907" y="1964" rotated="true" width="53" height="72" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_考" x="1637" y="1942" rotated="true" width="46" height="72" frameX="-92" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="ヨハン_怒" x="1538" y="1942" rotated="true" width="48" height="72" frameX="-112" frameY="-61" frameWidth="291" frameHeight="767"/>
+    <SubTexture name="ヨハン_楽" x="803" y="1964" rotated="true" width="44" height="73" frameX="-111" frameY="-62" frameWidth="291" frameHeight="767"/>
+    <SubTexture name="ヨハン_笑2" x="1885" y="1934" rotated="true" width="46" height="72" frameX="-112" frameY="-62" frameWidth="291" frameHeight="767"/>
+    <SubTexture name="ヨハン_驚" x="1588" y="1942" rotated="true" width="47" height="72" frameX="-111" frameY="-59" frameWidth="291" frameHeight="767"/>
+    <SubTexture name="ルーク_喜" x="962" y="1964" rotated="true" width="53" height="72" frameX="-145" frameY="-54" frameWidth="360" frameHeight="760"/>
     <SubTexture name="ルーク_考" x="1992" y="1735" rotated="true" width="53" height="71" frameX="-145" frameY="-54" frameWidth="360" frameHeight="760"/>
-    <SubTexture name="ルーク_逸" x="858" y="1964" rotated="true" width="53" height="72" frameX="-145" frameY="-54" frameWidth="360" frameHeight="760"/>
+    <SubTexture name="ルーク_逸" x="1017" y="1964" rotated="true" width="53" height="72" frameX="-145" frameY="-54" frameWidth="360" frameHeight="760"/>
+    <SubTexture name="ルーク_驚" x="849" y="1964" rotated="true" width="56" height="72" frameX="-145" frameY="-52" frameWidth="360" frameHeight="760"/>
     <SubTexture name="女奴隷_B" x="1592" y="1" width="207" height="800"/>
     <SubTexture name="女魔道士" x="1" y="1605" rotated="true" width="800" height="414"/>
 </TextureAtlas>

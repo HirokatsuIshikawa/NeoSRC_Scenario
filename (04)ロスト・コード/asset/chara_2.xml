@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:86ba07676c5777a14e7bd5b565d31ca8:893d0933827ccb0d1890dd21baf9d37f:27966351b682d3170414d32f0e510cd1$ -->
+<!-- $TexturePacker:SmartUpdate:cfa8e578a1227cdd5f05aaa7077ab09e:ae397d79a7991cdc6ebf1c47d3ec60b6:27966351b682d3170414d32f0e510cd1$ -->
 <TextureAtlas imagePath="chara_2.png" width="2046" height="2048">
     <SubTexture name="エルフ_表情_怒" x="1248" y="1805" width="189" height="80" frameX="-198" frameY="-58" frameWidth="467" frameHeight="900"/>
     <SubTexture name="エルフ_追加_ボテ腹" x="1248" y="1887" rotated="true" width="182" height="160" frameX="-181" frameY="-255" frameWidth="467" frameHeight="900"/>
@@ -16,9 +16,9 @@
     <SubTexture name="カイル_眉_下げ2" x="628" y="2028" width="76" height="17" frameX="-136" frameY="-62" frameWidth="379" frameHeight="900"/>
     <SubTexture name="カイル_眉_平坦" x="294" y="2028" width="69" height="19" frameX="-139" frameY="-57" frameWidth="379" frameHeight="900"/>
     <SubTexture name="カイル_鎧" x="1064" y="903" width="379" height="900"/>
-    <SubTexture name="タマ_羞恥" x="1937" y="1677" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
-    <SubTexture name="タマ_舌打ち" x="1937" y="1794" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
-    <SubTexture name="タマ_苦しみ" x="1937" y="1911" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_眠り" x="1937" y="1677" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_羞恥" x="1937" y="1794" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
+    <SubTexture name="タマ_舌打ち" x="1937" y="1911" width="95" height="115" frameX="-159" frameY="-57" frameWidth="363" frameHeight="540"/>
     <SubTexture name="ダイアナ_裸ポーズ" x="144" y="1805" rotated="true" width="366" height="221" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
     <SubTexture name="ダイアナ_裸ポーズ赤面" x="512" y="1805" rotated="true" width="366" height="221" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
     <SubTexture name="ダイアナ_裸赤面" x="880" y="1805" rotated="true" width="366" height="221" frameX="-57" frameY="-34" frameWidth="300" frameHeight="400"/>
