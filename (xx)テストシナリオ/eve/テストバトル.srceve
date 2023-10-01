@@ -10,7 +10,7 @@ Exit
 
 ステージ開始:
 StopBGM
-LoadMap file:ゲンシ平原.map
+LoadMap file:ゲンシ平原_3.map
 //LoadMap file:新しいマップ_L.map
 //LoadMap file:新しいマップ_S.map
 //
