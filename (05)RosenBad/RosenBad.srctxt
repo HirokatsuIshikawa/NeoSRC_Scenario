@@ -1,0 +1,11 @@
+マイユニット
+スタートファイル:RosenBad_Start.srceve
+セーブ名:RosenBad_{0}
+セーブ数:3
+会話タイプ:立ち絵
+レベル:ユニット
+インターミッション
+//背景
+name:背景, type:img, img:住宅地
+//ラベル
+name:資金, type:label,key:資金, x:10, y:10

@@ -1,0 +1,5 @@
+name:ビーモス
+action:毒液玉
+	createImg, name:爆弾 ,asset:PoisonBall, pivot:中心, color:0xFFFFFF, scale:2
+	call:投てき
+

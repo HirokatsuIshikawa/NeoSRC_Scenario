@@ -1,101 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:31ac2722caecc347d0ed491ecdd88111:fbc30da2144631e22165f63b89dd59a7:91c28632c464b18449dbbfbb3c82cb2a$ -->
-<TextureAtlas imagePath="unit.png" width="248" height="662">
-    <SubTexture name="accelgun" x="65" y="555" width="32" height="16"/>
-    <SubTexture name="Arrow" x="234" y="231" rotated="true" width="12" height="32" frameX="0" frameY="-2" frameWidth="32" frameHeight="16"/>
-    <SubTexture name="beam_001" x="181" y="1" width="32" height="32"/>
-    <SubTexture name="beam_002" x="215" y="1" width="32" height="32"/>
-    <SubTexture name="beam_003" x="181" y="35" width="32" height="32"/>
-    <SubTexture name="beamF_001" x="215" y="35" width="32" height="32"/>
-    <SubTexture name="beamF_002" x="181" y="69" width="32" height="32"/>
-    <SubTexture name="beamG_001" x="215" y="69" width="32" height="32"/>
-    <SubTexture name="beamG_002" x="181" y="103" width="32" height="32"/>
-    <SubTexture name="bombB_001" x="223" y="497" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombB_002" x="35" y="548" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombB_003" x="215" y="103" width="32" height="32"/>
-    <SubTexture name="bombB_004" x="181" y="137" width="32" height="32"/>
-    <SubTexture name="bombB_005" x="215" y="137" width="32" height="32"/>
-    <SubTexture name="bombB_006" x="161" y="267" width="32" height="32"/>
-    <SubTexture name="bombN_001" x="223" y="523" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombN_002" x="163" y="605" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombN_003" x="195" y="267" width="32" height="32"/>
-    <SubTexture name="bombN_004" x="161" y="301" width="32" height="32"/>
-    <SubTexture name="bombN_005" x="195" y="301" width="32" height="32"/>
-    <SubTexture name="bombN_006" x="127" y="327" width="32" height="32"/>
-    <SubTexture name="bombP_001" x="118" y="527" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombP_002" x="185" y="575" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombP_003" x="1" y="453" width="32" height="32"/>
-    <SubTexture name="bombP_004" x="35" y="453" width="32" height="32"/>
-    <SubTexture name="bombP_005" x="69" y="453" width="32" height="32"/>
-    <SubTexture name="bombP_006" x="125" y="459" width="32" height="32"/>
-    <SubTexture name="bombR_001" x="144" y="527" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombR_002" x="215" y="575" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombR_003" x="159" y="459" width="32" height="32"/>
-    <SubTexture name="bombR_004" x="193" y="459" width="32" height="32"/>
-    <SubTexture name="bombR_005" x="1" y="487" width="32" height="32"/>
-    <SubTexture name="bombR_006" x="35" y="487" width="32" height="32"/>
-    <SubTexture name="bombY_001" x="170" y="527" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombY_002" x="193" y="605" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="bombY_003" x="69" y="487" width="32" height="32"/>
-    <SubTexture name="bombY_004" x="121" y="493" width="32" height="32"/>
-    <SubTexture name="bombY_005" x="155" y="493" width="32" height="32"/>
-    <SubTexture name="bombY_006" x="189" y="493" width="32" height="32"/>
-    <SubTexture name="ccs_sword" x="228" y="429" width="16" height="32"/>
-    <SubTexture name="cr_standbomb" x="215" y="171" width="32" height="24"/>
-    <SubTexture name="Dagger" x="205" y="635" rotated="true" width="28" height="6" frameX="-5" frameY="-4" frameWidth="16" frameHeight="32"/>
-    <SubTexture name="FalconEdge" x="237" y="350" width="10" height="32" frameX="-3" frameY="0" frameWidth="16" frameHeight="32"/>
-    <SubTexture name="firespear" x="99" y="555" width="32" height="16"/>
-    <SubTexture name="flag_b" x="234" y="265" width="12" height="15" frameX="-20" frameY="-17" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="flag_r" x="191" y="635" width="12" height="15" frameX="-20" frameY="-17" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="frame_b" x="1" y="549" width="32" height="32"/>
-    <SubTexture name="frame_r" x="66" y="521" width="32" height="32"/>
-    <SubTexture name="heal" x="129" y="641" width="16" height="16"/>
-    <SubTexture name="icon_fly" x="226" y="350" width="9" height="9" frameX="-23" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_GargoyleU" x="102" y="573" rotated="true" width="31" height="32" frameX="0" frameY="-1" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_GoblinU" x="34" y="521" rotated="true" width="30" height="25" frameX="-4" frameY="-1" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_HobgoblinU" x="1" y="521" rotated="true" width="31" height="25" frameX="-4" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_Kobold(Default)U" x="195" y="335" rotated="true" width="29" height="24" frameX="-5" frameY="-2" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_OgreU" x="134" y="607" width="27" height="32" frameX="-2" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="M_OrcKingU" x="69" y="573" width="31" height="32" frameX="0" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="MagiaBow" x="103" y="453" width="20" height="32"/>
-    <SubTexture name="MagusDagger" x="191" y="652" rotated="true" width="28" height="8" frameX="-4" frameY="-4" frameWidth="16" frameHeight="32"/>
-    <SubTexture name="Poison" x="103" y="641" rotated="true" width="24" height="16"/>
-    <SubTexture name="PoisonBall" x="167" y="553" width="16" height="16"/>
-    <SubTexture name="rayB" x="169" y="571" rotated="true" width="14" height="24" frameX="0" frameY="-1" frameWidth="24" frameHeight="16"/>
-    <SubTexture name="ShadowSnap" x="196" y="527" width="24" height="24"/>
-    <SubTexture name="SparkBomb" x="222" y="549" width="24" height="24"/>
-    <SubTexture name="SpinFire" x="1" y="583" width="32" height="32"/>
-    <SubTexture name="StandardPod" x="165" y="635" width="24" height="24"/>
-    <SubTexture name="stone_rance" x="1" y="651" rotated="true" width="32" height="8"/>
-    <SubTexture name="toho_tama" x="147" y="641" width="16" height="16"/>
-    <SubTexture name="Trident" x="185" y="553" rotated="true" width="32" height="8"/>
-    <SubTexture name="umbrella" x="234" y="197" width="12" height="32"/>
-    <SubTexture name="ValkyrieSpear" x="185" y="563" rotated="true" width="32" height="8"/>
-    <SubTexture name="wall" x="102" y="607" width="30" height="32" frameX="0" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="weapon_shot" x="69" y="641" width="32" height="16"/>
-    <SubTexture name="weapon_stick" x="228" y="361" width="6" height="32" frameX="-1" frameY="0" frameWidth="8" frameHeight="32"/>
-    <SubTexture name="windcutter" x="1" y="617" width="32" height="32"/>
-    <SubTexture name="イビルブルーU" x="103" y="487" width="16" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="エルフU" x="229" y="282" width="17" height="32" frameX="-7" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="エルフ裸U" x="229" y="316" width="17" height="32" frameX="-7" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="ジャドU" x="227" y="463" width="20" height="32" frameX="-6" frameY="0" frameWidth="32" frameHeight="32"/>
+<!-- $TexturePacker:SmartUpdate:1078d1769a7e01343a08fc20f6e523ce:b40ed8f56eb7000d49bd88c80ca8def7:91c28632c464b18449dbbfbb3c82cb2a$ -->
+<TextureAtlas imagePath="unit.png" width="250" height="646">
+    <SubTexture name="accelgun" x="69" y="622" width="32" height="16"/>
+    <SubTexture name="Arrow" x="161" y="436" width="32" height="12" frameX="0" frameY="-2" frameWidth="32" frameHeight="16"/>
+    <SubTexture name="beam_001" x="127" y="327" width="32" height="32"/>
+    <SubTexture name="beam_002" x="1" y="554" width="32" height="32"/>
+    <SubTexture name="beam_003" x="181" y="74" width="32" height="32"/>
+    <SubTexture name="beamF_001" x="127" y="361" width="32" height="32"/>
+    <SubTexture name="beamF_002" x="1" y="588" width="32" height="32"/>
+    <SubTexture name="beamG_001" x="35" y="554" width="32" height="32"/>
+    <SubTexture name="beamG_002" x="181" y="108" width="32" height="32"/>
+    <SubTexture name="bombB_001" x="225" y="406" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombB_002" x="213" y="372" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombB_003" x="215" y="74" width="32" height="32"/>
+    <SubTexture name="bombB_004" x="127" y="395" width="32" height="32"/>
+    <SubTexture name="bombB_005" x="35" y="588" width="32" height="32"/>
+    <SubTexture name="bombB_006" x="215" y="108" width="32" height="32"/>
+    <SubTexture name="bombN_001" x="197" y="480" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombN_002" x="195" y="402" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombN_003" x="69" y="554" width="32" height="32"/>
+    <SubTexture name="bombN_004" x="69" y="588" width="32" height="32"/>
+    <SubTexture name="bombN_005" x="99" y="453" width="32" height="32"/>
+    <SubTexture name="bombN_006" x="99" y="487" width="32" height="32"/>
+    <SubTexture name="bombP_001" x="197" y="506" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombP_002" x="167" y="483" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombP_003" x="103" y="554" width="32" height="32"/>
+    <SubTexture name="bombP_004" x="103" y="588" width="32" height="32"/>
+    <SubTexture name="bombP_005" x="181" y="142" width="32" height="32"/>
+    <SubTexture name="bombP_006" x="215" y="142" width="32" height="32"/>
+    <SubTexture name="bombR_001" x="171" y="553" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombR_002" x="167" y="513" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombR_003" x="181" y="176" width="32" height="32"/>
+    <SubTexture name="bombR_004" x="215" y="176" width="32" height="32"/>
+    <SubTexture name="bombR_005" x="133" y="451" width="32" height="32"/>
+    <SubTexture name="bombR_006" x="133" y="485" width="32" height="32"/>
+    <SubTexture name="bombY_001" x="197" y="532" width="24" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombY_002" x="194" y="450" width="28" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="bombY_003" x="133" y="519" width="32" height="32"/>
+    <SubTexture name="bombY_004" x="137" y="553" width="32" height="32"/>
+    <SubTexture name="bombY_005" x="137" y="587" width="32" height="32"/>
+    <SubTexture name="bombY_006" x="180" y="210" width="32" height="32"/>
+    <SubTexture name="ccs_sword" x="161" y="300" width="16" height="32"/>
+    <SubTexture name="cr_standbomb" x="137" y="621" width="32" height="24"/>
+    <SubTexture name="Dagger" x="223" y="552" width="6" height="28" frameX="-5" frameY="-4" frameWidth="16" frameHeight="32"/>
+    <SubTexture name="FalconEdge" x="215" y="584" width="10" height="32" frameX="-3" frameY="0" frameWidth="16" frameHeight="32"/>
+    <SubTexture name="firespear" x="103" y="622" width="32" height="16"/>
+    <SubTexture name="flag_b" x="215" y="629" width="12" height="15" frameX="-20" frameY="-17" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="flag_r" x="229" y="622" width="12" height="15" frameX="-20" frameY="-17" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="frame_b" x="214" y="210" width="32" height="32"/>
+    <SubTexture name="frame_r" x="180" y="244" width="32" height="32"/>
+    <SubTexture name="heal" x="229" y="432" width="16" height="16"/>
+    <SubTexture name="icon_fly" x="215" y="618" width="9" height="9" frameX="-23" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="MagiaBow" x="1" y="622" rotated="true" width="32" height="20"/>
+    <SubTexture name="MagusDagger" x="167" y="543" rotated="true" width="28" height="8" frameX="-4" frameY="-4" frameWidth="16" frameHeight="32"/>
+    <SubTexture name="Poison" x="197" y="618" width="16" height="24"/>
+    <SubTexture name="PoisonBall" x="227" y="586" width="16" height="16"/>
+    <SubTexture name="rayB" x="171" y="631" width="24" height="14" frameX="0" frameY="-1" frameWidth="24" frameHeight="16"/>
+    <SubTexture name="ShadowSnap" x="171" y="579" width="24" height="24"/>
+    <SubTexture name="SparkBomb" x="197" y="558" width="24" height="24"/>
+    <SubTexture name="SpinFire" x="214" y="244" width="32" height="32"/>
+    <SubTexture name="StandardPod" x="171" y="605" width="24" height="24"/>
+    <SubTexture name="stone_rance" x="241" y="450" width="8" height="32"/>
+    <SubTexture name="toho_tama" x="227" y="604" width="16" height="16"/>
+    <SubTexture name="Trident" x="240" y="484" width="8" height="32"/>
+    <SubTexture name="umbrella" x="231" y="552" width="12" height="32"/>
+    <SubTexture name="ValkyrieSpear" x="240" y="518" width="8" height="32"/>
+    <SubTexture name="wall" x="180" y="278" rotated="true" width="32" height="30" frameX="0" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="weapon_shot" x="195" y="432" width="32" height="16"/>
+    <SubTexture name="weapon_stick" x="243" y="372" width="6" height="32" frameX="-1" frameY="0" frameWidth="8" frameHeight="32"/>
+    <SubTexture name="windcutter" x="214" y="278" width="32" height="32"/>
+    <SubTexture name="イビルブルーU" x="161" y="334" width="16" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="エルフU" x="161" y="198" width="17" height="32" frameX="-7" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="エルフ裸U" x="161" y="232" width="17" height="32" frameX="-7" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ガーゴイルU" x="179" y="310" rotated="true" width="32" height="29" frameX="-1" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ジャドU" x="127" y="429" rotated="true" width="32" height="20" frameX="-6" frameY="0" frameWidth="32" frameHeight="32"/>
     <SubTexture name="セシルU" x="161" y="168" width="18" height="28" frameX="-8" frameY="-4" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="タイランU" x="69" y="607" width="31" height="32" frameX="-1" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="タマU" x="100" y="521" width="16" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="タマU_2" x="133" y="553" rotated="true" width="32" height="16" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="バトルブルー" x="161" y="335" rotated="true" width="32" height="24"/>
-    <SubTexture name="ビーモスU" x="181" y="171" rotated="true" width="32" height="25" frameX="-4" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="ロヴァンU" x="35" y="578" width="32" height="32"/>
-    <SubTexture name="兵士ベース" x="35" y="646" rotated="true" width="32" height="15" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="戦士_A_U - コピー" x="135" y="571" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="戦士_A_U" x="135" y="571" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="爆発_001" x="161" y="198" width="71" height="67" frameX="-61" frameY="-48" frameWidth="192" frameHeight="192"/>
-    <SubTexture name="爆発_002" x="127" y="361" rotated="true" width="99" height="96" frameX="-49" frameY="-37" frameWidth="192" frameHeight="192"/>
+    <SubTexture name="タイガードU" x="179" y="341" rotated="true" width="32" height="25" frameX="-5" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="タイランU" x="99" y="521" rotated="true" width="32" height="31" frameX="-1" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="タマU" x="195" y="368" width="16" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="タマU_2" x="197" y="584" width="16" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ビーモスU" x="213" y="345" rotated="true" width="32" height="25" frameX="-4" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ボディベースU" x="167" y="450" rotated="true" width="25" height="31" frameX="0" frameY="-7" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="マッドクロウU" x="213" y="312" rotated="true" width="32" height="31" frameX="0" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ヤサブロウU" x="35" y="622" rotated="true" width="32" height="20" frameX="-7" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="ロヴァンU" x="161" y="368" width="32" height="32"/>
+    <SubTexture name="兵士ベース" x="224" y="450" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="戦士_A_U - コピー" x="223" y="484" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="戦士_A_U" x="223" y="484" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="爆発_001" x="181" y="1" rotated="true" width="67" height="71" frameX="-61" frameY="-48" frameWidth="192" frameHeight="192"/>
+    <SubTexture name="爆発_002" x="1" y="453" width="96" height="99" frameX="-49" frameY="-37" frameWidth="192" frameHeight="192"/>
     <SubTexture name="爆発_003" x="1" y="327" width="124" height="124" frameX="-36" frameY="-30" frameWidth="192" frameHeight="192"/>
     <SubTexture name="爆発_004" x="1" y="168" width="158" height="157" frameX="-17" frameY="-14" frameWidth="192" frameHeight="192"/>
     <SubTexture name="爆発_005" x="1" y="1" width="178" height="165" frameX="-14" frameY="-8" frameWidth="192" frameHeight="192"/>
-    <SubTexture name="盗賊_A_U" x="152" y="571" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="盗賊_B_U" x="228" y="395" width="17" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
-    <SubTexture name="砂漠船U" x="35" y="612" width="32" height="32"/>
+    <SubTexture name="盗賊_A_U" x="223" y="518" width="15" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="盗賊_B_U" x="161" y="266" width="17" height="32" frameX="-8" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="砂漠船U" x="161" y="402" width="32" height="32"/>
 </TextureAtlas>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5b8f9a31075dce4e98843b27a655abab:97125236121820122b5db02438f4cce8:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_0.png" width="2042" height="2047">
+    <SubTexture name="どんぐり目_0001" x="1" y="1525" width="247" height="521" frameX="0" frameY="-119" frameWidth="247" frameHeight="640"/>
+    <SubTexture name="なのは" x="792" y="1" rotated="true" width="641" height="374" frameX="0" frameY="-79" frameWidth="374" frameHeight="720"/>
+    <SubTexture name="アタッカー" x="1440" y="652" rotated="true" width="601" height="174" frameX="0" frameY="-39" frameWidth="174" frameHeight="640"/>
+    <SubTexture name="アリサ" x="613" y="1498" width="358" height="541" frameX="0" frameY="-99" frameWidth="358" frameHeight="640"/>
+    <SubTexture name="カリン" x="973" y="1416" width="165" height="621" frameX="0" frameY="-19" frameWidth="165" frameHeight="640"/>
+    <SubTexture name="ケイブガード" x="1440" y="451" rotated="true" width="601" height="199" frameX="0" frameY="-59" frameWidth="199" frameHeight="660"/>
+    <SubTexture name="ケロちゃん" x="1168" y="676" width="102" height="140" frameX="-13" frameY="-207" frameWidth="120" frameHeight="640"/>
+    <SubTexture name="ゴウセツ" x="1" y="765" width="238" height="758"/>
+    <SubTexture name="シンイチ" x="1416" y="828" width="211" height="581" frameX="0" frameY="-59" frameWidth="211" frameHeight="640"/>
+    <SubTexture name="ジャンクロイド" x="241" y="765" width="449" height="731" frameX="-40" frameY="-21" frameWidth="512" frameHeight="768"/>
+    <SubTexture name="スバル" x="1440" y="231" rotated="true" width="601" height="218" frameX="0" frameY="-39" frameWidth="218" frameHeight="640"/>
+    <SubTexture name="フェイト" x="1440" y="1411" rotated="true" width="597" height="362" frameX="0" frameY="-43" frameWidth="362" frameHeight="640"/>
+    <SubTexture name="ミナモ" x="792" y="377" rotated="true" width="641" height="297" frameX="0" frameY="-39" frameWidth="297" frameHeight="680"/>
+    <SubTexture name="メカニック" x="1440" y="1" rotated="true" width="601" height="228" frameX="0" frameY="-39" frameWidth="228" frameHeight="640"/>
+    <SubTexture name="ヤイバ" x="1168" y="828" width="246" height="581" frameX="0" frameY="-59" frameWidth="246" frameHeight="640"/>
+    <SubTexture name="ユーノ" x="250" y="1498" width="361" height="541" frameX="0" frameY="-99" frameWidth="361" frameHeight="640"/>
+    <SubTexture name="レイダー" x="1811" y="828" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
+    <SubTexture name="八雲紫" x="390" y="1" width="400" height="720"/>
+    <SubTexture name="奈緒子" x="1140" y="1416" width="298" height="601" frameX="0" frameY="-119" frameWidth="298" frameHeight="720"/>
+    <SubTexture name="宵闇コクエン" x="1629" y="828" width="180" height="581" frameX="0" frameY="-59" frameWidth="180" frameHeight="640"/>
+    <SubTexture name="近藤ゲン" x="1" y="1" width="387" height="762"/>
+    <SubTexture name="闇雲ミズチ" x="1440" y="1775" rotated="true" width="590" height="212" frameX="0" frameY="-50" frameWidth="212" frameHeight="640"/>
+    <SubTexture name="黄昏の魔法使い" x="692" y="723" width="474" height="691"/>
+</TextureAtlas>

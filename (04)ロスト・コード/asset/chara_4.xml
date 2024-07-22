@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:cfa8e578a1227cdd5f05aaa7077ab09e:ae397d79a7991cdc6ebf1c47d3ec60b6:27966351b682d3170414d32f0e510cd1$ -->
-<TextureAtlas imagePath="chara_4.png" width="2045" height="2046">
-    <SubTexture name="エリス_表情_ギャグ" x="1981" y="1817" rotated="true" width="59" height="68" frameX="-98" frameY="-53" frameWidth="270" frameHeight="600"/>
-    <SubTexture name="エルフ_衣装_ビキニ鎧" x="1268" y="216" rotated="true" width="763" height="467" frameX="0" frameY="-133" frameWidth="467" frameHeight="900"/>
-    <SubTexture name="エルフ_追加_首輪" x="1981" y="1705" width="63" height="52" frameX="-262" frameY="-133" frameWidth="467" frameHeight="900"/>
-    <SubTexture name="カイル_裸" x="1" y="1" width="293" height="888" frameX="-10" frameY="0" frameWidth="379" frameHeight="900"/>
-    <SubTexture name="カレン_目_呆れ" x="1112" y="851" width="73" height="29" frameX="-128" frameY="-68" frameWidth="304" frameHeight="800"/>
-    <SubTexture name="カレン_目_疑" x="1035" y="851" width="75" height="29" frameX="-128" frameY="-68" frameWidth="304" frameHeight="800"/>
-    <SubTexture name="シャンフー_ボディ" x="1" y="891" width="275" height="880"/>
-    <SubTexture name="シャンフー_喜" x="1526" y="1331" width="83" height="55" frameX="-78" frameY="-81" frameWidth="275" frameHeight="880"/>
-    <SubTexture name="シャンフー_怒" x="1526" y="1388" width="82" height="64" frameX="-76" frameY="-79" frameWidth="275" frameHeight="880"/>
-    <SubTexture name="シャンフー_楽" x="1526" y="1272" width="83" height="57" frameX="-78" frameY="-81" frameWidth="275" frameHeight="880"/>
-    <SubTexture name="ジュノ_法衣" x="1622" y="978" width="418" height="725" frameX="0" frameY="-75" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="ジュノ_睨" x="764" y="1687" rotated="true" width="54" height="84" frameX="-147" frameY="-138" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="ジュノ_笑" x="1526" y="1509" width="81" height="62" frameX="-147" frameY="-136" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="ジュノ_考" x="1526" y="1454" width="82" height="53" frameX="-147" frameY="-138" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="ジュノ_裸" x="1267" y="978" width="257" height="700" frameX="-35" frameY="-75" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="ジュノ_驚" x="1526" y="1573" width="80" height="63" frameX="-149" frameY="-132" frameWidth="418" frameHeight="800"/>
-    <SubTexture name="セシル_服" x="1622" y="1705" rotated="true" width="357" height="185" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="セシル_通常涙目" x="296" y="851" width="81" height="32" frameX="-114" frameY="-108" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="セシル_通常目" x="817" y="851" width="81" height="30" frameX="-114" frameY="-108" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="ナイト_小物_照れ" x="333" y="1743" width="65" height="23" frameX="-117" frameY="-75" frameWidth="292" frameHeight="760"/>
-    <SubTexture name="ナースサポーター" x="803" y="885" width="462" height="800"/>
-    <SubTexture name="バトルブルー" x="820" y="1687" rotated="true" width="800" height="358" frameX="-13" frameY="0" frameWidth="384" frameHeight="800"/>
-    <SubTexture name="ブフルス_目_通常" x="278" y="1743" width="53" height="24" frameX="-228" frameY="-73" frameWidth="443" frameHeight="1000"/>
-    <SubTexture name="ブフルス_表情_苦笑" x="1981" y="1759" width="62" height="56" frameX="-225" frameY="-68" frameWidth="443" frameHeight="1000"/>
-    <SubTexture name="ブフルス_表情_通常" x="1981" y="1887" width="59" height="59" frameX="-228" frameY="-65" frameWidth="443" frameHeight="1000"/>
-    <SubTexture name="マリー_裸ポーズ" x="1622" y="1892" rotated="true" width="357" height="150" frameX="-90" frameY="-43" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="マーク感情_ギザギザ" x="1526" y="1203" rotated="true" width="91" height="67" frameX="-4" frameY="0" frameWidth="218" frameHeight="600"/>
-    <SubTexture name="ヨハン_裸" x="1268" y="1" rotated="true" width="767" height="213" frameX="-43" frameY="0" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ヨハン_鎧" x="1268" y="685" rotated="true" width="760" height="291" frameX="0" frameY="0" frameWidth="291" frameHeight="767"/>
-    <SubTexture name="ルーク_怒" x="1981" y="1948" rotated="true" width="58" height="73" frameX="-144" frameY="-52" frameWidth="360" frameHeight="760"/>
-    <SubTexture name="ロリ_不満" x="1526" y="1053" width="92" height="71" frameX="-106" frameY="-87" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="ロリ_困り" x="1526" y="1126" width="91" height="75" frameX="-107" frameY="-83" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="ロリ_怒り" x="1526" y="978" width="92" height="73" frameX="-106" frameY="-87" frameWidth="300" frameHeight="400"/>
-    <SubTexture name="女剣士" x="1" y="1773" rotated="true" width="800" height="271"/>
-    <SubTexture name="女悪魔_ボディ" x="278" y="891" width="484" height="850"/>
-    <SubTexture name="女悪魔_目_ウインク" x="900" y="851" width="72" height="30" frameX="-178" frameY="-76" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_上向き" x="379" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_下向き" x="452" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_横目" x="525" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_細める" x="598" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_見開く" x="671" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_目_通常" x="744" y="851" width="71" height="32" frameX="-178" frameY="-74" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_裸" x="296" y="1" width="484" height="848" frameX="0" frameY="0" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_裸タトゥー" x="782" y="1" width="484" height="848" frameX="0" frameY="0" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_顔_頬照れ" x="1526" y="1638" width="75" height="47" frameX="-184" frameY="-77" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="少女_照れ" x="974" y="851" width="59" height="30" frameX="-109" frameY="-80" frameWidth="270" frameHeight="600"/>
+<!-- $TexturePacker:SmartUpdate:0103e962557074858cf8cff9485adbd6:c8662b33d76f3c0569fd09beb3abe980:6a144fbdfcf29fa3c1fcaa2722449915$ -->
+<TextureAtlas imagePath="chara_4.png" width="2033" height="2045">
+    <SubTexture name="エリス_オーバーオール" x="603" y="1805" rotated="true" width="590" height="198" frameX="-47" frameY="-5" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_お茶目" x="1195" y="1992" width="73" height="52" frameX="-95" frameY="-53" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_ギャグ" x="1961" y="259" rotated="true" width="59" height="68" frameX="-98" frameY="-53" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_楽" x="1409" y="1992" width="73" height="49" frameX="-97" frameY="-56" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_笑" x="1484" y="1992" width="70" height="51" frameX="-96" frameY="-59" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_笑2" x="1913" y="1917" width="73" height="55" frameX="-97" frameY="-56" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エリス_表情_驚" x="1961" y="110" rotated="true" width="55" height="73" frameX="-97" frameY="-53" frameWidth="270" frameHeight="600"/>
+    <SubTexture name="エルフ_追加_首輪" x="1344" y="1992" width="63" height="52" frameX="-262" frameY="-133" frameWidth="467" frameHeight="900"/>
+    <SubTexture name="シャンフー_喜" x="1913" y="1860" width="83" height="55" frameX="-78" frameY="-81" frameWidth="275" frameHeight="880"/>
+    <SubTexture name="シャンフー_照れ" x="1961" y="723" rotated="true" width="31" height="70" frameX="-84" frameY="-97" frameWidth="275" frameHeight="880"/>
+    <SubTexture name="セシル_丸出し" x="1195" y="1805" rotated="true" width="357" height="185" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="セシル_丸出し赤面" x="1554" y="1805" rotated="true" width="357" height="185" frameX="-76" frameY="-43" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="ダークエルフ_A_葉っぱ" x="1420" y="1" width="277" height="900"/>
+    <SubTexture name="マーク_裸" x="1" y="1805" rotated="true" width="600" height="218"/>
+    <SubTexture name="マーク感情_怒" x="1961" y="1" rotated="true" width="44" height="107" frameX="-80" frameY="-24" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_お茶目" x="1556" y="1992" width="69" height="51" frameX="-94" frameY="-57" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_哀" x="1988" y="1917" rotated="true" width="44" height="72" frameX="-94" frameY="-61" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_怒" x="1270" y="1992" width="72" height="52" frameX="-94" frameY="-58" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_恥" x="1701" y="1992" width="69" height="43" frameX="-95" frameY="-63" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_悩" x="1961" y="653" rotated="true" width="47" height="68" frameX="-96" frameY="-58" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_楽" x="1627" y="1992" width="72" height="44" frameX="-94" frameY="-60" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_笑" x="1913" y="1974" rotated="true" width="53" height="70" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="マーク表情_笑2" x="1961" y="185" rotated="true" width="53" height="72" frameX="-94" frameY="-59" frameWidth="218" frameHeight="600"/>
+    <SubTexture name="メイプル" x="556" y="1" width="509" height="900"/>
+    <SubTexture name="ラーナ" x="1" y="903" width="552" height="900"/>
+    <SubTexture name="リィル" x="1" y="1" width="553" height="900"/>
+    <SubTexture name="ロキ" x="1067" y="1" width="351" height="900"/>
+    <SubTexture name="侍_表情_不満" x="1961" y="591" rotated="true" width="56" height="60" frameX="-88" frameY="-92" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_表情_弱り" x="1968" y="1991" width="61" height="53" frameX="-90" frameY="-95" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_表情_微笑" x="1961" y="527" rotated="true" width="56" height="62" frameX="-88" frameY="-92" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_表情_怒り" x="1961" y="463" width="60" height="62" frameX="-88" frameY="-92" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_表情_笑い" x="1961" y="329" width="60" height="66" frameX="-88" frameY="-88" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_表情_驚く" x="1961" y="397" width="60" height="64" frameX="-88" frameY="-88" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="侍_顔_赤面" x="1913" y="1805" width="87" height="53" frameX="-90" frameY="-102" frameWidth="365" frameHeight="800"/>
+    <SubTexture name="女悪魔_眉_通常" x="2007" y="1" rotated="true" width="24" height="77" frameX="-172" frameY="-67" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女悪魔_顔_涙" x="1" y="2025" width="47" height="15" frameX="-191" frameY="-88" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女戦士" x="555" y="903" width="398" height="900"/>
+    <SubTexture name="女盗賊" x="1699" y="1" width="260" height="900"/>
+    <SubTexture name="戦士_A" x="955" y="903" width="307" height="900"/>
+    <SubTexture name="盗賊_A" x="1538" y="903" width="246" height="900"/>
+    <SubTexture name="盗賊_B" x="1786" y="903" width="246" height="900"/>
+    <SubTexture name="魔導師_A" x="1264" y="903" width="272" height="900"/>
 </TextureAtlas>

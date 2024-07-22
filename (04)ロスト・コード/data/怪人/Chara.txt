@@ -1,0 +1,14 @@
+﻿name:ビーモス
+nickname:ビーモス
+type:立ち絵
+x:160,	y:160
+ボディ, 	ビーモス, 	0
+basic:ボディ
+
+
+name:タイガード
+nickname:タイガード
+type:立ち絵
+x:160,	y:160
+ボディ, 	タイガード, 	0
+basic:ボディ

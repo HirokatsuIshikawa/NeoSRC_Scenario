@@ -87,6 +87,16 @@ Return
 Set name:プレイヤー位置 value:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * $引数(0) + $引数(1))
 Return
 
+キャラセット:
+Call プレイヤー位置計算加算 $引数(1) 0
+SetChara name:$引数(0) x:$変数(プレイヤー位置) alpha:0
+Return
+
+
+キャラセット位置加算:
+Call プレイヤー位置計算加算 $引数(1) $引数(2)
+SetChara name:$引数(0) x:$変数(プレイヤー位置) alpha:0
+Return
 
 テロップセット:
 SetTelop backColor:0 fontColor:0xFFFFFF
@@ -186,6 +196,32 @@ SetMove chara:$Args(0) time:0.5 fade:in
 StartMove type:連続 wait:on
 Return
 
+キャラ単体表示セット:
+Call プレイヤー位置計算加算 $Args(1) 0
+SetChara name:$Args(0) x:$変数(プレイヤー位置) alpha:0
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:in
+StartMove type:連続 wait:on
+Return
+
+
+キャラ単体表示加算セット:
+Call プレイヤー位置計算加算 $Args(1) $Args(2)
+SetChara name:$Args(0) x:$変数(プレイヤー位置) alpha:0
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:in
+StartMove type:連続 wait:on
+Return
+
+キャラ単体表示加算セット縦:
+Call プレイヤー位置計算加算 $Args(1) $Args(2)
+SetChara name:$Args(0) x:$変数(プレイヤー位置) alpha:0 y:$Args(3)
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:in
+StartMove type:連続 wait:on
+Return
+
+
 キャラ単体非表示:
 ReadyMove
 SetMove chara:$Args(0) time:0.5 fade:out
@@ -202,4 +238,32 @@ Return
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
 CharaLayer name:キャラクター
+Return
+
+キャラ単体横移動:
+ReadyMove
+SetMove chara:$Args(0) time:$Args(2) alpha:1 x:$Args(1)
+StartMove type:同時 wait:on
+Return 
+
+
+キャラ単体横移動フェードアウト:
+ReadyMove
+SetMove chara:$Args(0) time:$Args(2) fade:out x:$Args(1)
+StartMove type:同時 wait:on
+Return 
+
+
+///////////////////////表示レイヤー移動/////////////////////
+
+プレイヤー表示移動:
+ReadyMove
+SetMove layer:キャラクター time:$Args(0) x:$変数(プレイヤー表示位置)
+StartMove type:同時 wait:on
+Return
+
+エネミー表示移動:
+ReadyMove
+SetMove layer:キャラクター time:$Args(0) x:$変数(エネミー表示位置)
+StartMove type:同時 wait:on
 Return

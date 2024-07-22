@@ -1,0 +1,226 @@
+ゲームオーバー:
+Select goto:on 続ける:継続選択 あきらめる:終了選択
+Exit
+
+継続選択:
+QuickLoad
+Exit
+
+終了選択:
+Finish
+Exit
+
+
+
+ポジション初期設定:
+//
+//初期設定
+//
+PlayerSideName ジャド隊
+Set name:プレイヤー表示位置 value:0
+Set name:プレイヤー配置位置 value:0
+Set name:プレイヤー配置間隔 value:280
+Set name:プレイヤー位置 value:0
+Set name:エネミー表示位置 value:-1080
+Set name:エネミー配置位置 value:1300
+Set name:エネミー配置間隔 value:200
+Return
+
+ベースレイヤーセット:
+//
+//背景ベース
+//
+AddLayer name:背景 alpha:1
+AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:1
+CharaLayer name:キャラクター
+Return
+
+背景セット:
+SetImg img:$引数(0) size:fill name:背景 layer:背景 alpha:1
+Return
+
+背景変更:
+SetImg img:$引数(0) size:fill name:新背景 layer:背景 alpha:0
+ReadyMove
+SetMove name:新背景 time:$引数(1) fade:in
+SetMove name:背景 time:0 alpha:0
+StartMove type:連続 wait:on
+RemoveImg name:背景
+ChangeImgName before:新背景 after:背景
+Return
+
+画像セット:
+SetImg img:$引数(0) size:fill name:イベント画像 layer:キャラクター alpha:1
+Return
+
+画像変更:
+SetImg img:$引数(0) size:fill name:新イベント画像 layer:キャラクター alpha:0
+ReadyMove
+SetMove name:新イベント画像 time:$引数(1) fade:in
+SetMove name:イベント画像 time:0 alpha:0
+StartMove type:連続 wait:on
+RemoveImg name:イベント画像
+ChangeImgName before:新イベント画像 after:イベント画像
+Return
+
+黒幕エフェクトセット:
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+Return
+
+エフェクトイン:
+ReadyMove
+SetMove layer:エフェクト time:$引数(0) fade:in
+StartMove type:連続 wait:on
+Return
+
+場面初期表示:
+ReadyMove
+SetMove layer:背景 time:1 fade:in
+SetMove layer:キャラクター time:0.5 fade:in
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+場面初期位置表示:
+ReadyMove
+SetMove layer:背景 time:1 fade:in
+SetMove layer:キャラクター time:0.5 fade:in
+SetMove layer:キャラクター time:0 x:$引数(0)
+SetMove layer:エフェクト time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+プレイヤー位置計算:
+Set name:プレイヤー位置 value:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * $引数(0))
+Return
+
+
+プレイヤー位置計算加算:
+Set name:プレイヤー位置 value:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * $引数(0) + $引数(1))
+Return
+
+
+テロップセット:
+SetTelop backColor:0 fontColor:0xFFFFFF
+Telop
+Return
+
+テロップ終了:
+EndTelop
+Return
+
+テロップ再開:
+ClearTelop
+hidemsg time:0.3
+clearmsg type:all
+Telop
+Return
+
+
+//Call レイヤー横移動 レイヤー名 秒 移動位置
+レイヤー横移動:
+ReadyMove
+SetMove layer:$Args(0) time:$Args(1) x:$Args(2)
+StartMove type:連続 wait:on
+Return
+
+BGM:
+StartBGM file:$Args(0)
+Return
+
+SE:
+PlaySound file:$args(0)
+Return
+
+メッセージ消去:
+hidemsg time:0.3
+clearmsg type:all
+Return
+
+場面切り替え:
+ReadyMove
+SetMove layer:エフェクト time:0.5 fade:in
+StartMove type:同時 wait:on
+clearmsg type:all
+DeleteLayer name:背景
+ClearLayer name:キャラクター
+Wait 0.6
+Goto $args(0)
+Return
+
+エピローグへ:
+hidemsg time:0.3
+clearmsg type:all
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:同時 wait:on
+ClearLayer name:キャラクター
+Goto エピローグ
+Return
+
+エピローグ開始準備:
+AddLayer name:背景 alpha:1 level:0
+CharaLayer name:キャラクター
+Return
+
+エピローグ終了:
+hidemsg time:0.3
+clearmsg type:all
+Wait 0.8
+ReadyMove
+SetMove layer:エフェクト time:1 fade:in
+StartMove type:連続 wait:on
+DeleteAllLayer
+clearmsg
+Continue $args(0)
+Return
+
+
+初期マップ表示:
+ReadyMove
+SetMove layer:キャラクター alpha:0
+SetMove layer:エフェクト time:0.3 fade:out
+StartMove type:同時 wait:on
+Return
+
+
+マップ表示:
+hidemsg time:0.3
+clearmsg type:all
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+キャラ表示:
+ReadyMove
+SetMove layer:キャラクター time:0.5 fade:in
+StartMove type:連続 wait:on
+Return
+
+
+キャラ単体表示:
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:in
+StartMove type:連続 wait:on
+Return
+
+キャラ単体非表示:
+ReadyMove
+SetMove chara:$Args(0) time:0.5 fade:out
+StartMove type:連続 wait:on
+Return
+
+キャラレイヤー移動:
+ReadyMove
+SetMove layer:キャラクター time:0.5 x:$引数(0)
+StartMove type:同時 wait:on
+Return
+
+マップイベントレイヤーセット:
+AddLayer name:キャラクター alpha:0
+AddLayer name:エフェクト alpha:0
+CharaLayer name:キャラクター
+Return

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:50ce10b5c4124bf2d7dc1571162a6113:93156d154668777717a5bfed785e31f5:75e730636da1f75148defc1997c875c7$ -->
+<!-- $TexturePacker:SmartUpdate:bae42f84ba032bd4d2725a68d976e595:93156d154668777717a5bfed785e31f5:75e730636da1f75148defc1997c875c7$ -->
 <TextureAtlas imagePath="system.png" width="256" height="1720">
     <SubTexture name="backimg" x="249" y="658" width="4" height="4"/>
     <SubTexture name="battleback_bottom" x="1" y="99" width="192" height="48"/>

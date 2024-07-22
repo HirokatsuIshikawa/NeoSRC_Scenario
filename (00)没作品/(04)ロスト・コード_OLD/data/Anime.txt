@@ -1,0 +1,235 @@
+default
+////////////////////////////////////////////////////////////////////基本攻撃////////////////////////////////////////////////////////////////////
+action:近接
+	チェイン, delay:0.2, target:攻撃側
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-48, time:0.2
+			連続
+				target:攻撃側, pointTargetY:防御側, adjustY:-80, time:0.1, ease:QuadOut
+				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
+				PlaySound, file:近接, vol:1
+				if:回避 ? 回避:ダメージ
+				target:攻撃側, $x:0,$y:0, time:0.8, ease:QuadIn
+			連続終了
+		同時終了
+	チェイン終了
+	同時
+	ダメージ表示
+	メッセージ送り, 防御側
+	//Wait,1
+	//メッセージ呼び出し, 攻撃側, 特別モード
+	//メッセージ呼び出し, 攻撃側, 特別モード, 2
+	if:個別撃破 ? 撃破:none
+	同時終了
+/////////////////////////////////////////射撃
+action:射撃
+	チェイン, delay:0.3
+		createImg, name:弾丸 ,asset:weapon_shot, pivot:中心, color:0xFFFFFF, scale:2
+		target:弾丸, pointtarget:攻撃側, time:0, alpha:1
+		PlaySound, file:ビームガン, vol:1
+		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		PlaySound, file:爆発1, vol:1
+		target:弾丸, time:0, alpha:0
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////スキル////////////////////////////////////////////////////////////////////
+action:スキル2
+		set, 第一回転, 720
+		set, 第二回転, 360
+		createSpr, name:親スプライト, target:攻撃側
+		同時
+			target:親スプライト, $x:500, time:1.5
+			ループ, count:3
+				set, ヒール画像, ヒール$変数(ループ数)
+				createImg, name:$変数(ヒール画像) ,asset:heal, target:防御側, pivot:中心, alpha:0, color:0xFFFFFF, scale:2, target:親スプライト
+				target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数)), time:0, range:60, alpha:1
+				target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数) + $変数(第一回転)), time:1
+				target:$変数(ヒール画像), angle:$式(120 * $変数(ループ数) + $変数(第一回転) + $変数(第二回転)), time:0.5, alpha:0
+			ループ終了
+		同時終了
+action:スキル
+	同時
+		ループ, count:3, delay:0.1
+			Set, 横位置, $式(-30 + $変数(ループ数) * 30)
+			createImg, name:ヒール$変数(ループ数) ,asset:heal, target:防御側, pivot:中心, alpha:0, color:0xFFFFFF, scale:2
+			target:ヒール$変数(ループ数), time:0, $x:$変数(横位置), $y:-60, alpha:0, rotation:0
+			同時
+				target:ヒール$変数(ループ数), time:0.9, $y:80, rotation:720
+				連続
+					target:ヒール$変数(ループ数), time:0.1, alpha:1
+					wait, 0.7
+					target:ヒール$変数(ループ数), time:0.1, alpha:0
+				連続終了
+			同時終了
+		ループ終了
+	同時終了
+////////////////////////////////////////////////////////////////////ダメージ////////////////////////////////////////////////////////////////////
+action:ダメージ
+	連続
+		同時
+			target:防御側, $$x:16, time:0.2
+			target:防御側画像, time:0.1, color:0xFF0000
+		同時終了
+		target:防御側画像, time:0.1, color:0xFFFFFF
+	連続終了
+action:全体ダメージ
+	同時
+		target:全防御側, $$x:16, time:0.2
+		target:防御側画像, time:0.1, color:0xFF0000
+		target:防御側画像, time:0.1, color:0xFFFFFF
+	同時終了
+action:通常ダメージアニメ
+	同時
+		if:回避 ? 回避:ダメージ
+	同時終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+action:チェインダメージアニメ
+	同時
+		ダメージ表示, adjustX:16
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////回避////////////////////////////////////////////////////////////////////
+action:回避
+		同時
+			target:防御側, ,time:0.3, $$x:20, $$y:-20
+			target:防御側画像 ,time:0.3, $scale:-0.6
+		同時終了
+////////////////////////////////////////////////////////////////////撃破////////////////////////////////////////////////////////////////////
+action:撃破
+		同時
+			PlaySound, file:爆発1, vol:1
+			target:防御側, $$x:120, time:0.6, alpha:0
+		同時終了
+////////////////////////////////////////////////////////////////////剣攻撃////////////////////////////////////////////////////////////////////
+action:剣攻撃
+	チェイン, delay:0.2, target:攻撃側
+		target:剣, time:0.6, alpha:1, scale:2, rotation:45, $x:32, $y:12
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+			連続
+				target:攻撃側, $y:-50, time:0.1, ease:QuadOut
+				target:攻撃側, $y:0, time:0.1, ease:QuadIn
+			連続終了
+		同時終了
+		wait, 0.5
+		PlaySound, file:剣で斬る2, vol:1
+		target:攻撃側, $$x:360, time:0.2, ease:QuadIn
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-360, time:0
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		//if:個別撃破 ? 撃破:none, callTarget:防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////ショット////////////////////////////////////////////////////////////////////
+action:ショット
+	チェイン, delay:0.3
+		target:ショット, pointtarget:攻撃側, time:0, alpha:1
+		PlaySound, file:ビームガン, vol:1
+		target:ショット, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
+		PlaySound, file:爆発1, vol:1
+		target:ショット, time:0, alpha:0
+		if:回避 ? 回避:ダメージ
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////投てき////////////////////////////////////////////////////////////////////
+action:投てき
+	チェイン, delay:0.2
+		target:爆弾, pointtarget:攻撃側, time:0, alpha:1, rotation:-30
+		PlaySound, file:ヒューンと落下, vol:1
+		同時
+			target:爆弾, pointtargetX:防御側, time:0.8, rotation:30
+			連続
+				target:爆弾, pointtargetY:防御側, adjustY:-200,time:0.4, ease:QuadOut
+				target:爆弾, pointtargetY:防御側, time:0.4, ease:QuadIn
+			連続終了
+		同時終了
+		if:回避 ? 回避:ダメージ
+		PlaySound, file:爆発1, vol:1
+		target:爆弾, time:0.2, alpha:0
+	チェイン終了
+	同時
+		ダメージ表示
+		メッセージ送り, 防御側
+		if:個別撃破 ? 撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////弓構え
+action:弓構え
+	target:武器, time:0.3, alpha:1, scale:2, $x:0, $y:-32
+////////////////////////////////////////////////////////////////////単体剣攻撃
+action:単体剣攻撃
+	target:剣, time:0.6, alpha:1, scale:2, rotation:45, $x:32, $y:12
+	target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+	同時
+		target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+		連続
+			target:攻撃側, $y:-50, time:0.1, ease:QuadOut
+			target:攻撃側, $y:0, time:0.1, ease:QuadIn
+		連続終了
+	同時終了
+	wait, 0.5
+	PlaySound, file:剣で斬る2, vol:1
+	target:攻撃側, $$x:360, time:0.2, ease:QuadIn
+	if:回避 ? 回避:全体ダメージ
+	wait, 0.3
+	target:攻撃側, $x:-360, time:0
+	target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		//if:個別撃破 ? 撃破:none, callTarget:防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////槍攻撃
+action:槍攻撃
+	チェイン, delay:0.2
+		target:槍, time:0.6, alpha:1, scale:2, rotation:90, $x:-16
+		target:攻撃側, $x:40, delay:0.3, time:0.3, ease:QuadIn
+		同時
+			target:攻撃側, pointTargetX:防御側, adjustX:-60, time:0.2
+			連続
+				target:攻撃側, $Y:-50, time:0.1, ease:QuadOut
+				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
+			連続終了
+		同時終了
+		wait, 0.5
+		PlaySound, file:剣で斬る2, vol:1
+		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
+		if:回避 ? 回避:ダメージ
+		wait, 0.3
+		target:攻撃側, $x:-360, time:0
+		target:攻撃側, $x:0,$y:0, time:0.6, ease:QuadOut
+		target:槍, alpha:0, time:0
+	チェイン終了
+	同時
+		ダメージ表示, adjustX:32
+		メッセージ送り, 防御側
+		if:個別撃破 ? 剣撃破:none
+	同時終了
+////////////////////////////////////////////////////////////////////剣撃破
+action:剣撃破
+		PlaySound, file:剣を抜く, vol:1
+		同時
+			target:防御側, $$x:60, time:0.3, alpha:0
+			target:防御側画像, color:0xFF0000
+		同時終了
