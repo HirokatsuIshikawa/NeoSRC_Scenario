@@ -24,6 +24,10 @@ ReadyMove
 SetMove layer:背景 time:0.5 fade:in
 StartMove type:同時 wait:on
 //StartBGM file:game_maoudamashii_6_dangeon20 vol:1 fade:0.5
+addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
+clearDemo
+addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
+startDemo
 Call BGM maou_game_town12b.mp3
 Wait 1
 しってるか？　商業区７番通りの裏にある店
@@ -342,6 +346,8 @@ ReadyMove
 SetMove layer:キャラクター alpha:0 x:0
 SetMove layer:エフェクト time:0.3 fade:out
 StartMove type:同時 wait:on
+Setmove layer:エフェクト alpha:1
+Call タイトルコール 画像パス 第１話 ７番通りの奇妙な店
 CreateUnit name:ジャド x:8 y:12 side:ジャド隊 level:1 join:1
 CreateUnit name:タイガード x:11 y:10 side:敵 level:1
 SetChara name:ジャド x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1 怒り

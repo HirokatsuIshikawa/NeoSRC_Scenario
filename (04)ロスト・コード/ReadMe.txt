@@ -23,8 +23,12 @@ vxace_fantasy.png
 
 
 【魔王魂】　https://maou.audio/
-魔王魂  maou_game_town12b.mp3
+maou_game_town12b.mp3
 
+
+【ユーフルカ】　https://youfulca.com/
+shopping-district.mp3
+Victory.mp3
 
 ～効果音～
 

@@ -10,6 +10,26 @@ Exit
 Finish
 Exit
 
+タイトルコール:
+SetImg img:tex_black size:free name:ブラック layer:エフェクト alpha:0 width:960 height:240
+MessageLine name:話数 text:$Args(0) fontsize:64 y:160 alpha:0
+MessageLine name:タイトル text:$Args(1) alpha:0 y:240
+ReadyMove
+SetMove name:ブラック time:0.5 alpha:0.8
+SetMove name:話数 time:0.5 fade:in
+SetMove name:タイトル time:0.5 fade:in
+StartMove type:同時 wait:on
+
+ReadyMove
+SetMove name:ブラック time:0.5 fade:out
+SetMove name:話数 time:0.5 fade:out
+SetMove name:タイトル time:0.5 fade:out
+StartMove type:同時 wait:on
+deleteitem name:話数
+deleteitem name:タイトル 
+deleteitem name:ブラック 
+Return
+
 
 
 ポジション初期設定:
