@@ -389,6 +389,7 @@
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_base.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_base_w.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_commander.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_credit.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_execution.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_fly.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/common/system/btn_getpoint.png</key>
