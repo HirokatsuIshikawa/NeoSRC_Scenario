@@ -24,10 +24,17 @@ ReadyMove
 SetMove layer:背景 time:0.5 fade:in
 StartMove type:同時 wait:on
 //StartBGM file:game_maoudamashii_6_dangeon20 vol:1 fade:0.5
-addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
-clearDemo
-addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
-startDemo
+AddMaterial name:緑ハーブ num:4
+AddMaterial name:緑ハーブ num:4
+AddMaterial name:青ハーブ num:3
+AddMaterial name:青ハーブ num:3
+AddMaterial name:赤ハーブ num:2
+AddMaterial name:赤ハーブ num:2
+Continue LostCode_02.srceve
+//addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
+//clearDemo
+//addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
+//startDemo
 Call BGM maou_game_town12b.mp3
 Wait 1
 しってるか？　商業区７番通りの裏にある店
