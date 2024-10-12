@@ -1,5 +1,7 @@
 //名前
-緑ハーブ, IconSet_310
-赤ハーブ, IconSet_315
-青ハーブ, IconSet_314
-蒸留水
+緑ハーブ,薬草!, IconSet_310
+赤ハーブ,1, IconSet_315
+青ハーブ,2, IconSet_314
+蒸留水,1
+女奴隷,奴隷, syuujinF_c02
+尻たたき棒, 0

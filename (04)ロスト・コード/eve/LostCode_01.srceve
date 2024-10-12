@@ -30,6 +30,16 @@ AddMaterial name:青ハーブ num:3
 AddMaterial name:青ハーブ num:3
 AddMaterial name:赤ハーブ num:2
 AddMaterial name:赤ハーブ num:2
+AddMaterial name:赤ハーブ num:2
+AddMaterial name:女奴隷 num:3
+AddMaterial name:尻たたき棒 num:1
+//SelectMaterial category:0,1,2 reject:2 target:アイテム選択
+//SelectMaterial category:0,1,2 target:アイテム選択
+//SelectMaterial reject:1,2 target:アイテム選択
+SelectMaterial target:アイテム選択
+Talk システム
+選択アイテム$変数(アイテム選択)……
+
 Continue LostCode_02.srceve
 //addDemo action:シャドウスナップ attacker:ジャド deffender:タマ
 //clearDemo
