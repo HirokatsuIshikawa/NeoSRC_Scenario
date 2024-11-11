@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:f86d0e97580716f922879c6e017acf91:160f7f56be50363327787089e61b26a6:2bb8d15e5f3b359ad71c94e1b3cc23ac$ -->
+<!-- $TexturePacker:SmartUpdate:6029e51d22efb65c455c6f1dc5a19e3a:160f7f56be50363327787089e61b26a6:2bb8d15e5f3b359ad71c94e1b3cc23ac$ -->
 <TextureAtlas imagePath="battle.png" width="128" height="628">
     <SubTexture name="accelgun" x="69" y="456" width="32" height="16"/>
     <SubTexture name="base_genshi" x="1" y="1" width="32" height="32"/>
