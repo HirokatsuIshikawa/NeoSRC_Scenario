@@ -12,7 +12,7 @@ AddLayer name:エフェクト alpha:0
 //
 //場面転換
 //
-SetImg img:住宅地 size:fill name:境内 layer:背景 alpha:1
+SetImg img:jyutakuchi size:fill name:境内 layer:背景 alpha:1
 CharaLayer name:キャラクター
 //
 //配置位置変数
@@ -144,7 +144,7 @@ ClearLayer name:キャラクター
 //
 //場面転換
 //
-SetImg img:草地 size:fill name:境内 layer:背景 alpha:1
+SetImg img:kusachi size:fill name:境内 layer:背景 alpha:1
 SetChara name:ケルベロス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
@@ -1673,7 +1673,7 @@ Exit
 エピローグ:
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
-SetImg img:神社境内 size:just name:神社境内 layer:背景
+SetImg img:keidai size:just name:神社境内 layer:背景
 SetChara name:アリサ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
 SetChara name:すずか x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:1
 ReadyMove

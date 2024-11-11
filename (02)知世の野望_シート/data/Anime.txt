@@ -8,7 +8,7 @@ action:近接
 			連続
 				target:攻撃側, pointTargetY:防御側, adjustY:-80, time:0.1, ease:QuadOut
 				target:攻撃側, pointTargetY:防御側, time:0.1, ease:QuadIn
-				PlaySound, file:近接, vol:1
+				PlaySound, file:hit, vol:1
 				if:回避 ? 回避:ダメージ
 				target:攻撃側, $x:0,$y:0, time:0.8, ease:QuadIn
 			連続終了
@@ -27,7 +27,7 @@ action:射撃
 	チェイン
 		createImg, name:弾丸 ,asset:weapon_shot, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
 		target:弾丸, pointtarget:攻撃側, adjustX:32 ,time:0, alpha:0
-		PlaySound, file:爆発1, vol:1
+		PlaySound, file:explode_01, vol:1
 		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
 		createImg, name:爆発 ,anime:bombP_,pivot:中心, alpha:0, color:0xFFFFFF, scale:2
 		target:爆発, pointtarget:防御側, time:0, alpha:1
@@ -48,11 +48,11 @@ action:武器射撃
 		Wait, 0.4
 		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
 		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:0
-		PlaySound, file:ビームガン, vol:1
+		PlaySound, file:beam_gun, vol:1
 		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
 		createImg, name:爆発 ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
 		target:爆発, pointtarget:防御側, time:0, alpha:1
-		PlaySound, file:爆発1, vol:1
+		PlaySound, file:explode_01, vol:1
 		startAnime, target:爆発, frame:100,loop:0
 		target:弾丸, time:0.2, alpha:0
 		if:回避 ? 回避:ダメージ
@@ -134,7 +134,7 @@ action:回避
 ////////////////////////////////////////////////////////////////////撃破////////////////////////////////////////////////////////////////////
 action:撃破
 		同時
-			PlaySound, file:爆発1, vol:1
+			PlaySound, file:explode_01, vol:1
 			target:防御側, $$x:120, time:0.5, alpha:0
 				連続
 					target:防御側, $$y:-120, time:0.25, ease:QuadOut
@@ -154,7 +154,7 @@ action:剣攻撃
 			連続終了
 		同時終了
 		wait, 0.5
-		PlaySound, file:剣で斬る2, vol:1
+		PlaySound, file:sword_slash_02, vol:1
 		target:攻撃側, $$x:360, time:0.2, ease:QuadIn
 		if:回避 ? 回避:ダメージ
 		wait, 0.3
@@ -179,7 +179,7 @@ action:単体剣攻撃
 		連続終了
 	同時終了
 	wait, 0.5
-	PlaySound, file:剣で斬る2, vol:1
+	PlaySound, file:sword_slash_02, vol:1
 	target:攻撃側, $$x:360, time:0.2, ease:QuadIn
 	if:回避 ? 回避:全体ダメージ
 	wait, 0.3
@@ -193,7 +193,7 @@ action:単体剣攻撃
 	同時終了
 ////////////////////////////////////////////////////////////////////剣撃破
 action:剣撃破
-		PlaySound, file:剣を抜く, vol:1
+		PlaySound, file:sword_out, vol:1
 		同時
 			target:防御側, $$x:60, time:0.3, alpha:0
 			target:防御側画像, color:0xFF0000
@@ -212,7 +212,7 @@ action:武器突撃
 			連続終了
 		同時終了
 		wait, 0.5
-		PlaySound, file:近接, vol:1
+		PlaySound, file:hit, vol:1
 		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
 		if:回避 ? 回避:ダメージ
 		wait, 0.3
@@ -239,7 +239,7 @@ action:べとべとアタック
 		同時終了
 		Wait, 0.3
 		target:攻撃側画像, $width:32, $height:-32, time:0.3
-		PlaySound, file:スライム, vol:1
+		PlaySound, file:slime, vol:1
 		if:回避 ? 回避:ダメージ
 		Wait, 0.3
 		target:攻撃側画像, $width:0, $height:0, time:0.3
@@ -263,7 +263,7 @@ action:体当たり
 		同時終了
 		Wait, 0.3
 		target:攻撃側, $$x:128, time:0.2
-		PlaySound, file:近接, vol:1
+		PlaySound, file:hit, vol:1
 		if:回避 ? 回避:ダメージ
 		Wait, 0.3
 		target:攻撃側, $$x:480, time:0.3
@@ -289,7 +289,7 @@ action:ヘビーブロウ
 		同時終了
 		Wait, 0.3
 		target:攻撃側, $$x:16, time:0.2
-		PlaySound, file:近接, vol:1
+		PlaySound, file:hit, vol:1
 		if:回避 ? 回避:打ち上げダメージ
 		Wait, 0.3
 		target:攻撃側, $$x:480, time:0.3

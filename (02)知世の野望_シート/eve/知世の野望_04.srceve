@@ -60,7 +60,7 @@ Wait 0.6
 cn
 いただきます
 
-PlaySound file:茶碗を置く
+PlaySound file:tyawan_down
 Wait 0.3
 Talk ケイブガード
 ……それで、そっちの方はどんな感じだ？
@@ -140,7 +140,7 @@ Talk ケイブガード
 
 （なんか、お互いさまって気もするけど……）
 Wait 1
-PlaySound file:茶碗を置く
+PlaySound file:tyawan_down
 Wait 0.3
 Talk ユーノ
 ふぅ……ごちそうさま
@@ -161,7 +161,7 @@ Wait 2
 //
 //
 //
-SetImg img:暗所 size:just name:境内 layer:背景 alpha:1
+SetImg img:darkplace size:just name:境内 layer:背景 alpha:1
 SetChara name:勇太 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 3) alpha:1
 ReadyMove
 SetMove layer:背景 fade:in
@@ -186,7 +186,7 @@ Talk ？？？
 どこかの地下なのかな……
 どうやって出ればいいんだろう……？
 
-PlaySound file:インスピ
+PlaySound file:inspi
 Wait 0.5
 Talk ？？？
 ……ん？　なんだろこれ……？
@@ -194,12 +194,12 @@ Talk ？？？
 なんか、不思議な模様がついてるけど
 いつの間に、こんなの持ってたんだろ……？
 
-PlaySound file:メカボイス Vol:0.3
+PlaySound file:mecha_voice Vol:0.3
 Wait 0.7
 Talk ？？？
 わっ！？　誰かいるの！？
 Wait 0.8
-PlaySound file:メカボイス Vol:0.5
+PlaySound file:mecha_voice Vol:0.5
 Talk ？？？
 ワ……ハ……ド……
 
@@ -210,7 +210,7 @@ Talk ？？？
 Wait 0.3
 でも、中には誰も……
 Wait 1
-PlaySound file:メカボイス Vol:0.5
+PlaySound file:mecha_voice Vol:0.5
 Talk ？？？
 ワタシハ……
 
@@ -219,7 +219,7 @@ Talk ？？？
 
 もしかして、車がしゃべってるの……？
 
-PlaySound file:メカボイス
+PlaySound file:mecha_voice
 Talk デッカード
 ワタシハ……デッカード……
 
@@ -283,7 +283,7 @@ Talk 勇太
 Talk ？？？
 ！？
 
-StartBGM file:魔王魂_村08
+StartBGM file:game_maoudamashii_5_village08
 Talk 勇太
 あ……人間……？
 
@@ -314,7 +314,7 @@ Talk ミズチ
 ……闇雲ミズチだ
 
 Wait 0.7
-PlaySound file:メカボイス Vol:0.5
+PlaySound file:mecha_voice Vol:0.5
 Talk ？？？
 ミズ……チ……
 Wait 0.6
@@ -362,7 +362,7 @@ Talk ミズチ
 ……来るぞ
 
 Call キャラクター隠し
-StartBGM file:魔王魂_BGM_ネオロック80
+StartBGM file:game_maoudamashii_neorock80
 Wait 0.6
 CreateUnit name:ガベージ x:14 y:10 side:敵 level:1
 CreateUnit name:ガベージ x:16 y:10 side:敵 level:1
@@ -525,7 +525,7 @@ StopBGM fade
 Talk ？？？
 ユウ……タ……！
 
-PlaySound file:パワーチャージ
+PlaySound file:power_charge
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -538,7 +538,7 @@ Wait 0.3
 
 だが、一体何に反応して……
 Wait 0.6
-PlaySound file:パワーチャージ
+PlaySound file:power_charge
 flash time:0.3
 wait 0.3
 ！？　あれは……！
@@ -564,12 +564,12 @@ Talk デッカード
 Talk 勇太
 わかった、こうだね……！
 Wait 0.5
-PlaySound file:剣で斬る2
+PlaySound file:sword_slash_02
 Wait 1
 ClearMsg
 ブレイブアップ！　デッカード！！
 
-PlaySound file:ビーム砲チャージ
+PlaySound file:charge_beam_cannon
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
@@ -602,7 +602,7 @@ Talk 勇太
 
 それに、戦うって……この変なのと！？
 Wait 0.5
-PlaySound file:ビームガン
+PlaySound file:beam_gun
 flash time:0.3
 wait 0.3
 ClearMsg
@@ -614,9 +614,9 @@ Talk デッカード
 Talk 勇太
 くっ、このおっ！！
 Wait 0.5
-PlaySound file:ビームガン
+PlaySound file:beam_gun
 Wait 0.8
-PlaySound file:爆発1
+PlaySound file:explode_01
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -673,7 +673,7 @@ Talk ミズチ
 
 ……ん？
 Wait 1
-PlaySound file:インスピ
+PlaySound file:inspi
 flash time:0.3
 wait 0.3
 Talk 勇太
@@ -703,7 +703,7 @@ hidemsg time:0.3
 clearmsg type:all
 Wait 1
 SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
-PlaySound file:テレポート
+PlaySound file:teleport
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:同時 wait:on
@@ -725,7 +725,7 @@ Exit
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
 Wait 0.8
-SetImg img:草地 size:just name:草地 layer:背景
+SetImg img:kusachi size:just name:草地 layer:背景
 Call ポジション初期設定
 Call ベースレイヤーセット
 Call 背景セット 草地
@@ -743,7 +743,7 @@ Call 場面初期表示
 ClearLayer name:エフェクト
 showmsg time:0.3
 StartBGM file:game_maoudamashii_5_village05 vol:1 fade:0.5
-PlaySound file:インスピ
+PlaySound file:inspi
 Wait 0.4
 Talk ユーノ
 ん……？
@@ -782,7 +782,7 @@ StopBGM fade:0.5
 
 ReadyMove
 SetMove layer:キャラクター time:1 x:-300
-PlaySound file:テレポート
+PlaySound file:teleport
 StartMove
 Flash time:0.3
 Call プレイヤー位置計算加算 4 60
@@ -793,7 +793,7 @@ StartMove
 Talk ミズチ
 よっ……
 
-PlaySound file:テレポート
+PlaySound file:teleport
 Flash time:0.3
 Call プレイヤー位置計算加算 5 20
 SetChara name:友永勇太 x:$変数(プレイヤー位置) alpha:0 デッカードスタイル
@@ -805,7 +805,7 @@ Talk 勇太
 
 Talk ケイブガード
 な、なんだ！？
-StartBGM file:魔王魂_村08 vol:1 fade:0.5
+StartBGM file:game_maoudamashii_5_village08 vol:1 fade:0.5
 Wait 1
 Talk ミズチ
 この気配……あちら側か……

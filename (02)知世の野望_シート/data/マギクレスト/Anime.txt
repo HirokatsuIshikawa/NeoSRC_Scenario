@@ -5,7 +5,7 @@ name:ケイブガード
 			target:火炎弾, time:0, alpha:1, pointTarget:攻撃側
 			target:火炎弾, pointtarget:防御側, adjustX:-32, time:0.6, alpha:1, rotation:1440
 			createImg, name:爆発 ,anime:bombR_, pivot:中心, alpha:0, color:0xFFFFFF, scale:2
-			PlaySound, file:爆発1, vol:1
+			PlaySound, file:explode_01, vol:1
 			target:爆発, alpha:1, time:0, pointTarget:防御側
 			startAnime, target:爆発, frame:100,loop:0
 			target:火炎弾, time:0, alpha:0
@@ -38,7 +38,7 @@ action:フレイムスピアー
 		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
 		createImg, name:爆発 ,anime:bombR_, pivot:中心, color:0xFFFFFF, scale:2
 		target:爆発, pointtarget:防御側, time:0, alpha:1
-		PlaySound, file:爆発1, vol:1
+		PlaySound, file:explode_01, vol:1
 		startAnime, target:爆発, frame:100,loop:0
 		target:弾丸, time:0.2, alpha:0
 		if:回避 ? 回避:ダメージ
@@ -61,7 +61,7 @@ action:ビーストランサー
 			連続終了
 		同時終了
 		wait, 0.5
-		PlaySound, file:剣で斬る2, vol:1
+		PlaySound, file:sword_slash_02, vol:1
 		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
 		if:回避 ? 回避:ダメージ
 		wait, 0.3
@@ -90,7 +90,7 @@ action:ショックベイアニット
 			連続終了
 		同時終了
 		wait, 0.5
-		PlaySound, file:近接, vol:1
+		PlaySound, file:hit, vol:1
 		target:攻撃側, $$x:560, time:0.2, ease:QuadIn
 		if:回避 ? 回避:ダメージ
 		wait, 0.3
@@ -110,11 +110,11 @@ action:アンブレラキャノン
 		Wait, 0.4
 		createImg, name:弾丸 ,asset:rayB, targetPosition:攻撃側,pivot:中心, color:0xFFFFFF, scale:2
 		target:弾丸, pointtarget:攻撃側, adjustX:32, time:0, alpha:1
-		PlaySound, file:ビームガン, vol:1
+		PlaySound, file:beam_gun, vol:1
 		target:弾丸, pointtarget:防御側, adjustX:-32,time:0.3, alpha:1
 		createImg, name:爆発 ,anime:bombB_, pivot:中心, color:0xFFFFFF, scale:2
 		target:爆発, pointtarget:防御側, time:0, alpha:1
-		PlaySound, file:爆発1, vol:1
+		PlaySound, file:explode_01, vol:1
 		startAnime, target:爆発, frame:100,loop:0
 		target:弾丸, time:0.2, alpha:0
 		if:回避 ? 回避:ダメージ

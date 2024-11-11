@@ -12,7 +12,7 @@ AddLayer name:エフェクト alpha:0
 //
 //場面転換
 //
-SetImg img:住宅地 size:fill name:境内 layer:背景 alpha:1
+SetImg img:jyutakuchi size:fill name:境内 layer:背景 alpha:1
 CharaLayer name:キャラクター
 //
 //配置位置変数

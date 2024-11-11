@@ -10,7 +10,7 @@ AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
 CharaLayer name:キャラクター
-SetImg img:住宅地 size:fill name:部屋 layer:背景
+SetImg img:jyutakuchi size:fill name:部屋 layer:背景
 //
 //テロップセット
 //
@@ -100,7 +100,7 @@ ClearTelop
 //
 //場面転換
 //
-SetImg img:廃墟 size:fill name:路地裏 layer:背景 alpha:0
+SetImg img:haikyo size:fill name:路地裏 layer:背景 alpha:0
 ReadyMove
 SetMove name:路地裏 time:0.5 fade:in
 StartMove type:同時 wait:on
@@ -123,7 +123,7 @@ wait 0.3
 
 ClearTelop
 Wait 0.3
-SetImg img:イベント_黄昏の魔法使い size:fill name:魔法使い layer:キャラクター
+SetImg img:event_witch size:fill name:魔法使い layer:キャラクター
 ReadyMove
 SetMove layer:キャラクター time:1.5 fade:in
 StartMove type:同時 wait:on
@@ -156,7 +156,7 @@ ClearLayer name:キャラクター
 //
 //場面転換
 //
-SetImg img:神社境内 size:fill name:境内 layer:背景 alpha:1
+SetImg img:keidai size:fill name:境内 layer:背景 alpha:1
 CharaLayer name:キャラクター
 //
 //配置位置変数
@@ -1285,7 +1285,7 @@ Exit
 エピローグ:
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
-SetImg img:神社境内 size:just name:神社境内 layer:背景
+SetImg img:keidai size:just name:神社境内 layer:背景
 SetChara name:ケルベロス x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1

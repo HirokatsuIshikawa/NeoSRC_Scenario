@@ -18,7 +18,7 @@ Set name:エネミー配置位置 value:1300
 Set name:エネミー配置間隔 value:200
 //
 Wait 1
-SetImg img:草地 size:fill name:境内 layer:背景 alpha:1
+SetImg img:kusachi size:fill name:境内 layer:背景 alpha:1
 SetChara name:知世 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
 SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
@@ -29,7 +29,7 @@ ReadyMove
 SetMove layer:背景 time:1 fade:in
 StartMove type:連続 wait:on
 Wait 1
-PlaySound file:テレポート
+PlaySound file:teleport
 flash
 ReadyMove
 SetMove layer:キャラクター time:0.5 fade:in
@@ -163,7 +163,7 @@ StartBGM file:Narrow_Gear fade:0.5
 これ、すごく嫌な感じがする……！
 
 Wait 0.3
-PlaySound file:念話
+PlaySound file:nenwa
 Wait 0.8
 Talk ケイブガード
 ん……呼び出し……？
@@ -219,7 +219,7 @@ Wait 2
 //
 //
 //
-SetImg img:草地 size:fill name:境内 layer:背景 alpha:1
+SetImg img:kusachi size:fill name:境内 layer:背景 alpha:1
 SetChara name:奈緒子 x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0) alpha:1
 SetChara name:すずか x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:アリサ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
@@ -256,7 +256,7 @@ Talk すずか
 Wait 1
 誰ッ！？
 Wait 1
-PlaySound file:マシン走行
+PlaySound file:machine_dash
 SetChara name:マシンキャバリー x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 4) alpha:0
 ReadyMove
 SetMove chara:マシンキャバリー fade:in time:0.5
@@ -544,7 +544,7 @@ SetChara name:ケイブガード x:$式($変数(プレイヤー配置位置) + $
 ReadyMove
 SetMove layer:キャラクター time:0.5 x:$式($変数(プレイヤー表示位置))
 StartMove type:連続 wait:on
-StartBGM file:サイバーバトルⅠ
+StartBGM file:cyber_battle_01
 Talk ユーノ
 あいつら！　まだこんな所に……
 
@@ -831,7 +831,7 @@ Clearmsg
 
 それっ！！
 
-PlaySound file:妖精弾幕
+PlaySound file:danmaku_fairy
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置) + 400)
 StartMove type:連続 wait:on
@@ -1230,7 +1230,7 @@ Talk ヤイバ
 Wait 0.8
 ん……？
 
-PlaySound file:足音_草むら
+PlaySound file:step_kusa
 Wait 1
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置) + 400)
@@ -1373,7 +1373,7 @@ Exit
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
 Wait 0.8
-SetImg img:草地 size:just name:草地 layer:背景
+SetImg img:kusachi size:just name:草地 layer:背景
 SetChara name:アリサ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:さくら x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 0) alpha:1
 SetChara name:ユーノ x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1) alpha:1
@@ -1385,7 +1385,7 @@ SetMove layer:エフェクト time:0.5 fade:out
 StartMove type:連続 wait:on
 Wait 0.3
 showmsg time:0.3
-StartBGM file:魔王魂_村03 vol:1 fade:0.5
+StartBGM file:game_maoudamashii_5_village03 vol:1 fade:0.5
 Talk アリサ
 あれ……ここは……
 
@@ -1674,7 +1674,7 @@ Talk 知世
 
 StopBGM fade:0.5
 Wait 0.8
-StartBGM file:魔王魂_村03 vol:1 fade:0.5
+StartBGM file:game_maoudamashii_5_village03 vol:1 fade:0.5
 Talk アリサ
 は、はぁ……どうも
 Wait 0.8

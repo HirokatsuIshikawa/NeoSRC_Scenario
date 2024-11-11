@@ -9,7 +9,7 @@ PlayerSideName さくらチーム
 AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
-SetImg img:住宅地 size:fill name:部屋 layer:背景
+SetImg img:jyutakuchi size:fill name:部屋 layer:背景
 //
 //テロップセット
 //
@@ -1222,7 +1222,7 @@ Exit
 StopBGM
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
-SetImg img:住宅地 size:just name:住宅地 layer:背景
+SetImg img:jyutakuchi size:just name:住宅地 layer:背景
 SetChara name:ユーノ x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 2) alpha:1
 ReadyMove

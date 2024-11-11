@@ -12,7 +12,7 @@ action:さくらカード『風』
 		set, 第二回転, 360
 		target:背景緑, alpha:0, time:0
 		target:親スプライト, x:720, y:200, time:0, alpha:1
-		PlaySound, file:風魔法2, vol:1
+		PlaySound, file:wind_magic_02, vol:1
 		同時
 			ループ, count:3
 				set, ヒール画像, ヒール$変数(ループ数)

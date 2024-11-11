@@ -13,7 +13,7 @@ AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
 CharaLayer name:キャラクター
-SetImg img:back/住宅地.jpg size:just name:部屋 layer:背景
+SetImg img:jyutakuchi size:just name:部屋 layer:背景
 SetChara name:木之本桜 x:340 alpha:1
 SetChara name:ケルベロス x:540 alpha:0
 ReadyMove
@@ -689,7 +689,7 @@ Exit
 ステージクリア:
 AddLayer name:背景 alpha:1 level:0
 CharaLayer name:キャラクター
-SetImg img:back/BG22a_80.jpg size:just name:部屋 layer:背景
+SetImg img:shinrin size:just name:部屋 layer:背景
 SetChara name:ケルベロス x:520 alpha:1 真の姿
 SetChara name:なのは x:820 alpha:1
 SetChara name:ユーノ x:940 alpha:1 フェレット

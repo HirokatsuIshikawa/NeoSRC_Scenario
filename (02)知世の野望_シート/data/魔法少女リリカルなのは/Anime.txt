@@ -13,7 +13,7 @@ set, 基本数, 720
 	//target:弾丸$変数(ループ数), pointTarget:防御側, adjustX:$式(80 + $変数(振れ幅X)), adjustY:$変数(振れ幅Y),time:0.6, alpha:1
 	target:弾丸$変数(ループ数), pointTarget:防御側,time:0.6, alpha:1, pointTargetNum:$変数(ループ数)
 	createImg, name:爆発$変数(ループ数) ,anime:bombP_, pivot:中心, alpha:0, color:0xFFFFFF, scale:2
-	PlaySound, file:爆発1, vol:1
+	PlaySound, file:explode_01, vol:1
 	//Target:爆発$変数(ループ数), alpha:1, time:0, pointTarget:防御側, adjustX:$式(80 + $変数(振れ幅X)), adjustY:$変数(振れ幅Y)
 	Target:爆発$変数(ループ数), alpha:1, time:0, pointTarget:防御側, pointTargetNum:$変数(ループ数)
 	startAnime, target:爆発$変数(ループ数), frame:100,loop:0
@@ -35,11 +35,11 @@ action:ディバインバスター
 	wait, 0.6
 	createImg, name:ビーム ,target:攻撃側, anime:beamF_, grid:12_0_8_32, pivotX:32, pivotY:16, alpha:0, color:0xFFFFFF, width:0, height:0
 	startAnime, target:ビーム, frame:100,loop:1
-	PlaySound, file:ビーム砲チャージ, vol:1
+	PlaySound, file:charge_beam_cannon, vol:1
 	target:ビーム, time:0, adjustX:16
 	target:ビーム, time:0.5, width:64, height:64, alpha:1
 	Wait, 0.3
-	PlaySound, file:ビーム砲2, vol:1
+	PlaySound, file:beam_cannon_02, vol:1
 	target:ビーム, time:0.2, width:960
 	wait, 1
 	同時
@@ -63,7 +63,7 @@ action:シールドアタック
 	createImg, name:シールド,target:攻撃側, asset:wall, pivot:中心, alpha:0, color:0xFFFFFF
 	target:シールド, time:0.3, pointTarget:攻撃側, alpha:0, width:128, height:128
 	target:シールド, time:0.3, pointTarget:攻撃側, alpha:0.6
-	PlaySound, file:ビーム砲2, vol:1
+	PlaySound, file:beam_cannon_02, vol:1
 	target:攻撃側, $$x:900, time:0.5, ease:QuadIn
 	Wait ,0.3
 	target:攻撃側, $x:-360, time:0

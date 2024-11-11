@@ -5,7 +5,7 @@ AddLayer name:背景alpha:0
 AddLayer name:キャラクターalpha:0
 AddLayer name:エフェクトalpha:0
 CharaLayer name:キャラクター
-SetImg img:back/さくら部屋.jpgsize:fillname:部屋layer:背景
+SetImg img:sakura_roomsize:fillname:部屋layer:背景
 SetChara name:木之本桜x:240
 SetChara name:ケルベロスx:740
 SetChara name:知世x540

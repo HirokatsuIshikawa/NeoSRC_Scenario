@@ -3,7 +3,7 @@
 AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
 AddLayer name:エフェクト alpha:0
-SetImg img:back/住宅地.jpg size:fill name:部屋 layer:背景
+SetImg img:jyutakuchi size:fill name:部屋 layer:背景
 ReadyMove
 SetMove layer:背景 time:0.5 fade:in
 StartMove type:同時 wait:on
