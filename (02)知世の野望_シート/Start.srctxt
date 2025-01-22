@@ -14,7 +14,7 @@
 レベル:ユニット
 インターミッション
 //背景
-name:背景, type:img, img:住宅地
+name:背景, type:img, img:intermission
 //ラベル
 name:資金, type:label,key:資金, x:10, y:10
 //ボタン
