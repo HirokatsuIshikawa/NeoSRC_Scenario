@@ -6,11 +6,12 @@ Exit
 スタート:
 AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
-AddLayer name:エフェクト alpha:0
+AddLayer name:エフェクト alpha:1
 //
 //場面転換
 //
-SetImg img:jyutakuchi size:fill name:境内 layer:背景 alpha:1
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+SetImg img:jyutakuchi size:fill name:住宅地 layer:背景 alpha:1
 CharaLayer name:キャラクター
 //
 //配置位置変数
@@ -28,8 +29,13 @@ SetChara name:すずか x:$式($変数(プレイヤー配置位置) + $変数(�
 //
 //フェードイン
 //
+Wait 1
 ReadyMove
 SetMove layer:背景 time:0.5 fade:in
+Setmove layer:エフェクト time:0.5 fade:out
+StartMove type:同時 wait:on
+Wait 0.5
+ReadyMove
 SetMove layer:キャラクター time:0.5 fade:in
 StartMove type:同時 wait:on
 //
@@ -43,6 +49,7 @@ Talk アリサ
 
 Talk すずか
 ねぇ、アリサちゃん……
+Wait 0.4
 やっぱり、やめた方がいいんじゃないかな……？
 
 Talk アリサ
@@ -62,7 +69,7 @@ Talk すずか
 Wait 0.4
 Talk アリサ
 なのはのヤツめ……
-
+Wait 0.5
 最近付き合いが悪いと思ったら、
 まさか男が出来てたなんて……
 
@@ -70,15 +77,16 @@ Talk アリサ
 
 Talk すずか
 相手の子が、ここ友枝町に住んでいて……
-
+Wait 0.5
 金髪のショートカットで、緑色の目をして
 友枝町でも有名なスポーツ万能の明るい子で……
 
 去年やった劇の眠れる森の美女でやってた
 王子様の役がとっても人気だったとか……
 
+Call SE hit.mp3
 Talk アリサ
-すずかだって、気になってんじゃないの！
+すずかだって、気になってんじゃない！
 
 それにしても、少女漫画の恋人感満々で……
 
@@ -88,11 +96,12 @@ Talk すずか
 なにも、なのはちゃんに先を越された嫉妬で
 ここまで追いかけなくても……
 
+Call SE hit.mp3
 Talk アリサ
 怒ってるのはそこじゃないわよ！！
 
 こんな面白……
-
+Wait 0.4
 いや、大事な事を私達に相談もせず
 一人で悩むなんて、あんまりだと思わない？
 
@@ -101,7 +110,7 @@ Talk すずか
 
 Talk アリサ
 男が出来たら、親友なんて
-もう過去のもんなのかっての……
+もう過去のもんなのかっての！！　ええ！？
 
 Talk すずか
 アリサちゃん、顔がすごい事になってる……
@@ -132,7 +141,7 @@ clearmsg type:all
 //
 //場面転換
 //
-SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
+//SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:0.5 fade:in
 SetMove layer:背景 time:0.3 fade:out
@@ -238,14 +247,14 @@ Talk ユーノ
 
 Talk ケルベロス
 当然ありえへん
-
+Wait 0.4
 アイツら見た目からしてアホそうやったし
 
 きっと、どっかの別の出入り口から
 入ってきよったんやろな
 
 Talk 知世
-と言う事は、この世界への出入り口は
+……と言う事は、この世界への出入り口は
 神社の御神木以外にも……？
 
 Talk ケルベロス
@@ -278,7 +287,7 @@ Talk さくら
 
 Talk なのは
 ホントだ……
-
+Wait 0.4
 しかも、ゲームに出て来そうなの……
 
 Talk ケルベロス
@@ -531,12 +540,12 @@ Talk ケイブガード
 フードを被った女の人から魔法の紋章を貰わなかった？
 
 Talk なのは
-……一応、それっぽいのは持ってますけど
+……一応、それっぽいのは持ってるけど
 
-（でも、紋章ってのとはちょっと違うし……？）
+（でも、紋章ってのとはちょっと違うよね……？）
 
 Talk ケイブガード
-やっぱり
+やっぱり……
 
 ……まぁ、マギクレストって呼び方は
 いつの間にか広まってた名前だし
@@ -551,7 +560,10 @@ Talk なのは
 
 Talk ユーノ
 なのは……
-
+Wait 0.4
+cn
+レイジングハート
+Wait 0.4
 僕は、あげたつもりはないからね
 
 hidemsg time:0.3
@@ -984,7 +996,7 @@ Exit
 
 マップスタート:
 StopBGM
-LoadMap file:02_plaen_potato.map
+LoadMap file:02_plane_potato.map
 ReadyMove
 SetMove layer:キャラクター alpha:0
 SetMove layer:エフェクト time:0.3 fade:out
@@ -1012,6 +1024,7 @@ Talk キャノンレイダー
 よしよし
 
 あとは少し待つだけで……
+Wait 0.4
 Flash time:0.3
 PlaySound file:magic-quake2
 Shake x:20 y:0
@@ -1029,7 +1042,7 @@ Talk ロッドアタッカー
 
 Talk ブッシュシューター
 まぁ、大したことはないだろ
-
+Wait 0.4
 ん？　あいつらは……
 
 HideMessage time:0.3
@@ -1043,12 +1056,12 @@ LaunchUnit name:なのは x:13 y:18
 LaunchUnit name:ユーノ x:15 y:18 
 CreateUnit name:ケイブガード x:9 y:17 side:さくらチーム level:2 join:0
 CreateUnit name:ケイブガード x:11 y:17 side:さくらチーム level:2 join:0
-CreateUnit name:ワイルドランナー x:11 y:19 side:さくらチーム level:2 join:0
-CreateUnit name:ワイルドランナー x:9 y:19 side:さくらチーム level:2 join:0
+CreateUnit name:ワイルドランナー x:10 y:18 side:さくらチーム level:2 join:0
+CreateUnit name:ワイルドランナー x:8 y:18 side:さくらチーム level:2 join:0
 CreateUnit name:ケイブガード x:17 y:17 side:さくらチーム level:2 join:0
 CreateUnit name:ケイブガード x:19 y:17 side:さくらチーム level:2 join:0
-CreateUnit name:ワイルドランナー x:19 y:19 side:さくらチーム level:2 join:0
-CreateUnit name:ワイルドランナー x:17 y:19 side:さくらチーム level:2 join:0
+CreateUnit name:ワイルドランナー x:18 y:18 side:さくらチーム level:2 join:0
+CreateUnit name:ワイルドランナー x:20 y:18 side:さくらチーム level:2 join:0
 Wait 1
 SetChara name:さくら x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 0 + 30) alpha:1
 SetChara name:なのは x:$式($変数(プレイヤー配置位置) + $変数(プレイヤー配置間隔) * 1) alpha:1
@@ -1150,14 +1163,17 @@ SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 Center unit:キャノンレイダー
 StartBGM file:game_maoudamashii_1_battle25 vol:1 fade:0.5
+Call SE slime.mp3
 CreateUnit name:ポテトン x:10 y:14 side:敵 level:1
 CreateUnit name:ポテトン x:12 y:14 side:敵 level:1 
 CreateUnit name:ポテトン x:13 y:13 side:敵 level:1 
 CreateUnit name:ポテトン x:15 y:13 side:敵 level:1 
+Call SE slime.mp3
 CreateUnit name:ポテトン x:17 y:11 side:敵 level:1 
 CreateUnit name:ポテトン x:19 y:11 side:敵 level:1 
 CreateUnit name:ポテトン x:9 y:11 side:敵 level:1
 CreateUnit name:ポテトン x:11 y:11 side:敵 level:1 
+Call SE slime.mp3
 CreateUnit name:ポテドン x:8 y:9 side:敵 level:1
 CreateUnit name:ポテドン x:10 y:9 side:敵 level:1
 CreateUnit name:ポテドン x:18 y:9 side:敵 level:1
@@ -1281,7 +1297,9 @@ Talk ケイブガード
 空でも飛べなきゃ、あの上は通れないはずだから
 
 Talk 知世
-わかりましたわ
+わかりました
+
+（……でも、３人とも飛ぶ魔法はちゃんと使えますわ）
 
 Talk さくら
 それじゃあ……いくよ！！
@@ -1341,10 +1359,12 @@ ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 Center x:14 y:11
+Call SE slime.mp3
 CreateUnit name:ポテトン x:12 y:8 side:敵 level:1
 CreateUnit name:ポテドン x:11 y:9 side:敵 level:1 
 CreateUnit name:ポテトン x:11 y:13 side:敵 level:1 
 CreateUnit name:ポテドン x:12 y:14 side:敵 level:1 
+Call SE slime.mp3
 CreateUnit name:ポテトン x:16 y:14 side:敵 level:1 
 CreateUnit name:ポテドン x:17 y:13 side:敵 level:1 
 CreateUnit name:ポテトン x:17 y:9 side:敵 level:1 
@@ -1600,6 +1620,7 @@ ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 Wait 1
+Call SE sammon.mp3
 Flash
 Escape side:敵
 Wait 1
@@ -1772,18 +1793,18 @@ Talk 奈緒子
 
 Talk アリサ
 ……そう言えば、友枝町って
-
+Wait 0.4
 一昨年から、妙な異常気象が頻発してるって
 聞いた事あったけど……
 
 Talk 奈緒子
 よく知ってるね
-
+Wait 0.4
 友枝町だけ大雨だったり、大雪だったり
 公園の滑り台がひっくり返ったりして
 
 でも、いつの間にか戻ってたりとか……
-
+Wait 0.4
 そんな色々な事が起こってたんだよ
 
 Talk 奈緒子
@@ -1821,10 +1842,19 @@ Talk 奈緒子
 
 hidemsg time:0.3
 clearmsg type:all
-flash time:2
+Wait 0.4
+Call SE sammon.mp3
+SetImg img:tex_white size:fill name:ホワイト layer:エフェクト alpha:1
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:連続 wait:on
+Wait 1
+SetImg img:tex_black size:fill name:ブラック layer:エフェクト alpha:0
+ReadyMove
+SetMove name:ブラック time:1 fade:in
+SetMove name:ホワイト time:1 fade:out
+StartMove type:同時 wait:on
+Wait 0.5
 DeleteAllLayer
 Continue MoH_03.srceve
 Exit

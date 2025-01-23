@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:7b9f9f87ee11f238e63a3d96c736d44f:8eabd12183146f6f53d4128c06f8f11b:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<!-- $TexturePacker:SmartUpdate:c33ea49847f0127e52feeb20d6f10c62:043965cc3604259b7b10028b42653168:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
 <TextureAtlas imagePath="chara_2.png" width="538" height="468">
     <SubTexture name="ポテトン" x="1" y="1" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
 </TextureAtlas>
