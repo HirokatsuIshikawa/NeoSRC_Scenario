@@ -52,3 +52,10 @@ https://w.atwiki.jp/neosrchelp/
 ・背景画像
 ＜ks_factory＞https://radius-rave.com/ks_factory/
 <ぐったりにゃんこのホームページ>http://guttari8.sakura.ne.jp/
+
+・SE
+tsugi-studioの以下のツールを私用
+DSP Fantasy
+DSP Retro
+DSP Sci-Fi
+DSP Anime
