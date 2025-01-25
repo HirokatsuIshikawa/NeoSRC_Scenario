@@ -9,7 +9,7 @@ Exit
 //
 Call ポジション初期設定
 Call ベースレイヤーセット
-Call 背景セット 草地
+Call 背景セット kusachi
 Call 黒幕エフェクトセット
 Wait 1
 Call プレイヤー位置計算加算 1 -40
@@ -23,7 +23,7 @@ Wait 0.6
 //
 //
 //
-StartBGM file:game_maoudamashii_5_village05 fade:0.5
+StartBGM file:game_maoudamashii_5_village05.mp3 fade:0.5
 Talk ケイブガード
 よぉ、おつかれ
 
@@ -35,7 +35,7 @@ Talk ユーノ
 
 Talk ケルベロス
 ほー、芋煮かいな……
-
+Wait 0.4
 中々うまそうやないか
 
 Talk ユーノ
@@ -50,9 +50,9 @@ Talk ケイブガード
 Talk ケルベロス
 ふむふむ、子供が作ったにしてはなかなかやないか
 
-特に問題あらへんから、ユーノもくえ喰え
+特に問題あらへんから、ユーノも喰え喰え
 Wait 0.3
-せやないと、身体もたんで
+せやないと、身体もたへんで
 
 Talk ユーノ
 ……
@@ -71,7 +71,7 @@ Talk ユーノ
 これまで感じた事のない性質の魔力だから
 すんなりって訳にはいかないけれど……
 
-空肝転移は、何度かやった事があるし
+空間転移は、何度かやった事があるし
 不思議とどういう物なのかは分かるから
 時間をかければ何とかなると思う
 
@@ -86,7 +86,7 @@ Talk ユーノ
 
 Talk ケルベロス
 ワイの思った通りや
-
+Wait 0.3
 これなら、うまく行きそうやな
 
 Talk ユーノ
@@ -179,7 +179,7 @@ StartMove wait:on
 Wait 1
 Talk ？？？
 ここは……どこ？
-
+Wait 0.4
 確か、いつもの広場で遊んでたら
 急に足元が……
 
@@ -432,12 +432,12 @@ Talk 勇太
 
 Call キャラクター隠し
 Center x:6 y:4
-ReadyUnitMove unit:闇雲ミズチ x:12 y:3 time:1
-ReadyUnitMove unit:友永勇太(ベーシック) x:12 y:4 time:1
+ReadyUnitMove unit:闇雲ミズチ x:12 y:4 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:12 y:5 time:1
 StartUnitMove
 Wait 0.3
-ReadyUnitMove unit:闇雲ミズチ x:5 y:3 time:1
-ReadyUnitMove unit:友永勇太(ベーシック) x:4 y:4 time:1
+ReadyUnitMove unit:闇雲ミズチ x:5 y:4 time:1
+ReadyUnitMove unit:友永勇太(ベーシック) x:4 y:5 time:1
 StartUnitMove
 Wait 0.3
 Call キャラクター表示
@@ -465,10 +465,12 @@ SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 StopBGM fade:1
 Wait 1
+Call SE drill.mp3
 StartBGM file:kthxbi
 CreateUnit name:ガベージ x:9 y:3 side:敵 level:1
 CreateUnit name:ガベージ x:9 y:5 side:敵 level:1
 CreateUnit name:ガベージ x:9 y:7 side:敵 level:1
+Call SE drill.mp3
 CreateUnit name:ガベージ x:11 y:4 side:敵 level:1
 CreateUnit name:ガベージ x:11 y:6 side:敵 level:1
 CreateUnit name:ガベージ x:11 y:8 side:敵 level:1
@@ -496,6 +498,7 @@ Exit
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ブレイブアップ:
 Wait 0.3
+Call SE drill.mp3
 CreateUnit name:ガベージ x:3 y:6 side:敵 level:1
 CreateUnit name:ガベージ x:4 y:7 side:敵 level:1
 AddLayer name:キャラクター alpha:0
@@ -613,8 +616,12 @@ Talk デッカード
 
 Talk 勇太
 くっ、このおっ！！
+
+hidemsg time:0.3
+clearmsg type:all
 Wait 0.5
-PlaySound file:beam_gun
+addDemo action:バスター attacker:友永勇太 deffender:ガベージ
+startDemo
 Wait 0.8
 PlaySound file:explode_01
 flash time:0.3
@@ -640,18 +647,23 @@ Exit
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ステージクリア:
+Call SE drill.mp3
 CreateUnit name:ガベージ x:11 y:3 side:敵 level:1 
 CreateUnit name:ガベージ x:13 y:3 side:敵 level:1 
 CreateUnit name:ガベージ x:15 y:3 side:敵 level:1 
+Call SE drill.mp3
 CreateUnit name:ガベージ x:17 y:3 side:敵 level:1 
 CreateUnit name:ガベージ x:19 y:4 side:敵 level:1 
 CreateUnit name:ガベージ x:19 y:6 side:敵 level:1 
+Call SE drill.mp3
 CreateUnit name:ガベージ x:19 y:8 side:敵 level:1 
 CreateUnit name:ガベージ x:19 y:10 side:敵 level:1 
 CreateUnit name:ガベージ x:19 y:12 side:敵 level:1 
+Call SE drill.mp3
 CreateUnit name:ガベージ x:19 y:14 side:敵 level:1 
 CreateUnit name:ガベージ x:17 y:16 side:敵 level:1 
 CreateUnit name:ガベージ x:15 y:16 side:敵 level:1 
+Call SE drill.mp3
 CreateUnit name:ガベージ x:13 y:16 side:敵 level:1 
 CreateUnit name:ガベージ x:11 y:16 side:敵 level:1 
 CreateUnit name:ガベージ x:9 y:16 side:敵 level:1 
@@ -728,7 +740,6 @@ Wait 0.8
 SetImg img:kusachi size:just name:草地 layer:背景
 Call ポジション初期設定
 Call ベースレイヤーセット
-Call 背景セット 草地
 Wait 1
 Call プレイヤー位置計算加算 1 -40
 SetChara name:ケルベロス x:$変数(プレイヤー位置) alpha:1
@@ -776,6 +787,7 @@ Talk ケルベロス
 Talk ユーノ
 わかった、それじゃあ……
 
+PlaySound file:teleport
 Flash time:0.3
 StopBGM fade:0.5
 ……え？
@@ -803,6 +815,8 @@ StartMove
 Talk 勇太
 うわぁぁぁぁぁぁっ！？
 
+Call SE hit.mp3
+Wait 1
 Talk ケイブガード
 な、なんだ！？
 StartBGM file:game_maoudamashii_5_village08 vol:1 fade:0.5
@@ -866,14 +880,14 @@ Talk 勇太
 ぬいぐるみが……浮かんで……
 Wait 0.5
 StartBGM file:game_maoudamashii_5_casino03 vol:1
-喋ってる！？
+喋ってるぅっ！？！？
 
 Talk ケルベロス
 コラぁッ！　誰がぬいぐるみや！
 
 Talk ミズチ
 （危ない所を切り抜けたが……
-　今度は、どうも面倒くさい事になりそうだな……）
+　つづけて面倒くさい事になりそうだな……）
 
 SetCommander name:大道寺知世 sidename:さくらチーム
 hidemsg time:0.3

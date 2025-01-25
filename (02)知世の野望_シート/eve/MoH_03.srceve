@@ -1,3 +1,8 @@
+初期化:
+#<system/system.srceve>
+#<LoadStart>
+Exit
+
 スタート:
 AddLayer name:背景 alpha:0
 AddLayer name:キャラクター alpha:0
@@ -41,8 +46,6 @@ StartBGM file:game_maoudamashii_7_event43 fade:0.5
 Talk ケイブガード
 ただいまー
 
-ってありゃ、誰もいない……？
-
 Talk ユーノ
 ここは、ケイブヴィレッジの洞窟……？
 
@@ -62,10 +65,12 @@ Talk なのは
 へぇ……
 
 Talk ケイブガード
+……ってありゃ、誰もいない？
+
 おーい！！
 Wait 1
 clearmsg
-うーん、やっぱみんないないな……
+うーん、やっぱりいないな……
 せっかく獲物を狩って来たってのに
 
 Talk ユーノ
@@ -75,7 +80,7 @@ Talk ユーノ
 
 Talk ケイブガード
 どうするって……
-
+wait 0.4
 そりゃ、食べるに決まってるじゃんか
 
 Talk なのは
@@ -132,7 +137,7 @@ Talk 知世
 もう結構な時間ですし、お帰りになられたのでしょうか？
 
 Talk ケイブガード
-いや、普段だったら残ってる奴が……
+いや、いつもなら残ってる奴が……
 
 StopBGM fade:0.5
 Talk さくら
@@ -229,6 +234,7 @@ SetMove layer:キャラクター fade:out
 SetMove layer:エフェクト time:0.5 fade:out
 StartMove type:連続 wait:on
 Wait 1
+Call SE sammon.mp3
 flash
 ReadyMove
 SetMove layer:キャラクター time:1 fade:in
@@ -242,7 +248,8 @@ Talk アリサ
 ちょっと……どこよ、ここ！？
 
 Talk 奈緒子
-さっきまで、月峰神社にいたのに……
+さっきまで、月峰神社にいたのに
+こんな草原の中に……
 
 これって、もしかして不思議体験！？
 
@@ -385,6 +392,8 @@ Talk キャノンレイダー
 Talk ヤイバ
 チッ、下らねぇ……
 
+Call SE walk_glass.mp3
+Wait 1
 Talk キャノンレイダー
 あ、おい！！
 
@@ -392,6 +401,7 @@ Talk ヤイバ
 後は任せた
 Wait 0.7
 ……少し、その辺を歩いてくる
+Call SE walk_glass.mp3
 ReadyMove
 SetMove chara:ヤイバ time:0.8 fade:out x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 5 + 100)
 StartMove type:同時 wait:on
@@ -404,7 +414,7 @@ Talk ブッシュシューター
 
 Talk キャノンレイダー
 まぁ、今回の作戦そのものが
-コクエンのワガママだしなぁ……
+とどのつまりはコクエンのワガママだしなぁ……
 
 ……おっ
 
@@ -418,6 +428,7 @@ CreateUnit name:マシンキャバリー x:18 y:1 side:コクエン隊 level:1 i
 CreateUnit name:マシンキャバリー x:20 y:1 side:コクエン隊 level:1 id:キャバリー２
 Wait 0.5
 Center x:28 y:9
+Call SE speed_move_sky.mp3
 UnitMove id:キャバリー１ x:27 y:8
 UnitMove id:キャバリー２ x:27 y:10
 SetChara name:マシンキャバリー x:$式($変数(エネミー配置位置) + $変数(エネミー配置間隔) * 1 - 80) alpha:1
@@ -498,6 +509,7 @@ clearmsg type:all
 ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
+Call SE speed_move_sky.mp3
 UnitMove id:キャバリー１ baseId:敵本拠地
 Escape id:キャバリー１
 UnitMove id:キャバリー２ baseId:敵本拠地
@@ -599,6 +611,7 @@ clearmsg
 ReadyMove
 SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
+Call SE sammon.mp3
 CreateUnit name:ロッドアタッカー x:13 y:6 side:コクエン隊 level:1  anime:1
 CreateUnit name:ブッシュシューター x:12 y:10 side:コクエン隊 level:1  anime:1
 CreateUnit name:エレクトロショッカー x:12 y:13 side:コクエン隊 level:1  anime:1
@@ -747,6 +760,8 @@ Clearmsg type:all
 ReadyMove
 SetMove layer:キャラクター time:0.3 x:$式($変数(プレイヤー表示位置) + 400)
 StartMove type:連続 wait:on
+Call SE NewType.mp3
+Wait 0.4
 Talk さくら
 ！？
 
@@ -764,6 +779,7 @@ SetMove layer:キャラクター time:0.3 fade:out
 StartMove type:同時 wait:on
 StopBGM
 Wait 1
+Call SE sammon.mp3
 StartBGM file:kthxbi
 CreateUnit name:弾幕妖精 x:22 y:4 side:コクエン隊 level:1 
 CreateUnit name:弾幕妖精 x:24 y:6 side:コクエン隊 level:1 
@@ -844,14 +860,14 @@ Talk ワイルドランナー
 くっ、数がすごくてよけにくい……！
 
 ReadyMove
-SetMove layer:キャラクター time:0 x:$式($変数(エネミー表示位置) + 200)
-SetMove layer:キャラクター time:0.1 fade:in
+SetMove layer:キャラクター time:0.3 x:$式($変数(エネミー表示位置) + 200)
+SetMove layer:キャラクター time:0.3 fade:in
 StartMove type:連続 wait:on
 Talk キャノンレイダー
 へへっ、空中飛んでるんじゃ原始人には
 相手しづらいだろ
 
-あの三人はなんとしても連れて来たいんでな……
+そこの三人はなんとしても連れて来たいんでな……
 
 邪魔者のお前らには、ここで退場してもらうぜ！！
 
@@ -1091,6 +1107,7 @@ Talk なのは
 Call キャラクター隠し
 Wait 0.7
 StartBGM file:true_or_false
+Call SE speed_move_sky.mp3
 Wait 0.7
 CreateUnit name:ヤイバ baseId:敵本拠地 side:コクエン隊 level:1 
 Wait 0.7
@@ -1184,7 +1201,7 @@ SetMove layer:キャラクター time:0.3 x:$式($変数(エネミー表示位�
 StartMove type:連続 wait:on
 Talk ヤイバ
 ……こんなフワフワした連中じゃないと思うが
-
+Wait 0.3
 腕が立つクレストマイスターが相手なら
 それだけで出向いてきた価値がある！
 
@@ -1774,7 +1791,7 @@ Talk なのは
 Talk アリサ
 ん……ちょっとしたウワサで聞いたのよ
 
-（こうしてみると、例の噂はさくらさんと
+（例の噂はさくらさんと
 　ユーノがごっちゃになってたみたいね……）
 
 Goto 選択肢表示
@@ -1925,7 +1942,6 @@ Talk ケルベロス
 
 hidemsg time:0.3
 clearmsg type:all
-flash time:2
 ReadyMove
 SetMove layer:エフェクト time:1 fade:in
 StartMove type:連続 wait:on

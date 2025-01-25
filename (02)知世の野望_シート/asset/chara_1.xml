@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:c33ea49847f0127e52feeb20d6f10c62:043965cc3604259b7b10028b42653168:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
-<TextureAtlas imagePath="chara_1.png" width="2042" height="2036">
-    <SubTexture name="すずか" x="1522" y="1117" width="151" height="521" frameX="0" frameY="-119" frameWidth="151" frameHeight="640"/>
-    <SubTexture name="カトレア" x="1" y="1" width="264" height="641" frameX="0" frameY="-79" frameWidth="264" frameHeight="720"/>
-    <SubTexture name="キャサリン京橋" x="267" y="1" width="150" height="640"/>
-    <SubTexture name="シューター" x="1358" y="1127" width="162" height="561" frameX="0" frameY="-79" frameWidth="162" frameHeight="640"/>
-    <SubTexture name="ジャンクゴーレム" x="419" y="1" width="383" height="638" frameX="-44" frameY="-2" frameWidth="427" frameHeight="640"/>
-    <SubTexture name="スライム" x="1105" y="1778" width="285" height="208" frameX="-31" frameY="-39" frameWidth="320" frameHeight="260"/>
-    <SubTexture name="ソロ" x="240" y="644" width="249" height="640"/>
-    <SubTexture name="チルノ" x="1383" y="634" width="282" height="481" frameX="0" frameY="-159" frameWidth="282" frameHeight="640"/>
-    <SubTexture name="ツルギ" x="583" y="1215" width="295" height="569" frameX="0" frameY="-71" frameWidth="295" frameHeight="640"/>
-    <SubTexture name="ディッキー" x="1392" y="1690" rotated="true" width="541" height="345" frameX="0" frameY="-99" frameWidth="345" frameHeight="640"/>
-    <SubTexture name="ドレイク" x="880" y="1215" width="304" height="561" frameX="0" frameY="-79" frameWidth="304" frameHeight="640"/>
-    <SubTexture name="パーカー少年_0001" x="1831" y="1097" width="198" height="400"/>
-    <SubTexture name="ポテドン" x="1522" y="1" width="513" height="442" frameX="-11" frameY="-9" frameWidth="530" frameHeight="454"/>
-    <SubTexture name="マシンキャバリー" x="1202" y="1" width="183" height="561" frameX="0" frameY="-79" frameWidth="183" frameHeight="640"/>
-    <SubTexture name="モンスター" x="491" y="641" rotated="true" width="534" height="572" frameX="-49" frameY="-6" frameWidth="675" frameHeight="540"/>
-    <SubTexture name="ワイルドランナー" x="1520" y="445" rotated="true" width="521" height="187" frameX="0" frameY="-119" frameWidth="187" frameHeight="640"/>
-    <SubTexture name="三白眼_0001" x="583" y="1786" rotated="true" width="520" height="245" frameX="0" frameY="-120" frameWidth="245" frameHeight="640"/>
-    <SubTexture name="友永勇太" x="1027" y="572" width="186" height="561" frameX="-127" frameY="-79" frameWidth="400" frameHeight="640"/>
-    <SubTexture name="友永勇太_デッカード" x="804" y="1" width="396" height="569" frameX="-4" frameY="-71" frameWidth="400" frameHeight="640"/>
-    <SubTexture name="大道寺きら" x="1215" y="564" width="166" height="561" frameX="0" frameY="-79" frameWidth="166" frameHeight="640"/>
-    <SubTexture name="大道寺知世" x="1" y="644" width="237" height="641" frameX="0" frameY="-79" frameWidth="237" frameHeight="720"/>
-    <SubTexture name="少年_0001" x="1675" y="1097" width="154" height="431"/>
-    <SubTexture name="木之本桜" x="1" y="1287" width="205" height="641" frameX="0" frameY="-79" frameWidth="205" frameHeight="720"/>
-    <SubTexture name="札付鋭一" x="208" y="1287" width="373" height="640"/>
-    <SubTexture name="東方妖精" x="1667" y="634" width="305" height="461" frameX="0" frameY="-179" frameWidth="305" frameHeight="640"/>
-    <SubTexture name="白壁ハクマ" x="1387" y="1" width="131" height="551" frameX="0" frameY="-89" frameWidth="131" frameHeight="640"/>
-    <SubTexture name="赤金シュリ" x="1186" y="1135" width="170" height="561" frameX="0" frameY="-79" frameWidth="170" frameHeight="640"/>
+<!-- $TexturePacker:SmartUpdate:6c3c1c4ddcb8d419f1dd2857b314a7fc:011fff1b6a41797803e240d1e2aafb81:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_1.png" width="2012" height="1961">
+    <SubTexture name="キャサリン京橋" x="240" y="1" width="150" height="640"/>
+    <SubTexture name="シューター" x="589" y="1798" rotated="true" width="561" height="162" frameX="0" frameY="-79" frameWidth="162" frameHeight="640"/>
+    <SubTexture name="シンイチ" x="376" y="1286" width="211" height="581" frameX="0" frameY="-59" frameWidth="211" frameHeight="640"/>
+    <SubTexture name="ジャンクゴーレム" x="392" y="1" width="383" height="638" frameX="-44" frameY="-2" frameWidth="427" frameHeight="640"/>
+    <SubTexture name="ソロ" x="208" y="644" width="249" height="640"/>
+    <SubTexture name="チルノ" x="1715" y="595" width="282" height="481" frameX="0" frameY="-159" frameWidth="282" frameHeight="640"/>
+    <SubTexture name="ツルギ" x="777" y="1" width="295" height="569" frameX="0" frameY="-71" frameWidth="295" frameHeight="640"/>
+    <SubTexture name="ディッキー" x="1470" y="1" rotated="true" width="541" height="345" frameX="0" frameY="-99" frameWidth="345" frameHeight="640"/>
+    <SubTexture name="ドレイク" x="1039" y="572" width="304" height="561" frameX="0" frameY="-79" frameWidth="304" frameHeight="640"/>
+    <SubTexture name="ポテドン" x="1478" y="1078" width="513" height="442" frameX="-11" frameY="-9" frameWidth="530" frameHeight="454"/>
+    <SubTexture name="マシンキャバリー" x="1125" y="1135" width="183" height="561" frameX="0" frameY="-79" frameWidth="183" frameHeight="640"/>
+    <SubTexture name="モンスター" x="589" y="1224" rotated="true" width="534" height="572" frameX="-49" frameY="-6" frameWidth="675" frameHeight="540"/>
+    <SubTexture name="レイダー" x="1074" y="1" width="206" height="561" frameX="0" frameY="-79" frameWidth="206" frameHeight="640"/>
+    <SubTexture name="三白眼_0001" x="1470" y="348" rotated="true" width="520" height="245" frameX="0" frameY="-120" frameWidth="245" frameHeight="640"/>
+    <SubTexture name="友永勇太" x="1282" y="1" width="186" height="561" frameX="-127" frameY="-79" frameWidth="400" frameHeight="640"/>
+    <SubTexture name="友永勇太_デッカード" x="641" y="641" width="396" height="569" frameX="-4" frameY="-71" frameWidth="400" frameHeight="640"/>
+    <SubTexture name="大道寺きら" x="1310" y="1135" width="166" height="561" frameX="0" frameY="-79" frameWidth="166" frameHeight="640"/>
+    <SubTexture name="大道寺知世" x="1" y="1" width="237" height="641" frameX="0" frameY="-79" frameWidth="237" frameHeight="720"/>
+    <SubTexture name="宵闇コクエン" x="459" y="641" width="180" height="581" frameX="0" frameY="-59" frameWidth="180" frameHeight="640"/>
+    <SubTexture name="少年_0001" x="1715" y="1522" width="154" height="431"/>
+    <SubTexture name="木之本桜" x="1" y="644" width="205" height="641" frameX="0" frameY="-79" frameWidth="205" frameHeight="720"/>
+    <SubTexture name="札付鋭一" x="1" y="1287" width="373" height="640"/>
+    <SubTexture name="東方妖精" x="1345" y="595" width="305" height="461" frameX="0" frameY="-179" frameWidth="305" frameHeight="640"/>
+    <SubTexture name="赤金シュリ" x="1152" y="1698" rotated="true" width="561" height="170" frameX="0" frameY="-79" frameWidth="170" frameHeight="640"/>
 </TextureAtlas>

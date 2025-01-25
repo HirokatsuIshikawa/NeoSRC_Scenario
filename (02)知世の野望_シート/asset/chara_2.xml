@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:c33ea49847f0127e52feeb20d6f10c62:043965cc3604259b7b10028b42653168:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
-<TextureAtlas imagePath="chara_2.png" width="538" height="468">
-    <SubTexture name="ポテトン" x="1" y="1" width="536" height="466" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
+<!-- $TexturePacker:SmartUpdate:6c3c1c4ddcb8d419f1dd2857b314a7fc:011fff1b6a41797803e240d1e2aafb81:752664ba6d2ae8d4bba6481a38a8c5ef$ -->
+<TextureAtlas imagePath="chara_2.png" width="475" height="1091">
+    <SubTexture name="すずか" x="190" y="539" width="151" height="521" frameX="0" frameY="-119" frameWidth="151" frameHeight="640"/>
+    <SubTexture name="ポテトン" x="1" y="1" rotated="true" width="466" height="536" frameX="-22" frameY="-20" frameWidth="573" frameHeight="500"/>
+    <SubTexture name="ワイルドランナー" x="1" y="539" width="187" height="521" frameX="0" frameY="-119" frameWidth="187" frameHeight="640"/>
+    <SubTexture name="白壁ハクマ" x="343" y="539" width="131" height="551" frameX="0" frameY="-89" frameWidth="131" frameHeight="640"/>
 </TextureAtlas>
