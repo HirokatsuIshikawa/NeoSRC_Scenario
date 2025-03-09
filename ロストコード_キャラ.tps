@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.4.0</string>
+        <string>7.6.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -50,7 +50,7 @@
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
         <key>ditherType</key>
-        <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
+        <enum type="SettingsBase::DitherType">PngQuantLow</enum>
         <key>backgroundColor</key>
         <uint>0</uint>
         <key>libGdx</key>
@@ -173,6 +173,97 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_体_丸出し.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_体_奴隷服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_体_平服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_体_裸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_おすまし.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_つわり.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_アヘ顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_ウインク.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_ウインク笑顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_ダメージ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_ハート目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_フェラ顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_ムッ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_不満.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_伏せ目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_半泣き不信.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_困り笑顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_大ダメージ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_弱気.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_強い発情.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_強制快感.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_恐怖.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_愕然.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_戸惑い.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_楽.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_清楚顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_痴女顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_発情.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_目閉じ笑顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_羞恥.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_膨れ笑顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_軍師顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_顔面崩壊.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_表情_驚き.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_顔色_赤面線中.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_顔色_赤面線弱.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イズナ/イズナ_顔色_赤面線強.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>85,200,169,400</rect>
+                <key>scale9Paddings</key>
+                <rect>85,200,169,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_体_裸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_体_鎧.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_あちゃー.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_がはーん.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_ネコ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_微笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_曲げ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_膨れ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_舌.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_閉じる.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_開中.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_開大.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_口_開小.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_正面 小.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_正面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_細.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_逸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_閉.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_目_驚.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_眉_上.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_眉_下.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_眉_平坦.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_眉_怒.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/イナホ/瑞穂_眉_普通.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>67,200,133,400</rect>
+                <key>scale9Paddings</key>
+                <rect>67,200,133,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ロスト・コード/asset_base/chara/エリス/エリス_オーバーオール.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/エリス/エリス_表情_お茶目.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/エリス/エリス_表情_ギャグ.png</key>
@@ -251,6 +342,7 @@
             <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_楽.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_照れ.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_目逸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_素.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_考.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/シャンフー/シャンフー_驚.png</key>
             <struct type="IndividualSpriteSettings">
@@ -292,8 +384,10 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_スク水.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_丸出し.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_丸出し赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_制服.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_服.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_服赤面.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_裸.png</key>
@@ -302,6 +396,24 @@
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_裸赤面.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_通常涙目.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/セシル/セシル_通常目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_制服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_服赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_裸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_裸ポーズ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_裸ポーズ赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_裸赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_通常涙目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ダイアナ/ダイアナ_通常目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_制服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_服.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_服赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_裸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_裸ポーズ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_裸ポーズ赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_裸赤面.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_通常涙目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナタリア/ナタリア_通常目.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/ロリ共通/ロリ_なし.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/ロリ共通/ロリ_不満.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/ロリ共通/ロリ_困り.png</key>
@@ -326,6 +438,113 @@
                 <rect>75,100,150,200</rect>
                 <key>scale9Paddings</key>
                 <rect>75,100,150,200</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/なし.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_パンツ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_ブラ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_ベース.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_ポロリ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_下半身.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_伏し目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_号泣.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_微笑み.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_拒否.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_泣き顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_眠り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_羞恥.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_舌打ち.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_苦しみ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/タマ/タマ_通常.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>91,135,181,270</rect>
+                <key>scale9Paddings</key>
+                <rect>91,135,181,270</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_タオル.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_トランクス.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_ランニング.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_小物_サングラス.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_小物_怒り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_小物_汗.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_小物_照れ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_小物_眼鏡.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ナイト共通/ナイト_水着.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>73,190,146,380</rect>
+                <key>scale9Paddings</key>
+                <rect>73,190,146,380</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_B.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_哀.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_喘.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_怒.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_悩.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_楽.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_涙.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_照れ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_睨.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_笑2.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_考.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_膨.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_苦笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス_驚.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ニルス/ニルス裸.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>91,190,181,380</rect>
+                <key>scale9Paddings</key>
+                <rect>91,190,181,380</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_ボディ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_目_ウインク.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_目_笑顔目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_目_通常.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_表情_困り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_表情_怒り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_表情_笑顔.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_表情_苦笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/ブフルス/ブフルス_表情_通常.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>111,250,221,500</rect>
+                <key>scale9Paddings</key>
+                <rect>111,250,221,500</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -391,6 +610,63 @@
                 <rect>91,200,183,400</rect>
                 <key>scale9Paddings</key>
                 <rect>91,200,183,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_体_裸.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_体_鎧.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_お茶目.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_ギャグ泣き.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_哀.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_怒.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_悩.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_楽.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_泣.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_涙.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_笑2.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_考.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_膨れ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_苦笑.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_表情_驚 2.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_顔色_照れ.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/リオン/久遠_顔色_照れ2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>66,200,133,400</rect>
+                <key>scale9Paddings</key>
+                <rect>66,200,133,400</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/兵士汎用/兵士_なし.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/兵士汎用/兵士_感情_はてな.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/兵士汎用/兵士_感情_怒り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/兵士汎用/兵士_感情_汗.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/兵士汎用/兵士_感情_電球.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/ダムブルー兵.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/兵士_表情_叫び.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/兵士_表情_困り.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/兵士_表情_笑い.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/兵士_表情_通常.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/男兵士/帝国兵.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>147,281,293,562</rect>
+                <key>scale9Paddings</key>
+                <rect>147,281,293,562</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -699,21 +975,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">(04)ロスト・コード/asset_base/chara/単品/怪人_04.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>304,450,607,900</rect>
-                <key>scale9Paddings</key>
-                <rect>304,450,607,900</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
             <key type="filename">(04)ロスト・コード/asset_base/chara/単品/怪人_06.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -760,6 +1021,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/単品/皇帝クラウス.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>108,144,217,288</rect>
+                <key>scale9Paddings</key>
+                <rect>108,144,217,288</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">(04)ロスト・コード/asset_base/chara/培養液内.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -776,6 +1052,7 @@
                 <false/>
             </struct>
             <key type="filename">(04)ロスト・コード/asset_base/chara/女悪魔/女悪魔_なし.png</key>
+            <key type="filename">(04)ロスト・コード/asset_base/chara/女悪魔/女悪魔_ボディ - コピー.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/女悪魔/女悪魔_ボディ.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/女悪魔/女悪魔_前髪.png</key>
             <key type="filename">(04)ロスト・コード/asset_base/chara/女悪魔/女悪魔_口_すぼみ.png</key>
@@ -977,19 +1254,30 @@
             <struct type="SpriteSheet">
                 <key>files</key>
                 <array>
+                    <filename>(04)ロスト・コード/asset_base/chara/イズナ</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/イナホ</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/エリス</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/エルフ</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/シャンフー</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/ジャド</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/セシル</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/タマ</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/ダイアナ</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/ナイト共通</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/ナタリア</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/ニルス</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/ブフルス</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/マーク</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/ヤサブロウ</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/リオン</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/ロリ共通</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/単品</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/培養液内.png</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/女悪魔</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/少女共通</filename>
                     <filename>(04)ロスト・コード/asset_base/chara/汎用</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/兵士汎用</filename>
+                    <filename>(04)ロスト・コード/asset_base/chara/男兵士</filename>
                 </array>
             </struct>
         </map>
