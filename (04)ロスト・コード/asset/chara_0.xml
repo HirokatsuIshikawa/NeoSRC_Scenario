@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:312054828a55738f779dec8a2e7f6946:141bce6f5786f03f6ad4ee467fc28ff6:27966351b682d3170414d32f0e510cd1$ -->
+<!-- $TexturePacker:SmartUpdate:de07d7081ad6222fcc9047dda33fdf73:405a048581a24d8387d981ba5e4acb5a:27966351b682d3170414d32f0e510cd1$ -->
 <TextureAtlas imagePath="chara_0.png" width="2047" height="2048">
     <SubTexture name="なし" x="2026" y="1606" width="3" height="3" frameX="0" frameY="0" frameWidth="363" frameHeight="540"/>
     <SubTexture name="イズナ_表情_フェラ顔" x="1825" y="1780" rotated="true" width="80" height="118" frameX="-130" frameY="-99" frameWidth="339" frameHeight="800"/>
@@ -29,11 +29,13 @@
     <SubTexture name="タマ_ポロリ" x="1892" y="1238" rotated="true" width="144" height="197" frameX="-105" frameY="-179" frameWidth="363" frameHeight="540"/>
     <SubTexture name="ダイアナ_通常涙目" x="2005" y="1437" rotated="true" width="26" height="88" frameX="-109" frameY="-114" frameWidth="300" frameHeight="400"/>
     <SubTexture name="ダイアナ_通常目" x="135" y="2016" width="88" height="24" frameX="-109" frameY="-114" frameWidth="300" frameHeight="400"/>
+    <SubTexture name="ナイト_なし" x="2026" y="1606" width="3" height="3" frameX="0" frameY="0" frameWidth="363" frameHeight="760"/>
     <SubTexture name="ナイト_ランニング" x="1490" y="1780" width="134" height="240" frameX="-67" frameY="-131" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ナイト_小物_サングラス" x="393" y="2016" width="75" height="19" frameX="-111" frameY="-66" frameWidth="292" frameHeight="760"/>
-    <SubTexture name="ナイト_小物_汗" x="1701" y="2030" rotated="true" width="39" height="17" frameX="-168" frameY="-19" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ナイト_小物_汗" x="1714" y="2030" rotated="true" width="39" height="17" frameX="-168" frameY="-19" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ナイト_小物_照れ" x="2009" y="1939" rotated="true" width="23" height="65" frameX="-117" frameY="-75" frameWidth="292" frameHeight="760"/>
     <SubTexture name="ナイト_小物_眼鏡" x="1578" y="2032" width="68" height="15" frameX="-114" frameY="-73" frameWidth="292" frameHeight="760"/>
+    <SubTexture name="ナイト_赤面" x="1648" y="2032" width="64" height="15" frameX="-140" frameY="-80" frameWidth="363" frameHeight="760"/>
     <SubTexture name="バトルブルー_孕み" x="837" y="1247" width="384" height="800"/>
     <SubTexture name="ブフルス_目_ウインク" x="2018" y="447" rotated="true" width="22" height="51" frameX="-228" frameY="-73" frameWidth="443" frameHeight="1000"/>
     <SubTexture name="ブフルス_目_笑顔目" x="2026" y="1685" rotated="true" width="18" height="51" frameX="-228" frameY="-77" frameWidth="443" frameHeight="1000"/>
@@ -58,11 +60,11 @@
     <SubTexture name="女悪魔_なし" x="2026" y="1606" width="3" height="3" frameX="0" frameY="0" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_口_すぼみ" x="1894" y="1936" rotated="true" width="10" height="16" frameX="-208" frameY="-112" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_口_怒り" x="2026" y="1738" width="20" height="17" frameX="-205" frameY="-110" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_口_歯ぎしり" x="1768" y="2030" width="23" height="17" frameX="-205" frameY="-109" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女悪魔_口_歯ぎしり" x="1781" y="2030" width="23" height="17" frameX="-205" frameY="-109" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_口_笑い" x="2026" y="769" rotated="true" width="20" height="22" frameX="-205" frameY="-108" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_口_膨れ" x="1701" y="2015" width="11" height="13" frameX="-210" frameY="-111" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_口_通常" x="2031" y="713" rotated="true" width="14" height="20" frameX="-206" frameY="-110" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_口_驚き" x="2013" y="713" width="16" height="20" frameX="-206" frameY="-110" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女悪魔_口_通常" x="2032" y="713" rotated="true" width="14" height="20" frameX="-206" frameY="-110" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女悪魔_口_驚き" x="1824" y="2029" rotated="true" width="20" height="16" frameX="-206" frameY="-110" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_目_ウインク" x="2016" y="506" rotated="true" width="30" height="72" frameX="-178" frameY="-76" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_目_閉" x="1714" y="2010" width="69" height="18" frameX="-181" frameY="-79" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_眉_困り" x="2026" y="1615" rotated="true" width="18" height="68" frameX="-177" frameY="-68" frameWidth="484" frameHeight="850"/>
@@ -70,7 +72,7 @@
     <SubTexture name="女悪魔_眉_通常" x="225" y="2016" width="77" height="24" frameX="-172" frameY="-67" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_眉_驚き" x="1984" y="589" rotated="true" width="27" height="76" frameX="-171" frameY="-62" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_顔_汗" x="1892" y="1772" rotated="true" width="10" height="6" frameX="-239" frameY="-99" frameWidth="484" frameHeight="850"/>
-    <SubTexture name="女悪魔_顔_涙" x="1648" y="2032" width="47" height="15" frameX="-191" frameY="-88" frameWidth="484" frameHeight="850"/>
+    <SubTexture name="女悪魔_顔_涙" x="1805" y="2012" width="47" height="15" frameX="-191" frameY="-88" frameWidth="484" frameHeight="850"/>
     <SubTexture name="女悪魔_顔_涙黒子" x="2018" y="500" width="5" height="4" frameX="-237" frameY="-90" frameWidth="484" frameHeight="850"/>
     <SubTexture name="少女__照れ" x="73" y="2016" width="60" height="31" frameX="-109" frameY="-79" frameWidth="270" frameHeight="600"/>
     <SubTexture name="少女_なし" x="2026" y="1606" width="3" height="3" frameX="0" frameY="0" frameWidth="270" frameHeight="600"/>
@@ -79,13 +81,13 @@
     <SubTexture name="戦闘員_37" x="790" y="1" width="674" height="1244" frameX="-69" frameY="-36" frameWidth="816" frameHeight="1280"/>
     <SubTexture name="瑞穂_口_がはーん" x="1990" y="2013" rotated="true" width="29" height="31" frameX="-99" frameY="-105" frameWidth="267" frameHeight="800"/>
     <SubTexture name="瑞穂_口_ネコ" x="2004" y="769" rotated="true" width="20" height="32" frameX="-99" frameY="-104" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_微笑" x="1742" y="2030" width="24" height="17" frameX="-102" frameY="-105" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_曲げ" x="1817" y="2012" rotated="true" width="18" height="16" frameX="-105" frameY="-105" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_膨れ" x="1795" y="1999" rotated="true" width="20" height="17" frameX="-104" frameY="-104" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_微笑" x="1755" y="2030" width="24" height="17" frameX="-102" frameY="-105" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_曲げ" x="1806" y="2029" width="16" height="18" frameX="-105" frameY="-105" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_膨れ" x="2013" y="713" width="17" height="20" frameX="-104" frameY="-104" frameWidth="267" frameHeight="800"/>
     <SubTexture name="瑞穂_口_舌" x="2005" y="1606" width="19" height="19" frameX="-104" frameY="-106" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_閉じる" x="2021" y="2006" rotated="true" width="16" height="19" frameX="-104" frameY="-107" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_開中" x="2021" y="2027" width="18" height="18" frameX="-105" frameY="-105" frameWidth="267" frameHeight="800"/>
-    <SubTexture name="瑞穂_口_開小" x="1793" y="2030" width="16" height="17" frameX="-105" frameY="-106" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_閉じる" x="1854" y="2012" width="19" height="16" frameX="-104" frameY="-107" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_開中" x="1785" y="2010" width="18" height="18" frameX="-105" frameY="-105" frameWidth="267" frameHeight="800"/>
+    <SubTexture name="瑞穂_口_開小" x="1875" y="2012" rotated="true" width="17" height="16" frameX="-105" frameY="-106" frameWidth="267" frameHeight="800"/>
     <SubTexture name="瑞穂_目_正面 小" x="1984" y="339" rotated="true" width="32" height="82" frameX="-77" frameY="-71" frameWidth="267" frameHeight="800"/>
     <SubTexture name="瑞穂_目_笑" x="304" y="2030" width="73" height="17" frameX="-83" frameY="-84" frameWidth="267" frameHeight="800"/>
     <SubTexture name="瑞穂_目_細" x="1825" y="1900" width="79" height="23" frameX="-79" frameY="-80" frameWidth="267" frameHeight="800"/>
